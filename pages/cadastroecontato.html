@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore - Seu E-commerce de Games</title>
+    <link rel="stylesheet" href="../assest/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🎮 GameStore</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./jogos.html">Jogos</a></li>
+                <li><a href="./PaginaInterna2.html">Sobre</a></li>
+                <li><a href="#" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carousel -->
+    <section class="carousel">
+        <div class="carousel-content">
+            <div class="carousel-text">
+                <h2>Bem-vindo à GameStore</h2>
+                <h1>Os Melhores Jogos para Você</h1>
+                <p>Venha fazer parte deste Time.</p>
+                <!-- Alterado para um link com a classe 'explorar-link' -->
+                <a href="./jogos.html" class="explorar-link">Explorar Agora</a>
+            </div>
+            <div class="carousel-image">
+                <img src="../assest/images/The Last of Us Part II_1.jpg" alt="Destaque do Jogo">
+            </div>
+        </div>
+        <div class="carousel-nav">
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>
+    </section>
+
+    <main>
+        <div class="form-and-images">
+            <!-- Imagens à esquerda do formulário -->
+            <div class="left-images">
+                <img src="../assest/images/Witcher1.jpg" alt="Jogo 1">
+                <img src="../assest/images/Resident Evil 4.jpg" alt="Jogo 3">
+            </div>
+
+            <!-- Formulário -->
+            <div class="form-container">
+                <div class="container">
+                    <h2>A GameStore agradece a sua visita! Escolha uma opção:</h2>
+
+                    <div class="radio-container">
+                        <input type="radio" name="formOption" id="cadastro">
+                        <label for="cadastro">Cadastro</label>
+
+                        <input type="radio" name="formOption" id="contato">
+                        <label for="contato">Contato</label>
+                    </div>
+
+                    <!-- Campos de Cadastro -->
+                    <div class="fields" id="cadastroFields">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" placeholder="Nome Completo">
+
+                        <label for="username">Nome de Usuário</label>
+                        <input type="text" id="username" placeholder="Nome de Usuário">
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="E-mail">
+
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="Senha">
+                        <small id="password-help">Sua senha deve conter pelo menos 8 caracteres.</small>
+
+                        <label for="confirm-password">Confirme a Senha</label>
+                        <input type="password" id="confirm-password" placeholder="Confirme a Senha">
+
+                        <a href="../pages/PaginaInterna4.html" class="botao-link" id="enviarCadastro">Enviar Cadastro</a>
+                    </div>
+
+                    <!-- Campos de Contato -->
+                    <div class="fields" id="contatoFields">
+                        <label for="nameContato">Nome</label>
+                        <input type="text" id="nameContato" placeholder="Nome">
+
+                        <label for="emailContato">E-mail</label>
+                        <input type="email" id="emailContato" placeholder="E-mail">
+
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" placeholder="Digite sua mensagem"></textarea>
+
+                        <a href="../pages/PaginaInterna4.html" class="botao-link" id="enviarContato">Enviar Contato</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagens à direita do formulário -->
+            <div class="right-images">
+                <img src="../assest/images/FIFA 24_1.jpg" alt="Jogo 2">
+                <img src="../assest/images/Call of Duty.jpg" alt="Jogo 4">
+            </div>
+        </div>
+    </main>
+
+    <script src="../assest/js/script.js"></script>
+</body>
+</html>
