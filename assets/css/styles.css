@@ -319,23 +319,34 @@ h2 {
   z-index: 10;
 }
 
-/* Ajustes no layout das imagens */
 .left-images, .right-images {
-  position: absolute; /* Posicionando as imagens nas laterais */
-  top: 50%; /* Alinha as imagens ao meio da tela */
-  transform: translateY(-50%); /* Centraliza as imagens verticalmente */
-  z-index: 1;
   display: flex;
-  flex-direction: column; /* Empilhando as imagens verticalmente */
-  gap: 15px; /* Espaçamento entre as imagens */
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
-.left-images {
-  left: 5%;
+@media (max-width: 1024px) {
+  .left-images, .right-images {
+    position: relative; /* Remove o absolute para evitar sobreposição */
+    top: auto;
+    transform: none;
+    width: 100%; /* Faz as imagens ocuparem a largura total */
+    flex-direction: row; /* Exibe as imagens lado a lado */
+    justify-content: center;
+  }
 }
 
-.right-images {
-  right: 5%;
+@media (max-width: 768px) {
+  .left-images, .right-images {
+    flex-direction: column; /* Empilha as imagens no mobile */
+    width: 100%;
+    align-items: center;
+  }
+
+  .left-images img, .right-images img {
+    width: 80%; /* Reduz o tamanho para não ultrapassar a tela */
+  }
 }
 
 /* Ajuste específico para a imagem FIFA 24 */
