@@ -5,12 +5,12 @@
   box-sizing: border-box;
   font-family: "Arial", sans-serif;
 }
-
+ 
 body {
   background-color: #121212;
   color: white;
 }
-
+ 
 header {
   display: flex;
   justify-content: space-between;
@@ -23,30 +23,30 @@ header {
   left: 0;
   z-index: 1000;
 }
-
+ 
 .logo {
   font-size: 24px;
   font-weight: bold;
 }
-
+ 
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
 }
-
+ 
 nav ul li a {
   text-decoration: none;
   color: white;
   padding: 8px 15px;
 }
-
+ 
 .login-btn {
   background-color: #e60067;
   border-radius: 5px;
   padding: 5px 15px;
 }
-
+ 
 /* Carousel */
 .carousel {
   margin-top: 70px;
@@ -59,22 +59,22 @@ nav ul li a {
   position: relative;
   color: white;
 }
-
+ 
 .carousel-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 80%;
 }
-
+ 
 .carousel-text h2 {
   font-size: 18px;
 }
-
+ 
 .carousel-text h1 {
   font-size: 36px;
 }
-
+ 
 .carousel-text button {
   background-color: white;
   color: black;
@@ -82,7 +82,7 @@ nav ul li a {
   border: none;
   cursor: pointer;
 }
-
+ 
 /* Link "Comprar Agora" */
 .comprar-link {
   background-color: white;
@@ -93,11 +93,11 @@ nav ul li a {
   cursor: pointer;
   position: absolute;
 }
-
+ 
 .comprar-link:hover {
   background-color: #b3004d;
 }
-
+ 
 /* Link "Explorar Agora" */
 .explorar-link {
   background-color: white;
@@ -108,11 +108,11 @@ nav ul li a {
   cursor: pointer;
   position: absolute;
 }
-
+ 
 .explorar-link:hover {
   background-color: #b3004d;
 }
-
+ 
 .carousel-nav span {
   position: absolute;
   top: 50%;
@@ -120,21 +120,21 @@ nav ul li a {
   font-size: 30px;
   cursor: pointer;
 }
-
+ 
 /* Genres */
 .genres {
   text-align: center;
   padding: 30px;
   background-color: #1f1f1f;
 }
-
+ 
 .genre-list {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-top: 20px;
 }
-
+ 
 .genre-btn {
   background-color: #333;
   color: white;
@@ -144,28 +144,28 @@ nav ul li a {
   border-radius: 5px;
   transition: 0.3s;
 }
-
+ 
 .genre-btn:hover {
   background-color: #e60067;
 }
-
+ 
 /* Games */
 .games {
   text-align: center;
   padding: 30px;
 }
-
+ 
 .games h2 {
   margin-bottom: 20px;
 }
-
+ 
 .game-list {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
-
+ 
 .game-card {
   background-color: #1f1f1f;
   width: 200px;
@@ -174,18 +174,18 @@ nav ul li a {
   box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.3);
   text-align: center;
 }
-
+ 
 .game-card img {
   width: 100%;
   height: 120px;
   background: lightgray;
   border-radius: 5px;
 }
-
+ 
 .game-card h3 {
   margin: 10px 0;
 }
-
+ 
 .game-card button {
   background-color: #e60067;
   border: none;
@@ -194,7 +194,7 @@ nav ul li a {
   cursor: pointer;
   border-radius: 5px;
 }
-
+ 
 /* Cadastro e Contato */
 form {
   display: flex;
@@ -202,7 +202,7 @@ form {
   gap: 15px;
   padding: 20px;
 }
-
+ 
 input, select, textarea {
   padding: 10px;
   border-radius: 5px;
@@ -210,11 +210,11 @@ input, select, textarea {
   width: 100%;
   font-size: 0.81em; /* 10% redução no tamanho da fonte */
 }
-
+ 
 textarea {
   height: 120px;
 }
-
+ 
 .container {
   padding: 30px;
   background: #1f1f1f;
@@ -225,45 +225,45 @@ textarea {
   margin-right: auto;
   text-align: center;
 }
-
+ 
 #cadastroFields, #contatoFields {
   display: none;
 }
-
+ 
 #cadastroFields.show, #contatoFields.show {
   display: block;
 }
-
+ 
 #cadastroFields, #contatoFields {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-
+ 
 #cadastroFields label, #contatoFields label {
   font-weight: bold;
   font-size: 0.765em; /* 10% redução no tamanho da fonte */
   text-align: left;
 }
-
+ 
 .fields input, .fields textarea {
   max-width: 455px;
   margin-left: auto;
   margin-right: auto;
 }
-
+ 
 h2 {
   text-align: center;
   margin-bottom: 15px;
 }
-
+ 
 .radio-container {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-top: 15px;
 }
-
+ 
 .radio-container label {
   background-color: #555;
   color: white;
@@ -273,19 +273,19 @@ h2 {
   font-size: 0.765em; /* 10% redução no tamanho da fonte */
   transition: background-color 0.3s;
 }
-
+ 
 .radio-container label:hover {
   background-color: #777;
 }
-
+ 
 .radio-container input {
   display: none;
 }
-
+ 
 .radio-container input:checked + label {
   background-color: #e60067;
 }
-
+ 
 .botao-link, .link-button {
   display: inline-block;
   padding: 8px 16px;
@@ -299,12 +299,12 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
-
+ 
 .botao-link:hover, .link-button:hover {
   background-color: #c5005a;
   cursor: pointer;
 }
-
+ 
 /* Ajustes para o formulário abaixo do carrossel */
 .form-and-images {
   display: flex;
@@ -318,14 +318,14 @@ h2 {
   position: relative;
   z-index: 10;
 }
-
+ 
 .left-images, .right-images {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
 }
-
+ 
 @media (max-width: 1024px) {
   .left-images, .right-images {
     position: relative; /* Remove o absolute para evitar sobreposição */
@@ -336,106 +336,106 @@ h2 {
     justify-content: center;
   }
 }
-
+ 
 @media (max-width: 768px) {
   .left-images, .right-images {
     flex-direction: column; /* Empilha as imagens no mobile */
     width: 100%;
     align-items: center;
   }
-
+ 
   .left-images img, .right-images img {
     width: 80%; /* Reduz o tamanho para não ultrapassar a tela */
   }
 }
-
+ 
 /* Ajuste específico para a imagem FIFA 24 */
-.left-images img[src="caminho/para/sua/imagem/FIFA 24.jpg"], 
+.left-images img[src="caminho/para/sua/imagem/FIFA 24.jpg"],
 .right-images img[src="caminho/para/sua/imagem/FIFA 24.jpg"] {
   width: 200px !important;  /* Forçando a largura */
   height: 300px !important; /* Ajustando a altura para manter a proporção */
   object-fit: contain;
   object-position: center;
 }
-
+ 
 .left-images img, .right-images img {
   width: 250px;
   height: 250px;
   object-fit: contain; /* Garante que a imagem seja totalmente visível dentro do espaço */
   object-position: center; /* Garante que a imagem seja centralizada dentro do espaço */
 }
-
+ 
 /* Responsividade */
 @media (max-width: 1024px) {
   header {
       padding: 15px 20px;
   }
-
+ 
   .container {
       max-width: 90%;
       top: 10%;
   }
-
+ 
   input, select, textarea {
       width: 100%;
       font-size: 0.765em; /* 10% redução no tamanho da fonte */
   }
-
+ 
   .botao-link {
       font-size: 0.68em;
       padding: 7px 14px;
   }
 }
-
+ 
 @media (max-width: 768px) {
   .container {
       max-width: 100%;
       padding: 20px;
       top: 15%;
   }
-
+ 
   .form-and-images {
       flex-direction: column;
       gap: 20px;
       padding: 20px;
   }
-
+ 
   .left-images img, .right-images img {
       width: 70%;
       height: auto;
   }
 }
-
+ 
 @media (max-width: 480px) {
   .container {
       padding: 15px;
       top: 20%;
   }
-
+ 
   input, select, textarea {
       font-size: 0.63em; /* 10% redução no tamanho da fonte */
       padding: 8px;
   }
-
+ 
   .botao-link {
       font-size: 0.585em;
       padding: 5px 10px;
   }
-
+ 
   .form-and-images {
       padding: 10px;
   }
-
+ 
   .left-images img, .right-images img {
       width: 60%;
       height: auto;
   }
 }
-
-
+ 
+ 
 /* ---------------- CAROLINA PEREIRA ----------------- */
-
-
+ 
+ 
 .game {
   width: 90%;
   display: flex;
@@ -443,7 +443,7 @@ h2 {
   margin: 5%;
   border-radius: 10px;
 }
-
+ 
 .game-principal {
   margin: 0 auto;
   width: 95%;
@@ -453,12 +453,12 @@ h2 {
   display: flex;
   justify-content: center;
 }
-
+ 
 .game-principal img {
   height: 100%;
   border-radius: 10px;
 }
-
+ 
 .game-principal button {
   background-color: #e60067;
   border: none;
@@ -467,11 +467,11 @@ h2 {
   cursor: pointer;
   border-radius: 5px;
 }
-
+ 
 .texto-principal {
   padding: 10px;
 }
-
+ 
 .sidebar {
   width: 40%;
   border-radius: 10px;
@@ -480,13 +480,13 @@ h2 {
   gap: 10px;
   padding: 10px;
 }
-
+ 
 .sidebar img {
   width: 40%;
   padding: 10px;
   border-radius: 20px;
 }
-
+ 
 .sidebar-um {
   width: 100%;
   height: 100%;
@@ -497,7 +497,7 @@ h2 {
   justify-content: center;
   cursor: pointer;
 }
-
+ 
 .sidebar-dois {
   width: 100%;
   height: 100%;
@@ -508,33 +508,33 @@ h2 {
   justify-content: center;
   cursor: pointer;
 }
-
+ 
 .img-um {
   width: 100%;
   max-height: 100%;
 }
-
+ 
 .img-dois {
   height: 160px;
   object-fit: cover;
   border-radius: 10px;
   max-height: 100%;
 }
-
+ 
 .sidebar h3 {
   font-size: 24px;
   padding: 5px, 5px;
 }
-
+ 
 .side-text {
   display: flex;
   align-items: flex-end;
   font-size: 12px;
-
+ 
 }
-
+ 
 /*  SECTION PROMO  */
-
+ 
 .promo-section {
   margin: 0 auto;
   width: 90%;
@@ -547,23 +547,23 @@ h2 {
   box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.3);
   border-radius: 10px;
 }
-
+ 
 .promo-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 90%;
 }
-
+ 
 .video-container {
   margin-left: auto;
   display: flex;
 }
-
+ 
 .promo-text {
   padding: 10px;
 }
-
+ 
 .promo-text button {
   background-color: rgb(255, 255, 255);
   border: none;
@@ -572,11 +572,11 @@ h2 {
   cursor: pointer;
   border-radius: 5px;
 }
-
-
+ 
+ 
 /* SECTION - FINAL */
-
-
+ 
+ 
 .game-container {
   padding: 20px;
   display: flex;
@@ -584,7 +584,7 @@ h2 {
   gap: 40px;
   flex-wrap: wrap;
 }
-
+ 
 .game-item {
   background-color: #1f1f1f;
   width: 20%;
@@ -593,12 +593,12 @@ h2 {
   box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.3);
   text-align: center;
 }
-
+ 
 .game-item p {
   font-size: 14px;
   padding: 5px;
 }
-
+ 
 .img-hover {
   width: 260px;
   height: 150px;
@@ -609,21 +609,21 @@ h2 {
   filter: brightness(50%);
   cursor: pointer;
 }
-
+ 
 .img-hover:hover {
   transform: scale(1.1);
   filter: brightness(100%);
 }
-
-
-
+ 
+ 
+ 
 .game-preço {
   text-decoration: line-through;
   color: rgb(134, 134, 134);
   font-size: 14px;
 }
-
-
+ 
+ 
 .desconto {
   background-color: #e60067;
   color: black;
@@ -634,16 +634,16 @@ h2 {
   display: inline-block;
   margin-top: 5px;
 }
-
-
+ 
+ 
 /* FOOTER */
-
+ 
 .rodape {
   background-color: #1f1f1f;
   color: #fff;
   padding: 20px;
 }
-
+ 
 .rodape-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -651,63 +651,163 @@ h2 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-
+ 
 }
-
+ 
 .rodape-section {
   flex: 1;
   min-width: 200px;
   margin: 10px;
 }
-
+ 
 .rodape-section h4 {
   margin-bottom: 15px;
   font-size: 18px;
   color: #e60067;
 }
-
+ 
 .rodape-section p,
 .rodape-section ul {
   font-size: 16px;
   line-height: 1;
 }
-
-
+ 
+ 
 .rodape-section ul li {
   list-style-type: none;
   margin-bottom: 10px;
 }
-
+ 
 .rodape-section ul li a {
   color: #fff;
   text-decoration: none;
-
+ 
 }
-
-
+ 
+ 
 .redesocial-icon {
   display: flex;
   flex-direction: column;
   gap: 10px;
-
+ 
 }
-
+ 
 .redesocial-icon a {
   color: #e60067;
   font-size: 14px;
 }
-
+ 
 .creditos {
   text-align: center;
   padding: 10px 0;
   border-top: 1px solid #fff;
   margin-top: 20px;
 }
-
+ 
 .creditos p {
   margin: 0;
   font-size: 14px;
   color: #e60067;
 }
-
+ 
 /* ------------------------------------ */
+ /* --------- LUIZA VICENTE ----------- */
+
+
+/* Estilo do formulário de pesquisa */
+.search-form {
+  display: flex; /* Alinha o campo e o botão lado a lado */
+  justify-content: center; /* Centraliza o formulário */
+  align-items: center; /* Alinha verticalmente os elementos */
+  gap: 10px; /* Espaçamento entre o campo e o botão */
+  margin-top: 20px; /* Espaçamento acima do formulário */
+}
+
+/* Estilo do campo de entrada */
+.search-input {
+  width: 400px; /* Aumenta a largura do campo de entrada */
+  padding: 10px; /* Espaçamento interno */
+  border: 2px solid #ccc; /* Borda cinza */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo do botão de pesquisa */
+.search-button {
+  padding: 8px 15px; /* Reduz o tamanho do botão */
+  background-color: #e60067; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 14px; /* Tamanho da fonte menor */
+  cursor: pointer; /* Mostra o cursor de clique */
+  transition: background-color 0.3s ease; /* Transição suave no hover */
+}
+
+.search-button:hover {
+  background-color: #c5005a; /* Cor mais escura no hover */
+}
+
+/* Estilo da seção Indies */
+.indies {
+  background: linear-gradient(to left, #001f3f, #003366); /* Degradê azul-marinho da direita para a esquerda */
+  padding: 40px 20px; /* Espaçamento interno */
+  color: white; /* Cor do texto */
+  text-align: center; /* Centraliza o título */
+}
+
+.indies h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Estilo dos cards da seção Indies */
+.indie-list {
+  display: flex; /* Ativa o Flexbox */
+  flex-wrap: wrap; /* Permite que os cards quebrem linha */
+  justify-content: center; /* Centraliza os cards */
+  gap: 20px; /* Espaçamento entre os cards */
+}
+
+.indie-card {
+  width: calc(25% - 20px); /* Cada card ocupa 25% da largura menos o espaçamento */
+  background-color: #f5f5f5; /* Fundo cinza claro para os cards */
+  border-radius: 8px; /* Bordas arredondadas */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse o card */
+  text-align: center; /* Centraliza o texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+  padding: 10px; /* Espaçamento interno */
+}
+
+.indie-card img {
+  width: 100%; /* Faz a imagem ocupar toda a largura do card */
+  height: 150px; /* Define uma altura fixa para a imagem */
+  object-fit: cover; /* Ajusta a imagem para caber no espaço sem distorção */
+  border-radius: 5px; /* Bordas arredondadas para a imagem */
+  margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.indie-card h3 {
+  font-size: 18px; /* Tamanho da fonte do título */
+  margin: 10px 0; /* Espaçamento acima e abaixo do título */
+}
+
+.indie-card p {
+  font-size: 14px; /* Tamanho da fonte da descrição */
+  color: #555; /* Cor do texto */
+  margin: 5px 0; /* Espaçamento acima e abaixo da descrição */
+}
+
+.indie-card button {
+  background-color: #e60067; /* Cor de fundo do botão */
+  border: none; /* Remove a borda do botão */
+  padding: 10px 15px; /* Espaçamento interno do botão */
+  color: white; /* Cor do texto do botão */
+  cursor: pointer; /* Mostra o cursor de clique */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease; /* Transição suave no hover */
+}
+
+.indie-card button:hover {
+  background-color: #c5005a; /* Cor mais escura no hover */
+}
