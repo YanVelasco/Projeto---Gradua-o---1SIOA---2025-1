@@ -1,4 +1,7 @@
 /* Home */
+
+@import url(https://db.onlinewebfonts.com/c/2db95998b1dbd7d0d2f25ea8ad9968d4?family=GN-Kin-iro_SansSerif);
+
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +28,8 @@ header {
 }
  
 .logo {
-  font-size: 24px;
+  font-family: "GN-Kin-iro_SansSerif";
+  font-size: 50px;
   font-weight: bold;
 }
  
