@@ -28,6 +28,11 @@ header {
   font-size: 24px;
   font-weight: bold;
 }
+
+.logoimg {
+  width: 20px;
+  height: 20px;
+}
  
 nav ul {
   list-style: none;
