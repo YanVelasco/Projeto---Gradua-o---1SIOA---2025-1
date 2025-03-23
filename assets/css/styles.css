@@ -721,13 +721,13 @@ th, td {
 .rodape {
   background-color: #1f1f1f;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
 }
 
 .rodape-content {
   max-width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: space-around;
 }
@@ -735,8 +735,8 @@ th, td {
 .rodape-section img {
 max-width: 100%;
 border-radius: 20px;
-width: 90%;
-height: 170px;
+width: 25%;
+height: 35%;
 opacity: 0.5;
 margin-top: 20px;
 }
@@ -987,6 +987,7 @@ th, td {
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  margin-top: 100px;
 }
 
 .indies h2 {
@@ -1000,7 +1001,7 @@ th, td {
 
 /* Estilo dos cards da seção Indies */
 .indie-list {
-  display: flex; /* Ativa o Flexbox */
+  display: flex;
   flex-wrap: wrap; /* Permite que os cards quebrem linha */
   justify-content: center; /* Centraliza os cards */
   gap: 20px; /* Espaçamento entre os cards */
@@ -1068,5 +1069,122 @@ th, td {
   max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+}
+
+/* Estilo para telas grandes (PCs) */
+
+@media (min-width: 1025px) {
+
+  .carousel {
+
+      height: 400px; /* Ajusta a altura do carrossel */
+
+  }
+
+  .search-input {
+
+      width: 400px; /* Campo de pesquisa maior em telas grandes */
+
+  }
+
+  .indie-card {
+
+      width: calc(25% - 20px); /* 4 cards por linha */
+
+  }
+
+}
+
+/* Estilo para tablets (telas médias) */
+
+@media (max-width: 1024px) {
+
+  .carousel {
+
+      height: 300px; /* Reduz a altura do carrossel */
+
+  }
+
+  .search-input {
+
+      width: 300px; /* Campo de pesquisa menor */
+
+  }
+
+  .indie-card {
+
+      width: calc(33.33% - 20px); /* 3 cards por linha */
+
+  }
+
+}
+
+/* Estilo para smartphones (telas pequenas) */
+
+@media (max-width: 768px) {
+
+  .carousel {
+
+      height: 250px; /* Reduz ainda mais a altura do carrossel */
+
+  }
+
+  .search-input {
+
+      width: 250px; /* Campo de pesquisa ainda menor */
+
+  }
+
+  .indie-card {
+
+      width: calc(50% - 20px); /* 2 cards por linha */
+
+  }
+
+  .indies h2 {
+
+      font-size: 24px; /* Reduz o tamanho do título */
+
+  }
+
+}
+
+/* Estilo para telas muito pequenas (smartphones menores) */
+
+@media (max-width: 480px) {
+
+  .carousel {
+
+      height: 200px; /* Altura mínima para o carrossel */
+
+  }
+
+  .search-input {
+
+      width: 200px; /* Campo de pesquisa compacto */
+
+  }
+
+  .indie-card {
+
+      width: 100%; /* 1 card por linha */
+
+  }
+
+  .indies h2 {
+
+      font-size: 20px; /* Título ainda menor */
+
+  }
+
+}
+
+.carousel-indie {
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column; /* Empilha os elementos em telas menores */
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
