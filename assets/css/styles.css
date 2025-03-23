@@ -77,7 +77,7 @@ nav ul li a {
   justify-content: space-between;
   width: 80%;
 }
- 
+
 .carousel-text h2 {
   font-size: 18px;
 }
@@ -85,7 +85,7 @@ nav ul li a {
 .carousel-text h1 {
   font-size: 36px;
 }
- 
+
 .carousel-text button {
   background-color: white;
   color: black;
@@ -93,7 +93,11 @@ nav ul li a {
   border: none;
   cursor: pointer;
 }
- 
+
+.carousel-image {
+    
+}
+
 /* Link "Comprar Agora" */
 .comprar-link {
   background-color: white;
@@ -974,16 +978,24 @@ th, td {
 }
 
 /* Estilo da seção Indies */
+
 .indies {
-  background: linear-gradient(to left, #001f3f, #003366); /* Degradê azul-marinho da direita para a esquerda */
-  padding: 40px 20px; /* Espaçamento interno */
-  color: white; /* Cor do texto */
-  text-align: center; /* Centraliza o título */
+  background: linear-gradient(0deg, #e60067, #330133);
+  padding: 40px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .indies h2 {
   font-size: 28px;
   margin-bottom: 20px;
+}
+
+.indies h3 {
+  color: #0d0d0d;
 }
 
 /* Estilo dos cards da seção Indies */
