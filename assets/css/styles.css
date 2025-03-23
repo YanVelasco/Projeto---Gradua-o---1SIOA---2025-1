@@ -447,8 +447,7 @@ h2 {
  
  
 /* ---------------- CAROLINA PEREIRA ----------------- */
- 
- 
+
 .game {
   width: 90%;
   display: flex;
@@ -456,22 +455,23 @@ h2 {
   margin: 5%;
   border-radius: 10px;
 }
- 
+
 .game-principal {
   margin: 0 auto;
   width: 95%;
-  height: 400px;
+  max-height:100%;
   border-radius: 10px;
   align-items: center;
   display: flex;
   justify-content: center;
 }
- 
+
 .game-principal img {
+  max-width: 100%;
   height: 100%;
   border-radius: 10px;
 }
- 
+
 .game-principal button {
   background-color: #e60067;
   border: none;
@@ -480,11 +480,10 @@ h2 {
   cursor: pointer;
   border-radius: 5px;
 }
- 
 .texto-principal {
   padding: 10px;
 }
- 
+
 .sidebar {
   width: 40%;
   border-radius: 10px;
@@ -493,13 +492,14 @@ h2 {
   gap: 10px;
   padding: 10px;
 }
- 
+
 .sidebar img {
+  max-width: 100%;
   width: 40%;
   padding: 10px;
   border-radius: 20px;
 }
- 
+
 .sidebar-um {
   width: 100%;
   height: 100%;
@@ -510,7 +510,7 @@ h2 {
   justify-content: center;
   cursor: pointer;
 }
- 
+
 .sidebar-dois {
   width: 100%;
   height: 100%;
@@ -521,30 +521,26 @@ h2 {
   justify-content: center;
   cursor: pointer;
 }
- 
+
 .img-um {
+  max-width: 100%;
   width: 100%;
   max-height: 100%;
 }
- 
+
 .img-dois {
-  height: 160px;
+  max-width: 100%;
+  height: 150px;
   object-fit: cover;
   border-radius: 10px;
   max-height: 100%;
 }
- 
+
 .sidebar h3 {
-  font-size: 24px;
+  font-size: 1.5em;
   padding: 5px, 5px;
 }
- 
-.side-text {
-  display: flex;
-  align-items: flex-end;
-  font-size: 12px;
- 
-}
+
  
 /*  SECTION PROMO  */
  
@@ -589,11 +585,10 @@ h2 {
  
 /* SECTION - FINAL */
  
- 
 .game-container {
-  padding: 20px;
   display: flex;
   justify-content: space-evenly;
+  padding: 10px;
   gap: 40px;
   flex-wrap: wrap;
 }
@@ -608,35 +603,34 @@ h2 {
 }
  
 .game-item p {
-  font-size: 14px;
+  font-size: 0.875em;
   padding: 5px;
 }
  
 .img-hover {
-  width: 260px;
-  height: 150px;
+  max-width: 100%;
+  width: 90%;
+  height: 160px;
   object-fit: cover;
   border-radius: 5%;
   box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.3);
   transition: transform 0.3s ease-in-out;
   filter: brightness(50%);
   cursor: pointer;
+
 }
- 
+
 .img-hover:hover {
   transform: scale(1.1);
   filter: brightness(100%);
 }
- 
- 
- 
+
 .game-preço {
   text-decoration: line-through;
   color: rgb(134, 134, 134);
-  font-size: 14px;
+  font-size: 0.875em;
 }
- 
- 
+
 .desconto {
   background-color: #e60067;
   color: black;
@@ -647,83 +641,301 @@ h2 {
   display: inline-block;
   margin-top: 5px;
 }
- 
- 
+
+
+/*  TABELA  */
+
+
+.tabela-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0px 20px 40px ;
+  background-color: #121212;
+  box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.3);
+}
+
+.tabela-text img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  padding: 0px 10px;
+  border-radius: 10%;
+}
+
+.tabela-text h3 {
+  font-size: 28px;
+  padding: 10px;
+}
+
+.tabela-content {
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.tabela {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  width: 100%;
+  margin-bottom: 5%;
+  padding: 0Px 50px;
+  background-color: #121212;
+}
+
+.tabela h2 {
+  color: #e60067;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+table {
+  padding: 20px 0px 10px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 5px 100px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.tabela-text button {
+  background-color: #e60067;
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
 /* FOOTER */
- 
 .rodape {
   background-color: #1f1f1f;
   color: #fff;
   padding: 20px;
 }
- 
+
 .rodape-content {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
- 
 }
- 
-.rodape-section {
-  flex: 1;
-  min-width: 200px;
-  margin: 10px;
+
+.rodape-section img {
+max-width: 100%;
+border-radius: 20px;
+width: 90%;
+height: 170px;
+opacity: 0.5;
+margin-top: 20px;
 }
- 
-.rodape-section h4 {
-  margin-bottom: 15px;
-  font-size: 18px;
+
+.rodape-section h4{
+  font-size: 22px;
   color: #e60067;
+  margin-bottom: 10px;
 }
- 
+
 .rodape-section p,
 .rodape-section ul {
-  font-size: 16px;
-  line-height: 1;
+  
+  font-size: 15px;
 }
- 
- 
+
 .rodape-section ul li {
   list-style-type: none;
   margin-bottom: 10px;
 }
- 
+
 .rodape-section ul li a {
   color: #fff;
   text-decoration: none;
- 
+
 }
- 
- 
+
+.rodape-text {
+  display: flex;
+  justify-content: center;
+}
+
 .redesocial-icon {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
- 
+  justify-content: center;
+gap: 20px;
 }
- 
+
 .redesocial-icon a {
-  color: #e60067;
-  font-size: 14px;
+  color: #fff;
+  font-size: 30px;
 }
- 
+
 .creditos {
   text-align: center;
   padding: 10px 0;
   border-top: 1px solid #fff;
   margin-top: 20px;
 }
- 
+
 .creditos p {
   margin: 0;
   font-size: 14px;
   color: #e60067;
 }
- 
+
+
+/* responsividade */
+@media (max-width: 1024px) {
+  
+  .game {
+    flex-direction: column;
+    align-items: center;
+  }
+  .game-principal {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    
+  }
+  .game-principal button {
+    width: 50%; 
+  }
+  
+  .sidebar {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .game-item {
+    width: 45%;
+  }
+
+  .promo-section {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .promo-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .video-container {
+    margin: 20px;
+    max-width: 100%;
+  }
+
+.tabela-text {
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.tabela-text img {
+  padding: 20px 0;
+  height: auto;
+}
+
+.tabela-text h3 {
+  font-size: 24px;
+  padding: 20px;
+}
+
+.tabela {
+  padding: 0px 20px;
+}
+
+th, td {
+  padding: 5px 50px;
+}
+}
+
+
+@media (max-width: 768px) {
+  .game {
+    width: 100%;
+    margin: 2%;
+  }
+
+  .game-principal {
+    width: 100%;
+    padding:150px;
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+  .game-principal button {
+    width: 50%; 
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .game-container {
+    gap: 20px;
+  }
+  .game-item {
+    width: 50%;
+  }
+
+  .promo-section {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .promo-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .video-container {
+    margin: 20px ;
+  }
+
+
+  .tabela-text {
+    padding: 10px;
+  }
+
+  .tabela-text img {
+    padding: 10px 0px;
+  }
+
+  .tabela-text h3 {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  .tabela {
+    padding: 0px 10px;
+  }
+
+  th, td {
+    padding: 5px 20px;
+    font-size: 0.7em;
+  }
+
+  .tabela h2 {
+    font-size: 16px;
+  }
+
+  .rodape-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
 /* ------------------------------------ */
+
  /* --------- LUIZA VICENTE ----------- */
 
 
