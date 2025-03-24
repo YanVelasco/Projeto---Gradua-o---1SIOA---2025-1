@@ -8,12 +8,12 @@
   box-sizing: border-box;
   font-family: "Arial", sans-serif;
 }
- 
+
 body {
   background-color: #121212;
   color: white;
 }
- 
+
 header {
   display: flex;
   justify-content: space-between;
@@ -31,13 +31,13 @@ header {
   display: none;
   font-size: 2rem;
   cursor: pointer;
-  color: #ff0000; /* Cor inicial vermelha */
+  color: #ff0000;
   background: linear-gradient(90deg, #ff0000, #800080);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-left: auto; /* Empurra para o canto direito */
+  margin-left: auto;
 }
- 
+
 .logo {
   font-family: "GN-Kin-iro_SansSerif";
   display: flex;
@@ -50,25 +50,25 @@ header {
   width: 5rem;
   height: 5rem;
 }
- 
+
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
 }
- 
+
 nav ul li a {
   text-decoration: none;
   color: white;
   padding: 8px 15px;
 }
- 
+
 .login-btn {
   background-color: #e60067;
   border-radius: 5px;
   padding: 5px 15px;
 }
- 
+
 /* Carousel */
 .carousel {
   margin-top: 70px;
@@ -81,7 +81,7 @@ nav ul li a {
   position: relative;
   color: white;
 }
- 
+
 .carousel-content {
   display: flex;
   align-items: center;
@@ -92,7 +92,7 @@ nav ul li a {
 .carousel-text h2 {
   font-size: 18px;
 }
- 
+
 .carousel-text h1 {
   font-size: 36px;
 }
@@ -115,11 +115,11 @@ nav ul li a {
   cursor: pointer;
   position: absolute;
 }
- 
+
 .comprar-link:hover {
   background-color: #b3004d;
 }
- 
+
 /* Link "Explorar Agora" */
 .explorar-link {
   background-color: white;
@@ -130,11 +130,11 @@ nav ul li a {
   cursor: pointer;
   position: absolute;
 }
- 
+
 .explorar-link:hover {
   background-color: #b3004d;
 }
- 
+
 .carousel-nav span {
   position: absolute;
   top: 50%;
@@ -142,21 +142,21 @@ nav ul li a {
   font-size: 30px;
   cursor: pointer;
 }
- 
+
 /* Genres */
 .genres {
   text-align: center;
   padding: 30px;
   background-color: #1f1f1f;
 }
- 
+
 .genre-list {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-top: 20px;
 }
- 
+
 .genre-btn {
   background-color: #333;
   color: white;
@@ -166,28 +166,28 @@ nav ul li a {
   border-radius: 5px;
   transition: 0.3s;
 }
- 
+
 .genre-btn:hover {
   background-color: #e60067;
 }
- 
+
 /* Games */
 .games {
   text-align: center;
   padding: 30px;
 }
- 
+
 .games h2 {
   margin-bottom: 20px;
 }
- 
+
 .game-list {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
- 
+
 .game-card {
   background-color: #1f1f1f;
   width: 200px;
@@ -196,18 +196,18 @@ nav ul li a {
   box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.3);
   text-align: center;
 }
- 
+
 .game-card img {
   width: 100%;
   height: 120px;
   background: lightgray;
   border-radius: 5px;
 }
- 
+
 .game-card h3 {
   margin: 10px 0;
 }
- 
+
 .game-card button {
   background-color: #e60067;
   border: none;
@@ -216,7 +216,7 @@ nav ul li a {
   cursor: pointer;
   border-radius: 5px;
 }
- 
+
 /* Cadastro e Contato */
 form {
   display: flex;
@@ -224,19 +224,21 @@ form {
   gap: 15px;
   padding: 20px;
 }
- 
-input, select, textarea {
+
+input,
+select,
+textarea {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   width: 100%;
-  font-size: 0.81em; /* 10% redução no tamanho da fonte */
+  font-size: 0.81em;
 }
- 
+
 textarea {
   height: 120px;
 }
- 
+
 .container {
   padding: 30px;
   background: #1f1f1f;
@@ -249,69 +251,73 @@ textarea {
   margin-top: 100px;
 }
 
-
- 
-#cadastroFields, #contatoFields {
+#cadastroFields,
+#contatoFields {
   display: none;
 }
- 
-#cadastroFields.show, #contatoFields.show {
+
+#cadastroFields.show,
+#contatoFields.show {
   display: block;
 }
- 
-#cadastroFields, #contatoFields {
+
+#cadastroFields,
+#contatoFields {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
- 
-#cadastroFields label, #contatoFields label {
+
+#cadastroFields label,
+#contatoFields label {
   font-weight: bold;
-  font-size: 0.765em; /* 10% redução no tamanho da fonte */
+  font-size: 0.765em;
   text-align: left;
 }
- 
-.fields input, .fields textarea {
+
+.fields input,
+.fields textarea {
   max-width: 455px;
   margin-left: auto;
   margin-right: auto;
 }
- 
+
 h2 {
   text-align: center;
   margin-bottom: 15px;
 }
- 
+
 .radio-container {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin-top: 15px;
 }
- 
+
 .radio-container label {
   background-color: #555;
   color: white;
   padding: 8px 16px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 0.765em; /* 10% redução no tamanho da fonte */
+  font-size: 0.765em;
   transition: background-color 0.3s;
 }
- 
+
 .radio-container label:hover {
   background-color: #777;
 }
- 
+
 .radio-container input {
   display: none;
 }
- 
-.radio-container input:checked + label {
+
+.radio-container input:checked+label {
   background-color: #e60067;
 }
- 
-.botao-link, .link-button {
+
+.botao-link,
+.link-button {
   display: inline-block;
   padding: 8px 16px;
   background-color: #e60067;
@@ -319,17 +325,18 @@ h2 {
   text-align: center;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 0.765em; /* 10% redução no tamanho da fonte */
+  font-size: 0.765em;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
- 
-.botao-link:hover, .link-button:hover {
+
+.botao-link:hover,
+.link-button:hover {
   background-color: #c5005a;
   cursor: pointer;
 }
- 
+
 /* Ajustes para o formulário abaixo do carrossel */
 .form-and-images {
   display: flex;
@@ -339,127 +346,138 @@ h2 {
   padding: 40px;
   flex-wrap: wrap;
   min-height: 100vh;
-  margin-top: 3px; /* Margem reduzida ainda mais (50% do valor anterior) */
+  margin-top: 3px;
   position: relative;
   z-index: 10;
 }
- 
-.left-images, .right-images {
+
+.left-images,
+.right-images {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
   margin-top: 100px;
 }
- 
+
 @media (max-width: 1024px) {
-  .left-images, .right-images {
-    position: relative; /* Remove o absolute para evitar sobreposição */
+
+  .left-images,
+  .right-images {
+    position: relative;
     top: auto;
     transform: none;
-    width: 100%; /* Faz as imagens ocuparem a largura total */
-    flex-direction: row; /* Exibe as imagens lado a lado */
+    width: 100%;
+    flex-direction: row;
     justify-content: center;
   }
 }
- 
+
 @media (max-width: 768px) {
-  .left-images, .right-images {
-    flex-direction: column; /* Empilha as imagens no mobile */
+
+  .left-images,
+  .right-images {
+    flex-direction: column;
     width: 100%;
     align-items: center;
   }
- 
-  .left-images img, .right-images img {
-    width: 80%; /* Reduz o tamanho para não ultrapassar a tela */
+
+  .left-images img,
+  .right-images img {
+    width: 80%;
   }
 }
- 
-/* Ajuste específico para a imagem FIFA 24 */
+
 .left-images img[src="caminho/para/sua/imagem/FIFA 24.jpg"],
 .right-images img[src="caminho/para/sua/imagem/FIFA 24.jpg"] {
-  width: 200px !important;  /* Forçando a largura */
-  height: 300px !important; /* Ajustando a altura para manter a proporção */
+  width: 200px !important;
+  height: 300px !important;
   object-fit: contain;
   object-position: center;
 }
- 
-.left-images img, .right-images img {
+
+.left-images img,
+.right-images img {
   width: 250px;
   height: 250px;
-  object-fit: contain; /* Garante que a imagem seja totalmente visível dentro do espaço */
-  object-position: center; /* Garante que a imagem seja centralizada dentro do espaço */
+  object-fit: contain;
+  object-position: center;
 }
- 
+
 /* Responsividade */
 @media (max-width: 1024px) {
   header {
-      padding: 15px 20px;
+    padding: 15px 20px;
   }
- 
+
   .container {
-      max-width: 90%;
-      top: 10%;
+    max-width: 90%;
+    top: 10%;
   }
- 
-  input, select, textarea {
-      width: 100%;
-      font-size: 0.765em; /* 10% redução no tamanho da fonte */
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    font-size: 0.765em;
   }
- 
+
   .botao-link {
-      font-size: 0.68em;
-      padding: 7px 14px;
+    font-size: 0.68em;
+    padding: 7px 14px;
   }
 }
- 
+
 @media (max-width: 768px) {
   .container {
-      max-width: 100%;
-      padding: 20px;
-      top: 15%;
+    max-width: 100%;
+    padding: 20px;
+    top: 15%;
   }
- 
+
   .form-and-images {
-      flex-direction: column;
-      gap: 20px;
-      padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
   }
- 
-  .left-images img, .right-images img {
-      width: 70%;
-      height: auto;
+
+  .left-images img,
+  .right-images img {
+    width: 70%;
+    height: auto;
   }
 }
- 
+
 @media (max-width: 480px) {
   .container {
-      padding: 15px;
-      top: 20%;
+    padding: 15px;
+    top: 20%;
   }
- 
-  input, select, textarea {
-      font-size: 0.63em; /* 10% redução no tamanho da fonte */
-      padding: 8px;
+
+  input,
+  select,
+  textarea {
+    font-size: 0.63em;
+    padding: 8px;
   }
- 
+
   .botao-link {
-      font-size: 0.585em;
-      padding: 5px 10px;
+    font-size: 0.585em;
+    padding: 5px 10px;
   }
- 
+
   .form-and-images {
-      padding: 10px;
+    padding: 10px;
   }
- 
-  .left-images img, .right-images img {
-      width: 60%;
-      height: auto;
+
+  .left-images img,
+  .right-images img {
+    width: 60%;
+    height: auto;
   }
 }
- 
- 
-/* ---------------- CAROLINA PEREIRA ----------------- */
+
+/* PAG OFERTAS - INICIO */
 
 .game {
   width: 90%;
@@ -475,7 +493,7 @@ h2 {
 .game-principal {
   margin: 0 auto;
   width: 95%;
-  max-height:100%;
+  max-height: 100%;
   border-radius: 10px;
   align-items: center;
   display: flex;
@@ -497,6 +515,7 @@ h2 {
   cursor: pointer;
   border-radius: 5px;
 }
+
 .texto-principal {
   padding: 10px;
 }
@@ -554,9 +573,9 @@ h2 {
   padding: 5px, 5px;
 }
 
- 
+
 /*  SECTION PROMO  */
- 
+
 .promo-section {
   margin: 0 auto;
   margin-bottom: 2%;
@@ -570,30 +589,30 @@ h2 {
   box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.3);
   border-radius: 10px;
 }
- 
+
 .promo-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 90%;
 }
- 
-.video-container {
-    width: 250%;
-    
-  }
-  
-  .video-container video {
-    width: 100%;
-    height: auto; 
-    border-radius: 10px;
-  }
 
- 
+.video-container {
+  width: 250%;
+
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
 .promo-text {
   padding: 10px;
 }
- 
+
 .promo-text button {
   background-color: rgb(255, 255, 255);
   border: none;
@@ -602,10 +621,10 @@ h2 {
   cursor: pointer;
   border-radius: 5px;
 }
- 
- 
+
+
 /* SECTION - FINAL */
- 
+
 .game-container {
   display: flex;
   justify-content: space-evenly;
@@ -613,7 +632,7 @@ h2 {
   gap: 40px;
   flex-wrap: wrap;
 }
- 
+
 .game-item {
   background-color: #1f1f1f;
   width: 20%;
@@ -622,12 +641,12 @@ h2 {
   box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.3);
   text-align: center;
 }
- 
+
 .game-item p {
   font-size: 0.875em;
   padding: 5px;
 }
- 
+
 .img-hover {
   max-width: 100%;
   width: 90%;
@@ -671,7 +690,7 @@ h2 {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 10px 0px 20px 40px ;
+  padding: 10px 0px 20px 40px;
   background-color: #121212;
   box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.3);
 }
@@ -717,7 +736,8 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #333;
   padding: 5px 100px;
   text-align: left;
@@ -751,15 +771,15 @@ th, td {
 }
 
 .rodape-section img {
-max-width: 100%;
-border-radius: 20px;
-width: 25%;
-height: 35%;
-opacity: 0.5;
-margin-top: 20px;
+  max-width: 100%;
+  border-radius: 20px;
+  width: 25%;
+  height: 35%;
+  opacity: 0.5;
+  margin-top: 20px;
 }
 
-.rodape-section h4{
+.rodape-section h4 {
   font-size: 22px;
   color: #e60067;
   margin-bottom: 10px;
@@ -767,7 +787,7 @@ margin-top: 20px;
 
 .rodape-section p,
 .rodape-section ul {
-  
+
   font-size: 15px;
 }
 
@@ -790,7 +810,7 @@ margin-top: 20px;
 .redesocial-icon {
   display: flex;
   justify-content: center;
-gap: 20px;
+  gap: 20px;
 }
 
 .redesocial-icon a {
@@ -812,24 +832,66 @@ gap: 20px;
 }
 
 
+/* home-apresentação membros/equipe" */
+
+.apresentacao {
+  align-items: center; 
+  align-content: center;
+  padding: 50px 50px;
+  width: 100%;
+  
+}
+
+.apresentacao h2 {
+  color: #e60067;
+  border-top: 0.8px solid #fff;
+  padding: 20px;
+  font-size: 30px;
+  width: 100%;
+  font-family: "GN-Kin-iro_SansSerif";
+}
+
+.apresentacao-text {
+  align-items: center; 
+  align-content: center;
+  margin: 1% 5% ;
+  width: 90%;
+}
+
+.apresentacao h3 {
+  color: #e60067;
+  padding: 10px 0px;}
+
+.indora {
+  font-family: "GN-Kin-iro_SansSerif";
+  font-size: 40px;
+  color: #e60067;
+}
+
+
+
+
+
 /* responsividade */
 @media (max-width: 1024px) {
-  
+
   .game {
     flex-direction: column;
     align-items: center;
     margin-top: 10%;
   }
+
   .game-principal {
     width: 100%;
     flex-direction: column;
     text-align: center;
-    
+
   }
+
   .game-principal button {
-    width: 50%; 
+    width: 50%;
   }
-  
+
   .sidebar {
     width: 80%;
     margin-top: 20px;
@@ -854,28 +916,29 @@ gap: 20px;
     max-width: 100%;
   }
 
-.tabela-text {
-  flex-direction: column;
-  padding: 10px 20px;
-}
+  .tabela-text {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
 
-.tabela-text img {
-  padding: 20px 0;
-  height: auto;
-}
+  .tabela-text img {
+    padding: 20px 0;
+    height: auto;
+  }
 
-.tabela-text h3 {
-  font-size: 24px;
-  padding: 20px;
-}
+  .tabela-text h3 {
+    font-size: 24px;
+    padding: 20px;
+  }
 
-.tabela {
-  padding: 0px 20px;
-}
+  .tabela {
+    padding: 0px 20px;
+  }
 
-th, td {
-  padding: 5px 0px;
-}
+  th,
+  td {
+    padding: 5px 0px;
+  }
 }
 
 
@@ -887,10 +950,10 @@ th, td {
 
   .game-principal {
     width: 100%;
-    padding:10px;
+    padding: 10px;
     margin-top: 100px;
     flex-direction: column;
-    
+
   }
 
   .img-um {
@@ -900,7 +963,7 @@ th, td {
   }
 
   .game-principal button {
-    width: 50%; 
+    width: 50%;
   }
 
   .sidebar {
@@ -910,6 +973,7 @@ th, td {
   .game-container {
     gap: 20px;
   }
+
   .game-item {
     width: 50%;
   }
@@ -925,7 +989,7 @@ th, td {
   }
 
   .video-container {
-    margin: 20px ;
+    margin: 20px;
   }
 
 
@@ -946,7 +1010,8 @@ th, td {
     padding: 0px 10px;
   }
 
-  th, td {
+  th,
+  td {
     padding: 5px 20px;
     font-size: 0.7em;
   }
@@ -963,47 +1028,41 @@ th, td {
 }
 
 
-/* ------------------------------------ */
-
- /* --------- LUIZA VICENTE ----------- */
-
-
 /* Estilo do formulário de pesquisa */
 .search-form {
-  display: flex; /* Alinha o campo e o botão lado a lado */
-  justify-content: center; /* Centraliza o formulário */
-  align-items: center; /* Alinha verticalmente os elementos */
-  gap: 10px; /* Espaçamento entre o campo e o botão */
-  margin-top: 20px; /* Espaçamento acima do formulário */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 /* Estilo do campo de entrada */
 .search-input {
-  width: 400px; /* Aumenta a largura do campo de entrada */
-  padding: 10px; /* Espaçamento interno */
-  border: 2px solid #ccc; /* Borda cinza */
-  border-radius: 5px; /* Bordas arredondadas */
-  font-size: 16px; /* Tamanho da fonte */
+  width: 400px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 /* Estilo do botão de pesquisa */
 .search-button {
-  padding: 8px 15px; /* Reduz o tamanho do botão */
-  background-color: #e60067; /* Cor de fundo */
-  color: white; /* Cor do texto */
-  border: none; /* Remove a borda */
-  border-radius: 5px; /* Bordas arredondadas */
-  font-size: 14px; /* Tamanho da fonte menor */
-  cursor: pointer; /* Mostra o cursor de clique */
-  transition: background-color 0.3s ease; /* Transição suave no hover */
+  padding: 8px 15px;
+  background-color: #e60067;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .search-button:hover {
-  background-color: #c5005a; /* Cor mais escura no hover */
+  background-color: #c5005a;
 }
 
 /* Estilo da seção Indies */
-
 .indies {
   background: linear-gradient(0deg, #e60067, #330133);
   padding: 40px 20px;
@@ -1027,62 +1086,63 @@ th, td {
 /* Estilo dos cards da seção Indies */
 .indie-list {
   display: flex;
-  flex-wrap: wrap; /* Permite que os cards quebrem linha */
-  justify-content: center; /* Centraliza os cards */
-  gap: 20px; /* Espaçamento entre os cards */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .indie-card {
-  width: calc(25% - 20px); /* Cada card ocupa 25% da largura menos o espaçamento */
-  background-color: #f5f5f5; /* Fundo cinza claro para os cards */
-  border-radius: 8px; /* Bordas arredondadas */
-  overflow: hidden; /* Garante que o conteúdo não ultrapasse o card */
-  text-align: center; /* Centraliza o texto */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
-  padding: 10px; /* Espaçamento interno */
+  width: calc(25% - 20px);
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
 }
 
 .indie-card img {
-  width: 100%; /* Faz a imagem ocupar toda a largura do card */
-  height: 150px; /* Define uma altura fixa para a imagem */
-  object-fit: cover; /* Ajusta a imagem para caber no espaço sem distorção */
-  border-radius: 5px; /* Bordas arredondadas para a imagem */
-  margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .indie-card h3 {
-  font-size: 18px; /* Tamanho da fonte do título */
-  margin: 10px 0; /* Espaçamento acima e abaixo do título */
+  font-size: 18px;
+  margin: 10px 0;
 }
 
 .indie-card p {
-  font-size: 14px; /* Tamanho da fonte da descrição */
-  color: #555; /* Cor do texto */
-  margin: 5px 0; /* Espaçamento acima e abaixo da descrição */
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
 }
 
 .indie-card button {
-  background-color: #e60067; /* Cor de fundo do botão */
-  border: none; /* Remove a borda do botão */
-  padding: 10px 15px; /* Espaçamento interno do botão */
-  color: white; /* Cor do texto do botão */
-  cursor: pointer; /* Mostra o cursor de clique */
-  border-radius: 5px; /* Bordas arredondadas */
-  transition: background-color 0.3s ease; /* Transição suave no hover */
+  background-color: #e60067;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .indie-card button:hover {
-  background-color: #c5005a; /* Cor mais escura no hover */
+  background-color: #c5005a;
 }
 
-.pag4-h1{
+.pag4-h1 {
   font-size: 11px;
 }
 
-.corpo-pag4{
+.corpo-pag4 {
   height: 20rem;
 }
-.container-pag4{
+
+.container-pag4 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1103,20 +1163,17 @@ th, td {
 
   .carousel {
 
-      height: 400px; /* Ajusta a altura do carrossel */
-
+    height: 400px;
   }
 
   .search-input {
 
-      width: 400px; /* Campo de pesquisa maior em telas grandes */
-
+    width: 400px;
   }
 
   .indie-card {
 
-      width: calc(25% - 20px); /* 4 cards por linha */
-
+    width: calc(25% - 20px);
   }
 
 }
@@ -1126,21 +1183,14 @@ th, td {
 @media (max-width: 1024px) {
 
   .carousel {
-
-      height: 300px; /* Reduz a altura do carrossel */
-
+    height: 300px;
   }
 
   .search-input {
-
-      width: 300px; /* Campo de pesquisa menor */
-
+    width: 300px;
   }
-
   .indie-card {
-
-      width: calc(33.33% - 20px); /* 3 cards por linha */
-
+    width: calc(33.33% - 20px);
   }
 
 }
@@ -1150,27 +1200,19 @@ th, td {
 @media (max-width: 768px) {
 
   .carousel {
-
-      height: 250px; /* Reduz ainda mais a altura do carrossel */
-
+    height: 250px;
   }
 
   .search-input {
-
-      width: 250px; /* Campo de pesquisa ainda menor */
-
+    width: 250px;
   }
 
   .indie-card {
-
-      width: calc(50% - 20px); /* 2 cards por linha */
-
+    width: calc(50% - 20px);
   }
 
   .indies h2 {
-
-      font-size: 24px; /* Reduz o tamanho do título */
-
+    font-size: 24px;
   }
 
 }
@@ -1184,35 +1226,26 @@ th, td {
 @media (max-width: 480px) {
 
   .carousel {
-
-      height: 200px; /* Altura mínima para o carrossel */
-
+    height: 200px;
   }
 
   .search-input {
-
-      width: 200px; /* Campo de pesquisa compacto */
-
+    width: 200px;
   }
 
   .indie-card {
-
-      width: 100%; /* 1 card por linha */
-
+    width: 100%;
   }
 
   .indies h2 {
-
-      font-size: 20px; /* Título ainda menor */
-
+    font-size: 20px;
   }
-
 }
 
 .carousel-indie {
   margin-top: 130px;
   display: flex;
-  flex-direction: column; /* Empilha os elementos em telas menores */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -1242,7 +1275,7 @@ th, td {
     padding: 0;
   }
 
-  #menu-toggle:checked ~ nav ul {
+  #menu-toggle:checked~nav ul {
     height: 270px;
     padding: 20px 0;
   }
@@ -1264,7 +1297,7 @@ th, td {
     flex-direction: column;
     text-align: center;
     width: 90%;
-   
+
   }
 
   .carousel-text {
@@ -1301,7 +1334,7 @@ th, td {
   }
 
   .promo-video {
-    max-width: 70 ;
+    max-width: 70;
   }
 }
 
@@ -1309,32 +1342,31 @@ th, td {
 .cards-figure {
   padding: 40px 20px;
   display: flex;
-  flex-direction: column; /* Organiza a figcaption acima dos cards */
-  align-items: center; /* Centraliza a figcaption horizontalmente */
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
-  background-color: #1f1f1f;
   text-align: center;
 }
 
 .figcaption {
   font-size: 24px;
   color: white;
-  margin-bottom: 20px; /* Espaçamento entre a legenda e os cards */
+  margin-bottom: 20px;
 }
 
-/* Contêiner de cards - agora em linha horizontal */
+/* Contêiner de cards */
 .card-container {
   display: flex;
-  flex-wrap: wrap; /* Faz os cards quebrarem de linha quando necessário */
-  justify-content: center; /* Centraliza os cards horizontalmente */
-  gap: 20px; /* Espaçamento entre os cards */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .card {
   background-color: #333;
   border-radius: 10px;
   padding: 20px;
-  width: calc(20% - 20px); /* 5 cards por linha */
+  width: calc(20% - 20px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: white;
   transition: transform 0.3s ease;
@@ -1362,21 +1394,27 @@ th, td {
   color: #ccc;
 }
 
+.card a {
+  color:#e60067;
+  text-decoration: none;
+}
+
+
 /* Responsividade para os cards */
 @media (max-width: 1024px) {
   .card {
-    width: calc(33.33% - 20px); /* 3 cards por linha */
+    width: calc(33.33% - 20px);
   }
 }
 
 @media (max-width: 768px) {
   .card {
-    width: calc(50% - 20px); /* 2 cards por linha */
+    width: calc(50% - 20px);
   }
 }
 
 @media (max-width: 480px) {
   .card {
-    width: 100%; /* 1 card por linha */
+    width: 100%;
   }
 }
