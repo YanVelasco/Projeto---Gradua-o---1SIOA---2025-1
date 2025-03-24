@@ -576,9 +576,16 @@ h2 {
 }
  
 .video-container {
-  margin-left: auto;
-  display: flex;
-}
+    width: 300%;
+    
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+  }
+
  
 .promo-text {
   padding: 10px;
