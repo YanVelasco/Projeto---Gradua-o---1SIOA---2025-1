@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Indora - Seu E-commerce de Games</title>
-        <link rel="stylesheet" href="../assets/css/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <link rel="icon" type="png" href="/assets/images/SolRetrowaveLogo.png">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indora - Seu E-commerce de Games</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="png" href="/assets/images/SolRetrowaveLogo.png">
 
 
-    </head>
-    <body>
+</head>
 
-        <header>
-            <div class="logo"><img class="logoimg" src="../assets/images/SolRetrowaveLogo.png"></img> INDORA</div>
-            <nav>
-                <ul>
-                    <!--Página Principal: Home do website. -->
-                    <li><a href="../index.html">Home</a></li>
-                    <!--Página Interna 1: Conteúdo da pesquisa de aplicação e outros dados relevantes.  -->
-                    <li><a href="../pages/PaginaInterna1.html">Mais vendidos</a></li>
-                    <!--Página Interna 2: Conteúdo adicional da pesquisa e informações do projeto.  -->
-                    <li><a href="../pages/PaginaInterna2.html">Ofertas do dia</a></li>
-                    <!--Página Interna 3: Formulário de contato ou cadastro.  -->
-                    <li><a href="../pages/cadastroecontato.html">Cadastro</a></li>
-                    <!--<li><a href="./pages/PaginaInterna4.html">Página Interna 4: Página de feedback com mensagem de envio do formulário com sucesso. </a></li>-->
-                    <li class="cart"><a href="#">🛒 Carrinho</a></li>
-                    <li><a href="#" class="login-btn">Login</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <!-- Carousel -->
-    <section class="carousel">
-        <div class="carousel-indie">
-            <div class="carousel-text">
-                <h1>Os Melhores Jogos para Você</h1>
-                <p>Aqui você encontra o jogo do seu coração.</p>
-            </div>
-                <!-- Campo de pesquisa -->
-                <form class="search-form" action="./pesquisa.html" method="GET">
-                    <input 
-                        type="text" 
-                        name="query" 
-                        placeholder="Pesquise por um jogo..." 
-                        class="search-input"
-                        required>
-                    <button type="submit" class="search-button">Pesquisar</button>
-                </form>
-            <!-- <div class="carousel-image">
+<body>
+
+    <header>
+        <div class="logo">
+            <img class="logoimg" src="../assets/images/SolRetrowaveLogo.png" alt="logo INDORA"> INDORA
+        </div>
+
+        <!-- Hamburger Menu -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/PaginaInterna1.html">Mais vendidos</a></li>
+                <li><a href="../pages/PaginaInterna2.html">Ofertas do dia</a></li>
+                <li><a href="../pages/cadastroecontato.html">Cadastro</a></li>
+                <li class="cart"><a href="#">🛒 Carrinho</a></li>
+                <li><a href="#" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carousel -->
+    <section ">
+        <div class=" carousel-indie">
+        <div class="carousel-text">
+            <h1>Os Melhores Jogos para Você</h1>
+            <p>Aqui você encontra o jogo do seu coração.</p>
+        </div>
+        <!-- Campo de pesquisa -->
+        <form class="search-form" action="./pesquisa.html" method="GET">
+            <input type="text" name="query" placeholder="Pesquise por um jogo..." class="search-input" required>
+            <button type="submit" class="search-button">Pesquisar</button>
+        </form>
+        <!-- <div class="carousel-image">
                 <img src="../assets/images/The Last of Us Part II_1.jpg" alt="Destaque do Jogo">
             </div>-->
         </div>
@@ -111,7 +110,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="games">
         <h2>Resultado da Pesquisa</h2>
         <div class="game-list">
@@ -302,7 +301,8 @@
                 <button>Comprar</button>
             </div>
             <div class="game-card">
-                <img src="../assets/images/Armored Core VI Fires of Rubicon.jpg" alt=" Armored Core VI: Fires of Rubicon ">
+                <img src="../assets/images/Armored Core VI Fires of Rubicon.jpg"
+                    alt=" Armored Core VI: Fires of Rubicon ">
                 <h3> Armored Core VI Fires of Rubicon </h3>
                 <p> Pilote mechas em batalhas de tirar o fôlego.</p>
                 <button>Comprar</button>
@@ -364,49 +364,49 @@
         </div>
     </section>
 
-<!-- FOOTER -->
-<footer class="rodape">
-    <div class="rodape-content">
-        <div class="rodape-section">
-            <h4>Sobre Nós</h4>
-            <p>Somos uma loja especializada em jogos eletrônicos, oferecendo as melhores ofertas e promoções.</p>
-            <img src="/assets/images/INDORARODAPE.jpeg" alt="logo Indora">
-        </div>
-        <div class="rodape-section">
-            <h4>Ajuda</h4>
-            <ul>
-                <li><a href="/suporte">Suporte</a></li>
-                <li><a href="/politica-de-privacidade">Política de Privacidade</a></li>
-                <li><a href="/termos-de-uso">Termos de Uso</a></li>
-                <li><a href="/contato">Contato</a></li>
-            </ul>
-        </div>
-        <div class="rodape-section">
-            <h4 class="rodape-text">Redes Sociais</h4>
-            <div class="redesocial-icon">
-                <a href="https://facebook.com/">
-                    <i class="fab fa-facebook"> </i>
-                </a>
-                <a href="https://twitter.com/">
-                    <i class="fab fa-twitter"> </i>
-                </a>
-                <a href="https://instagram.com/">
-                    <i class="fab fa-instagram"> </i>
-                </a>
-                <a href="https://linkedin.com/in/">
-                    <i class="fab fa-linkedin"> </i>
-                </a>
+    <!-- FOOTER -->
+    <footer class="rodape">
+        <div class="rodape-content">
+            <div class="rodape-section">
+                <h4>Sobre Nós</h4>
+                <p>Somos uma loja especializada em jogos eletrônicos, oferecendo as melhores ofertas e promoções.</p>
+                <img src="/assets/images/INDORARODAPE.jpeg" alt="logo Indora">
+            </div>
+            <div class="rodape-section">
+                <h4>Ajuda</h4>
+                <ul>
+                    <li><a href="/suporte">Suporte</a></li>
+                    <li><a href="/politica-de-privacidade">Política de Privacidade</a></li>
+                    <li><a href="/termos-de-uso">Termos de Uso</a></li>
+                    <li><a href="/contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="rodape-section">
+                <h4 class="rodape-text">Redes Sociais</h4>
+                <div class="redesocial-icon">
+                    <a href="https://facebook.com/">
+                        <i class="fab fa-facebook"> </i>
+                    </a>
+                    <a href="https://twitter.com/">
+                        <i class="fab fa-twitter"> </i>
+                    </a>
+                    <a href="https://instagram.com/">
+                        <i class="fab fa-instagram"> </i>
+                    </a>
+                    <a href="https://linkedin.com/in/">
+                        <i class="fab fa-linkedin"> </i>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="creditos">
-        <p>&copy; 2025 Todos os direitos reservados.
-            Andre Grigoli - Carolina Pereira - Luiza Vicente - Romulo Amaro - Yan Velasco
-        </p>
-    </div>
-</footer>
+        <div class="creditos">
+            <p>&copy; 2025 Todos os direitos reservados.
+                Andre Grigoli - Carolina Pereira - Luiza Vicente - Romulo Amaro - Yan Velasco
+            </p>
+        </div>
+    </footer>
 
 
-    </body>
-    
-    </html>
+</body>
+
+</html>
