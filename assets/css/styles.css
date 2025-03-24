@@ -246,6 +246,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  margin-top: 100px;
 }
 
 
@@ -348,6 +349,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  margin-top: 100px;
 }
  
 @media (max-width: 1024px) {
@@ -576,9 +578,16 @@ h2 {
 }
  
 .video-container {
-  margin-left: auto;
-  display: flex;
-}
+    width: 300%;
+    
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+  }
+
  
 .promo-text {
   padding: 10px;
@@ -729,6 +738,7 @@ th, td {
   background-color: #1f1f1f;
   color: #fff;
   padding: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.3);
 }
 
 .rodape-content {
@@ -1284,5 +1294,81 @@ th, td {
 
   .promo-video {
     max-width: 70 ;
+  }
+}
+
+/* Estilo para a seção de cards */
+.cards-figure {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column; /* Organiza a figcaption acima dos cards */
+  align-items: center; /* Centraliza a figcaption horizontalmente */
+  gap: 20px;
+  background-color: #1f1f1f;
+  text-align: center;
+}
+
+.figcaption {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px; /* Espaçamento entre a legenda e os cards */
+}
+
+/* Contêiner de cards - agora em linha horizontal */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Faz os cards quebrarem de linha quando necessário */
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  gap: 20px; /* Espaçamento entre os cards */
+}
+
+.card {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(20% - 20px); /* 5 cards por linha */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Responsividade para os cards */
+@media (max-width: 1024px) {
+  .card {
+    width: calc(33.33% - 20px); /* 3 cards por linha */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px); /* 2 cards por linha */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* 1 card por linha */
   }
 }
