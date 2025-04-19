@@ -46,6 +46,11 @@ header {
   align-items: center;
 }
 
+.TextoBoasVindasLogin {
+  font-family: "GN-Kin-iro_SansSerif";
+
+}
+
 .logoimg {
   width: 5rem;
   height: 5rem;
