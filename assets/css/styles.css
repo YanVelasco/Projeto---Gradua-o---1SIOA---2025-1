@@ -224,7 +224,7 @@ nav ul li a {
   border-radius: 5px;
 }
 
-/* Cadastro e Contato */
+/* Inicio Cadastro e Contato */
 form {
   display: flex;
   flex-direction: column;
@@ -233,7 +233,7 @@ form {
 }
 
 input,
-select,
+select, /* Incluido campo novo de cadastro*/
 textarea {
   padding: 10px;
   border-radius: 5px;
@@ -241,6 +241,82 @@ textarea {
   width: 100%;
   font-size: 0.81em;
 }
+
+/* Inicio Ajustes Cadastro Fase 2 */
+
+/* Incluido novo campo novo de cadastro*/
+.fields select {
+  max-width: 455px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+/* Inicio Estilos da barra de progresso de senha ainda nao funcionando*/
+.password-strength-container {
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 8px;
+  border-radius: 4px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.progress-bar.fraca {
+  background-color: #e74c3c;
+  /*background-color: red;*/
+}
+
+.progress-bar.media {
+  background-color: #f1c40f;
+  /*background-color: orange;*/
+}
+
+.progress-bar.forte {
+  background-color: #2ecc71;
+  /*background-color: green;*/
+}
+
+/* Estilos para a barra de progresso da senha */
+#password-progress-bar {
+  width: 100% !important;  /* Garantir que a largura seja sempre controlada */
+  height: 8px;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.help-text {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.help-text.fraca {
+  color: red;
+}
+
+.help-text.media {
+  color: orange;
+}
+
+.help-text.forte {
+  color: green;
+}
+
+/* Fim Estilos da barra de progresso de senha ainda nao funcionando*/
+
+/* Fim Ajustes Cadastro Fase 2 */
 
 textarea {
   height: 120px;
@@ -344,7 +420,7 @@ h2 {
   cursor: pointer;
 }
 
-/* Ajustes para o formulário abaixo do carrossel */
+/* Ajustes para o formulario abaixo do carrossel */
 .form-and-images {
   display: flex;
   justify-content: center;
@@ -483,6 +559,184 @@ h2 {
     height: auto;
   }
 }
+
+/* Inicio Ajustes Cadastro Fase 2 continua */
+
+.botao-link:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.mensagem-feedback {
+  display: none; /* Oculta as mensagens inicialmente */
+  /* position: absolute; */
+  position: center;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #d9534f; /* Cor de alerta (vermelho) */
+}
+
+.form-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.form-feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.help-text,
+.mensagem-feedback {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.botao-link:hover + .mensagem-feedback {
+  display: block; /* Exibe a mensagem quando o botao e "hovered" */
+}
+
+.botao-link {
+  position: relative; /* Necessario para o posicionamento absoluto das mensagens */
+}
+
+/* ------------------ Modal Wrapper ------------------ */
+.modal.hidden {
+  display: none;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* ------------------ Modal Content ------------------ */
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+
+/* Garantir textos sempre pretos dentro do modal */
+.modal-content * {
+  color: #000 !important;
+}
+
+/* ------------------ Titulos e Mensagem ------------------ */
+.modal-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-message {
+  margin: 20px 0;
+}
+
+/* ------------------ Botao de Fechar (Principal) ------------------ */
+.btn-fechar {
+  padding: 10px 20px;
+  background-color: #e60067;
+  color: white !important;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-fechar:hover {
+  background-color: #b3004d;
+}
+
+/* ------------------ Botao de Fechar (X no canto) ------------------ */
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  color: #000 !important;
+}
+
+/* ------------------ Estilos de Ajuda ------------------ */
+.help-text.fraca {
+  color: red;
+}
+
+.help-text.forte {
+  color: green;
+}
+
+/* ------------------ Barra de Progresso ------------------ */
+.progress-bar.fraca {
+  background-color: red;
+}
+
+.progress-bar.media {
+  background-color: yellow;
+}
+
+.progress-bar.forte {
+  background-color: green;
+}
+
+/* ------------------ Nome do Usuario ------------------ */
+
+#username-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+#username-wrapper input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+}
+
+#gerarUsername {
+  padding: 6px 12px;
+  background-color: #e60067;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#gerarUsername:hover {
+  background-color: #cc005a;
+}
+
+/* Fim Ajustes Cadastro Fase 2 */
+
+/* Fim Cadastro e Contato continua*/
 
 /* PAG OFERTAS - INICIO */
 
