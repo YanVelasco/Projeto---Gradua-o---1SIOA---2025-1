@@ -34,7 +34,9 @@
                 <!--Página Interna 3: Formulário de contato ou cadastro.  -->
                 <li><a href="../pages/PaginaInterna3.html">Cadastro</a></li>
                 <!--<li><a href="../pages/PaginaInterna4.html">Página Interna 4: Página de feedback com mensagem de envio do formulário com sucesso. </a></li>-->
-                <li class="cart"><a href="#">🛒 Carrinho</a></li>
+                <li class="cart">
+                    <a href="#">🛒 Carrinho <span id="cart-counter">0</span></a>
+                </li>
                 <li><a href="/pages/PaginaLogin.html" class="login-btn">Login</a></li>
             </ul>
         </nav>
@@ -46,7 +48,7 @@
                 <h2>Destaque da Semana</h2>
                 <h1>The Last of Us Part II</h1>
                 <p>Viva uma emocionante história de sobrevivência e vingança.</p>
-                <a href="./pages/PaginaInterna1.html" class="comprar-link">Comprar Agora</a>
+                <button class="buy-button" data-added="false">Comprar Agora</button>
             </div>
             <div class="carousel-image">
                 <img src="./assets/images/The Last of Us Part II.jpg" alt="The Last of Us Part II">
@@ -61,25 +63,25 @@
                 <img src="./assets/images/Witcher3.jpg" alt="The Witcher 3">
                 <h3>The Witcher 3</h3>
                 <p>RPG épico com mundo aberto</p>
-                <button>Comprar</button>
+                <button class="buy-button" data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="./assets/images/Call of Duty3.jpg" alt="Call of Duty">
                 <h3>Call of Duty: MW3</h3>
                 <p>Ação intensa e multiplayer dinâmico</p>
-                <button>Comprar</button>
+                <button class="buy-button" data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="./assets/images/FIFA 24.jpg" alt="FIFA 24">
                 <h3>FIFA 24</h3>
                 <p>O maior jogo de futebol do mundo</p>
-                <button>Comprar</button>
+                <button class="buy-button" data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="./assets/images/Resident Evil 4.jpg" alt="Resident Evil">
                 <h3>Resident Evil 4</h3>
                 <p>Sobreviva ao terror!</p>
-                <button>Comprar</button>
+                <button class="buy-button" data-added="false">Comprar</button>
             </div>
         </div>
     </section>
@@ -182,7 +184,7 @@
 
         </div>
     </footer>
-
+    <script src="assets/js/cart.js"></script>
 </body>
 
 </html>
