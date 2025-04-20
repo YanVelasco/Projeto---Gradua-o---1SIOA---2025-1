@@ -29,7 +29,9 @@
                 <li><a href="../pages/PaginaInterna1.html">Mais vendidos</a></li>
                 <li><a href="../pages/PaginaInterna2.html">Ofertas do dia</a></li>
                 <li><a href="../pages/PaginaInterna3.html">Cadastro</a></li>
-                <li class="cart"><a href="#">🛒 Carrinho</a></li>
+                <li class="cart">
+                    <a href="#">🛒 Carrinho <span id="cart-counter">0</span></a>
+                </li>
                 <li><a href="/pages/PaginaLogin.html" class="login-btn">Login</a></li>
             </ul>
         </nav>
@@ -57,7 +59,8 @@
                 <img src="../assets/images/Nine Sols.jpeg" alt="Nine Sols">
                 <h3>Nine Sols</h3>
                 <p>Um jogo de plataforma/ação 2D com mecânicas inspiradas em Sekiro: Shadows Die Twice.</p>
-                <button>Comprar</button>
+                <!-- <button>Comprar</button> -->
+                <button class="buy-button" data-added="false">Comprar</button>
             </div>
             <div class="indie-card">
                 <img src="../assets/images/Hades 2.jpg" alt="Hades 2">
@@ -398,8 +401,7 @@
             </p>
         </div>
     </footer>
-
-
+    <script  src="/assets/js/cart.js"></script>
 </body>
 
 </html>

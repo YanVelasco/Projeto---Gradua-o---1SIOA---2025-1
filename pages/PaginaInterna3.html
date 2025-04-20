@@ -68,7 +68,10 @@
               <input type="text" id="username" name="username" placeholder="Nome de Usuário" required />
               <button type="button" id="gerarUsername" title="Gerar outro nome de usuário"><i class="fa fa-refresh"></i></button>
             </div> -->
-          
+            
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required />
+            <span id="dataNascimentoHelp" class="help-text"></span>
 
             <label for="email">E-mail</label>
             <input type="email" id="email" name="email" placeholder="E-mail"/>
@@ -86,7 +89,7 @@
             <small id="confirm-password-help" class="help-text"></small>
 
             <button type="submit" class="botao-link" id="enviarCadastro" disabled>Enviar Cadastro</button>
-            <span id="mensagemCadastro" class="mensagem-feedback">Pronto para começar? Assim que oscampos forem preenchidos, clique para finalizar seu cadastro!</span>
+            <span id="mensagemCadastro" class="mensagem-feedback">Pronto para começar? Assim que os campos forem preenchidos, clique para finalizar seu cadastro!</span>
 
             <button type="button" class="botao-link" id="cancelarCadastro">Cancelar</button>
             <span id="mensagemCancelarCadastro" class="mensagem-feedback">Mudou de ideia? Cancele o cadastro clicando aqui.</span>
