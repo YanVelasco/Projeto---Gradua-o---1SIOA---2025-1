@@ -734,9 +734,47 @@ h2 {
   background-color: #cc005a;
 }
 
-/* Fim Ajustes Cadastro Fase 2 */
+/* Data de Nascimento */
 
-/* Fim Cadastro e Contato continua*/
+input.valido {
+  border: 2px solid #28a745;
+  background-color: #e6ffed;
+}
+
+input.invalido {
+  border: 2px solid #dc3545;
+  background-color: #ffe6e6;
+}
+
+.help-text.fraca {
+  color: #dc3545; /* vermelho */
+}
+
+.help-text.media {
+  color: #ffc107; /* amarelo/laranja */
+}
+
+.help-text.forte {
+  color: #28a745; /* verde */
+}
+
+/* .help-text {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: gray;
+} */
+
+#dataNascimento-help {
+  display: none;
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* Fim Ajustes Cadastro Fase 2 continua */
+
+/* Fim Cadastro e Contato */
 
 /* PAG OFERTAS - INICIO */
 
