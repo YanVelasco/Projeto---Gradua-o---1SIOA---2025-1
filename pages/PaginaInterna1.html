@@ -40,13 +40,13 @@
 
     <!-- Carousel -->
     <section>
-        <div class=" carousel-indie">
+        <div class="carousel-indie">
             <div class="carousel-text">
                 <h1>Os Melhores Jogos para Você</h1>
                 <p>Aqui você encontra o jogo do seu coração.</p>
             </div>
             <!-- Campo de pesquisa -->
-            <form class="search-form" action="./pesquisa.html" method="GET">
+            <form class="search-form" onsubmit="event.preventDefault();">
                 <input type="text" name="query" placeholder="Pesquise por um jogo..." class="search-input" required>
                 <button type="submit" class="search-button">Pesquisar</button>
             </form>
@@ -54,7 +54,7 @@
     </section>
 
     <section class="indies">
-        <h2> Jogos Indies mais buscados</h2>
+        <h2> Jogos Indies</h2>
         <div class="indie-list">
             <div class="indie-card">
                 <img src="../assets/images/Nine Sols.jpeg" alt="Nine Sols">
@@ -108,7 +108,7 @@
     </section>
 
     <section class="games">
-        <h2>Resultado da Pesquisa</h2>
+        <h2>Jogos Triplo A</h2>
         <div class="game-list">
             <div class="game-card">
                 <img src="../assets/images/Witcher1.jpg" alt="The Witcher 3">
@@ -402,6 +402,7 @@
         </div>
     </footer>
     <script src="../assets/js/cart.js"></script>
+    <script src="../assets/js/search.js"></script>
    
       
 </body>
