@@ -367,6 +367,7 @@
             
             fecharBtn.addEventListener("click", () => {
                 document.body.removeChild(overlay);
+                window.location.href = "/index.html";
             });
 
             modal.appendChild(tituloElem);
