@@ -33,7 +33,6 @@ header {
   font-size: 2rem;
   cursor: pointer;
   color: #ff0000;
-  background: linear-gradient(90deg, #ff0000, #800080);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-left: auto;
@@ -82,6 +81,7 @@ nav ul li a {
   height: 350px;
   background: linear-gradient(90deg, #ff0000, #800080);
   display: flex;
+  padding: 8rem;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -1398,6 +1398,9 @@ td {
 @media (max-width: 768px) {
 
   .carousel {
+    display: flex;
+    align-items: center;
+  justify-content: center;
     height: 250px;
     padding: 200px 0px 150px 0px;
   }
@@ -1425,6 +1428,7 @@ td {
 @media (max-width: 480px) {
 
   .carousel {
+    display: flex;
     height: 200px;
 
   }
@@ -1623,5 +1627,71 @@ td {
 @media (max-width: 480px) {
   .card {
     width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .carousel {
+    height: 200px;
+  }
+
+  .carousel-inner img {
+    max-height: 200px;
+  }
+
+  .game-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .game-card {
+    width: 100%;
+  }
+
+  .apresentacao h2 {
+    font-size: 1.5rem;
+  }
+
+  .apresentacao-text {
+    font-size: 0.9rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .rodape-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .rodape-section img {
+    width: 50%;
+    height: auto;
   }
 }
