@@ -10,6 +10,19 @@
     <link rel="icon" type="png" href="/assets/images/SolRetrowaveLogo.png">
 
 
+    <style>
+    #login-container {
+        position: relative;
+      }
+      
+      #dropdown-menu li:hover {
+        background-color: #f2f2f2;
+      }
+      
+      #botao-login {
+        cursor: pointer;
+      }
+      </style>
 </head>
 
 <body>
@@ -37,7 +50,13 @@
                 <li class="cart">
                     <a href="#">🛒 Carrinho <span id="cart-counter">0</span></a>
                 </li>
-                <li><a href="/pages/PaginaLogin.html" class="login-btn">Login</a></li>
+                <li id="login-container">
+                    <a href="/pages/PaginaLogin.html" id="botao-login" class="login-btn">Login</a>
+                    <ul id="dropdown-menu" style="display: none; position: absolute; background-color: white; list-style: none; margin: 0; padding: 0; border: 1px solid #ccc; border-radius: 5px;">
+                      <li><a href="#" id="logout-btn" style="display: block; padding: 10px; color: #e60067; text-decoration: none;">Sair</a></li>
+                    </ul>
+                  </li>
+                  
             </ul>
         </nav>
     </header>
@@ -121,7 +140,7 @@
             <div class="card">
                 <img src="./assets/images/Andre.jpg" alt="Foto do André Medeiros Grigoli">
                 <h3>André Medeiros Grigoli</h3>
-                <a href="https://example.com/card1" target="_blank">Saiba mais</a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Saiba mais</a>
             </div>
             <div class="card">
                 <img src="./assets/images/carolinapereira.jfif" alt="Foto da Carolina Aparecida Pereira">
@@ -191,6 +210,40 @@
         </div>
     </footer>
     <script src="assets/js/cart.js"></script>
+
+    <script>
+        const nomeUsuario = localStorage.getItem("nomeUsuario");
+        const botaoLogin = document.getElementById("botao-login");
+        const dropdownMenu = document.getElementById("dropdown-menu");
+        const logoutBtn = document.getElementById("logout-btn");
+      
+        if (nomeUsuario) {
+          botaoLogin.textContent = `Olá, ${nomeUsuario} ⏷`;
+          botaoLogin.href = "#";
+      
+          // Mostrar/ocultar menu ao clicar no botão
+          botaoLogin.addEventListener("click", (e) => {
+            e.preventDefault();
+            dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+          });
+      
+          // Clique fora fecha o menu
+          document.addEventListener("click", (e) => {
+            if (!document.getElementById("login-container").contains(e.target)) {
+              dropdownMenu.style.display = "none";
+            }
+          });
+      
+          // Função de logout
+          logoutBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            localStorage.removeItem("nomeUsuario"); // remove o login
+            window.location.href = "/pages/PaginaLogin.html"; // redireciona
+          });
+        }
+      </script>
+      
+
 </body>
 
 </html>
