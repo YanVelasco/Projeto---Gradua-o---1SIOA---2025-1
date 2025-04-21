@@ -26,7 +26,13 @@
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="./PaginaInterna1.html">Mais vendidos</a></li>
+                <li class="mais-vendidos-menu">
+                    <a href="#">Mais Vendidos</a>
+                    <ul class="dropdown-menu" style="display: none; background-color: #333; padding: 10px; border-radius: 5px;">
+                        <li id="filter-indies" style="color: white; cursor: pointer; padding: 5px;">Jogos Indies</li>
+                        <li id="filter-games" style="color: white; cursor: pointer; padding: 5px;">Jogos Triplo A</li>
+                    </ul>
+                </li>
                 <li><a href="./PaginaInterna2.html">Ofertas do dia</a></li>
                 <li><a href="./PaginaInterna3.html">Cadastro</a></li>
                 <li class="cart">
@@ -403,6 +409,7 @@
     </footer>
     <script src="../assets/js/cart.js"></script>
     <script src="../assets/js/search.js"></script>
+    <script src="../assets/js/dropdown.js"></script>
    
       
 </body>
