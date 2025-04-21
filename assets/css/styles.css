@@ -1625,3 +1625,55 @@ td {
     width: 100%;
   }
 }
+
+/* Página Home Fase 2 */
+
+/* Icone de Carrinho */
+
+#login-container {
+  position: relative;
+}
+
+#dropdown-menu li:hover {
+  background-color: #f2f2f2;
+}
+
+#botao-login {
+  cursor: pointer;
+}
+
+/* Corousel bootstrap */
+
+.carousel-inner img {
+  max-height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+
+/* Página de Login Fase 2*/
+
+/* Icone de Carrinho */
+
+.cart i {
+  margin-right: 5px;
+}
+
+#dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#dropdown-menu li a {
+  display: block;
+  padding: 10px;
+  color: #e60067;
+  text-decoration: none;
+}
+
