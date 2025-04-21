@@ -45,7 +45,7 @@
                     </a>
                   </li> -->
                   <li id="login-container">
-                    <a href="./pages/PaginaLogin.html" id="botao-login" class="login-btn">Login</a>
+                    <a href="./pages/PaginaInterna5.html" id="botao-login" class="login-btn">Login</a>
                     <ul id="dropdown-menu">
                       <li><a href="#" id="logout-btn">Sair</a></li>
                     </ul>
@@ -244,39 +244,8 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script src="assets/js/carousel.js"></script>
-
-    <!-- Js utilizado no html temporariamente para garantir a interação no Menu Login com o usuário logado -->
-    <script>
-        const nomeUsuario = localStorage.getItem("nomeUsuario");
-        const botaoLogin = document.getElementById("botao-login");
-        const dropdownMenu = document.getElementById("dropdown-menu");
-        const logoutBtn = document.getElementById("logout-btn");
-
-        if (nomeUsuario) {
-            botaoLogin.textContent = `Olá, ${nomeUsuario} ⏷`;
-            botaoLogin.href = "#";
-
-            // Mostrar/ocultar menu ao clicar no botão
-            botaoLogin.addEventListener("click", (e) => {
-                e.preventDefault();
-                dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
-            });
-
-            // Clique fora fecha o menu
-            document.addEventListener("click", (e) => {
-                if (!document.getElementById("login-container").contains(e.target)) {
-                    dropdownMenu.style.display = "none";
-                }
-            });
-
-            // Função de logout
-            logoutBtn.addEventListener("click", (e) => {
-                e.preventDefault();
-                localStorage.removeItem("nomeUsuario"); // remove o login
-                window.location.href = "./pages/PaginaLogin.html"; // redireciona
-            });
-        }
-    </script>
+    <script src="assets/js/menulogin.js"></script>
 </body>
+
 
 </html>
