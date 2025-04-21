@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indora - Ofertas do dia</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="../assets/images/SolRetrowaveLogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="icon" type="png" href="/assets/images/SolRetrowaveLogo.png">
+<link rel="stylesheet" href="/assets/css/styles.css">
+
 </head>
 
 <body>
@@ -29,7 +32,9 @@
                 <li><a href="./PaginaInterna1.html">Mais vendidos</a></li>
                 <li><a href="./PaginaInterna2.html">Ofertas do dia</a></li>
                 <li><a href="./PaginaInterna3.html">Cadastro</a></li>
-                <li class="cart"><a href="#">🛒 Carrinho</a></li>
+                <li class="cart">
+                    <a href="#">🛒 Carrinho <span id="cart-counter">0</span></a>
+                </li>
                 <li><a href="./PaginaLogin.html" class="login-btn">Login</a></li>
             </ul>
         </nav>
@@ -37,48 +42,87 @@
 
 
 
-    <!-- PAG OFERTAS -->
+    <!-- PAG OFERTAS CAROUSEL-->
 
-    <section class="game">
-        <div class="game-principal">
-            <div class="texto-principal">
-                <h1>Tomb Raider</h1>
-                <br>
-                <h4> Descubra segredos antigos, enfrente inimigos implacáveis e forje seu destino.🏹💎 </h4>
-                <br>
-                <p>Tomb Raider é um videojogo que combina ação, aventura, exploração e elementos de RPG. O jogador assume o controle de Lara Croft, explorando um mundo semi-aberto cheio de desafios. Compre e embarque nessa aventura épica!</p>
-                <br>
-                <button>Saiba mais...</button>
-            </div>
-        </div>
+    <div id="carrosselPromo" class="carousel slide" data-bs-ride="carousel">
 
-        <img src="../assets/images/tombraider.jfif" class="img-um" alt="Tomb Raider">
+        <div class="carousel-inner">
 
-        <div class="sidebar">
-            <div class="sidebar-um">
-                <img src="../assets/images/Outer Wilds.PNG" class="img-dois" alt="Outer Wilds">
-                <div class="side-text">
-                    <h3>Outer Wilds</h3>
-                    <br>
-                    <p>Cada descoberta revela segredos únicos, mas o tempo é seu maior inimigo.</p>
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
 
-                </div>
+                    <div class="col-md-6">
+                        <img src="/assets/images/Rain World.PNG" class="img-fluid w-100 h-100" alt="Rain World">
+                        <div class="carousel-caption  carrossel-texto ">
+                            <h2 class="fw-bold"> RAIN WORLD EM PROMOÇÃO</h2>
+                            <p class="fw-bold d-none d-md-block">Explore um mundo selvagem com criaturas únicas e perigos imprevisíveis.
+                            </p>
+                            <p><span class="desconto fw-bold">-55%</span><span class="game-preço fw-bold">R$
+                                    199,90</span> R$89,90 <button class="buy-button btn-outline-light ">Comprar
+                                    Agora</button> </p>
+                        </div>
+                    </div>
+                    
 
-            </div>
-
-            <div class="sidebar-dois">
-                <img src="../assets/images/Rain World.PNG" class="img-dois" alt="Rain World">
-
-                <div class="side-text">
-                    <h3>Rain World</h3>
-                    <br>
-                    <p>Na selva industrial, até os predadores podem se tornar presas...</p>
+                    <div class="col-md-3 d-flex flex-column">
+                        <img src="/assets/gifs/Rain_World_animation_-_Blue_Liz_sm.gif" class="img-fluid d-none d-md-block mb-3 w-80 "
+                            alt="RaindWorld GIF">
+                        <img src="/assets/gifs/rainrain-ezgif.com-resize.gif" class="img-fluid w-80 d-none d-md-block" alt="RaindWorld GIF2">
+                    </div>
                 </div>
             </div>
 
-        </div>
+            <!-- SLIDE 2 -->
+            <div class="carousel-item">
+                <div class="row justify-content-center">
 
-    </section>
+                    <div class="col-md-6">
+                        <img src="/assets/images/tombraider.jfif" class="img-fluid w-100 h-100" alt="TombRaider">
+                        <div class="carousel-caption carrossel-texto ">
+                            <h2 class="fw-bold">TOMB RAIDER COM DESCONTO</h2>
+                            <p class="fw-bold d-none d-md-block ">Aventura, ação e mistérios antigos com Lara Croft no seu auge.</p>
+                            <p><span class="desconto fw-bold">-40%</span><span class="game-preço fw-bold">R$
+                                    229,90</span> R$137,94 <button class="buy-button">Comprar Agora</button></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 d-flex flex-column">
+                        <img src="/assets/gifs/tomb.gif" class="img-fluid mb-3 w-80 d-none d-md-block " alt="TombRaider GIF">
+                        <img src="/assets/gifs/tomb1.gif" class="img-fluid w-80 d-none d-md-block " alt="TombRaider GIF2">
+                    </div>
+                </div>
+            </div>
+            <!-- SLIDE 3 -->
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+
+
+                    <div class="col-md-6">
+                        <img src="/assets/images/Outer Wilds.PNG" class="img-fluid w-100 h-100" alt="Outer Wilds">
+                        <div class="carousel-caption carrossel-texto ">
+                            <h2 class="fw-bold">OUTER WILDS EM OFERTA</h2>
+                            <p class="fw-bold d-none d-md-block">Viaje por galáxias misteriosas em um ciclo infinito de descobertas.</p>
+                            <p><span class="desconto fw-bold">-50%</span><span class="game-preço fw-bold">R$
+                                    149,90</span> R$74,90 <button class="buy-button">Comprar Agora</button> </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 d-flex flex-column">
+                        <img src="/assets/gifs/outerwilds.gif" class="img-fluid mb-3 w-80 d-none d-md-block " alt="OuterWilds GIF">
+                        <img src="/assets/gifs/outerouter.gif" class="img-fluid w-80 d-none d-md-block " alt="OuterWilds GIF2">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrosselPromo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrosselPromo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
 
 
     <!---- SECTION PROMO -->
@@ -87,14 +131,16 @@
         <div class="promo-content">
 
             <div class="promo-text">
-                <h1>Promoção da Semana</h1>
+                <h1 class="fw-bold fs-2">Promoção da Semana</h1>
                 <br>
-                <h3>MULLET MADJACK</h3>
-                <p> Faça seu melhor tempo ou tente de novo. Aqui a PRESSA É AMIGA DA PERFEIÇÃO! 🔥🎮</p>
-                <br>
-                <p>Mullet MadJack é um jogo de tiro em primeira pessoa e Roguelike desenvolvido pela Hammer95 Studios. Com apenas 10 segundos por andar, os jogadores enfrentam desafios intensos e emocionantes. Não perca!</p>
-                <br>
-                <button>Comprar Agora</button>
+                <h3 class="fs-5 fw-semibold">MULLET MADJACK</h3>
+                <p class = "d-none d-sm-block "> Faça seu melhor tempo ou tente de novo. Aqui a PRESSA É AMIGA DA PERFEIÇÃO!</p>
+                <p class = "d-none d-md-block ">Mullet MadJack é um FPS roguelike frenético onde você controla Jack Banhammer, um moderador em 2095
+                    que precisa resgatar um influenciador em um mundo dominado por Robilionários. Com apenas 10 segundos
+                    por andar, derrote inimigos para ganhar tempo, usar finalizações e desbloquear upgrades. Inclui
+                    campanha, sobrevivência, boss rush e crossover com Ultrakill. </p>
+                <p><span class="desconto fw-bold ">-50%</span><span class="game-preço fw-bold">R$
+                    149,90</span> R$74,90 <button class="buy-button">Comprar Agora</button> </p>
             </div>
 
             <div class="video-container">
@@ -108,197 +154,536 @@
 
     <!---  SECTION - FINAL    -->
 
+    <div class="mt-5">
+        <h2 class="fw-bolder">Promoções Relâmpago</h2>
+        <h4 class="text-center d-none d-md-block">Descontos exclusivos em diversos títulos, só hoje!</h4>
+    </div>
     <section class="game">
 
         <div class="game-container">
 
             <div class="game-item">
-                <img src="../assets/images/EldenRing.jfif" class="img-hover" alt="Elden Ring">
+                <img src="/assets/images/EldenRing.jfif" class="img-hover" alt="Elden Ring">
                 <h3>Elden Ring</h3>
                 <p>Exploração e combates majestosos.</p>
-                <br>
                 <p><span class="desconto">-40%</span> <span class="game-preço">R$ 229,90</span> R$137,94</p>
+                <button class="buy-button" data-added="false">Comprar</button>
             </div>
 
             <div class="game-item">
-                <img src="../assets/images/GodOfWar.jfif" class="img-hover" alt="God of War">
+                <img src="/assets/images/GodOfWar.jfif" class="img-hover" alt="God of War">
                 <h3>God of War</h3>
                 <p>Mitologia épica e combate visceral.</p>
-                <br>
                 <p><span class="desconto">-60%</span> <span class="game-preço">R$199,90</span> R$79,96</p>
+                <button class="buy-button" data-added="false">Comprar</button>
             </div>
 
             <div class="game-item">
-                <img src="../assets/images/ghost-of-tsushima.jpg" class="img-hover" alt="Ghost of Tsushima">
+                <img src="/assets/images/ghost-of-tsushima.jpg" class="img-hover" alt="Ghost of Tsushima">
                 <h3>Ghost of Tsushima</h3>
                 <p>Combate samurai emocionante.</p>
-                <br>
                 <p><span class="desconto">-33%</span> <span class="game-preço">R$249,90</span> R$167,43</p>
+                <button class="buy-button" data-added="false">Comprar</button>
             </div>
 
             <div class="game-item">
-                <img src="../assets/images/METAL GEAR SOLID.jfif" class="img-hover" alt="METAL GEAR SOLID">
+                <img src="/assets/images/METAL GEAR SOLID.jfif" class="img-hover" alt="METAL GEAR SOLID">
                 <h3>Metal Gear Solid V</h3>
                 <p>Ação e Estratégia em mundo aberto.</p>
-                <br>
                 <p><span class="desconto">-40%</span> <span class="game-preço">R$98,99</span> R$59,39
                 </p>
-                <br>
+                <button class="buy-button" data-added="false">Comprar</button>
             </div>
 
             <div class="game-item">
-                <img src="../assets/images/UNCHARTED.jpg" class="img-hover" alt="UNCHARTED™">
+                <img src="/assets/images/UNCHARTED.jpg" class="img-hover" alt="UNCHARTED™">
                 <h3>UNCHARTED™</h3>
                 <p>Aventura cheia de reviravoltas.</p>
-                <br>
                 <p><span class="desconto">-60%</span> <span class="game-preço">R$199,90</span> R$79,96</p>
+                <button class="buy-button" data-added="false">Comprar</button>
             </div>
 
             <div class="game-item">
-                <img src="../assets/images/HogwartsLegacy.jpg" class="img-hover" alt="Hogwarts Legacy">
+                <img src="/assets/images/HogwartsLegacy.jpg" class="img-hover" alt="Hogwarts Legacy">
                 <h3>Hogwarts Legacy</h3>
                 <p>Magia e aventura no mundo bruxo.</p>
-                <br>
                 <p><span class="desconto">-75%</span> <span class="game-preço">R$299,99</span> R$74,99</p>
+                <button class="buy-button" data-added="false">Comprar</button>
             </div>
 
             <div class="game-item">
-                <img src="../assets/images/review-Horizon-Forbidden-West-scaled.webp" class="img-hover"
+                <img src="/assets/images/review-Horizon-Forbidden-West-scaled.webp" class="img-hover"
                     alt="Horizon Forbidden West">
                 <h3>Horizon Forbidden West</h3>
                 <p>Exploração em um mundo futurista.</p>
-                <br>
                 <p><span class="desconto">-33%</span> <span class="game-preço">R$249,90</span> R$167,43</p>
+                <button class="buy-button" data-added="false">Comprar</button>
             </div>
 
             <div class="game-item">
-                <img src="../assets/images/ResidentEvil.jfif" class="img-hover" alt="Resident Evil">
+                <img src="/assets/images/ResidentEvil.jfif" class="img-hover" alt="Resident Evil">
                 <h3>Resident Evil 4</h3>
                 <p>Terror intenso cheio de suspense.</p>
-                <br>
                 <p><span class="desconto">-50%</span> <span class="game-preço">R$139,00</span> R$69,50</p>
+                <button class="buy-button" data-added="false">Comprar</button>
             </div>
 
         </div>
+
+
 
     </section>
 
 
     <!--- TABELA --->
 
-    <div class="tabela-text">
+    <!--- OFERTAS DEVS --->
 
-        <img src="../assets/images/HollowKnight (1).jfif" alt="HolloeKnight">
 
-        <div class="tabela-content">
+    <div class="mb-5">
+        <h2 class="fw-bolder">Os Devs Jogam e Recomendam</h2>
+        <h4 class="text-center d-none d-md-block">Descontos exclusivos nos títulos mais jogados por quem entende de games.</h4>
+    </div>
+    <div class="row mx-0 mt-0 mb-3">
 
-            <h3>Hollow Knight</h3>
-            <p>Uma aventura de ação épica em um vasto reino arruinado de insetos e heróis.</p>
-            <br>
-            <p>Hollow Knight é um jogo indie de gênero metroidvania desenvolvido e publicado pela Team Cherry Ele foi
-                lançado exclusivamente para PlayStation 3 em 14
-                de junho de 2013. No jogo, um cavaleiro sem nome explora um reino em ruínas habitado por insetos,
-                desbloqueando habilidades novas que ajudam a explorar e livrar o reino de uma infecção causada por um
-                deus esquecido. </p>
-            <br>
-            <button>Comprar Agora</button>
+        <div class="col-6 ">
+            <div class="tabela-text">
+
+                <div class="card mb-3 w-100 ">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/assets/gifs/hollow-ezgif.com-crop.gif" class="img-fluid w-100 h-100 rounded-start rounded"
+                                alt="HollowKnight">
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Hollow Knight</h3>
+                                <p class="d-none d-md-block">Hollow Knight é uma obra-prima do gênero metroidvania, desenvolvida pelo estúdio
+                                    independente Team Cherry. Você assume o controle de um cavaleiro silencioso
+                                    explorando as ruínas subterrâneas de Hallownest, um reino antigo repleto de
+                                    mistérios, inimigos desafiadores e segredos escondidos.
+                                    Com uma estética sombria e desenhada à mão, o jogo encanta pela sua arte detalhada e
+                                    atmosfera envolvente. A trilha sonora melancólica e imersiva dá vida a um mundo que
+                                    mistura beleza e decadência.
+                                    Para quem busca desafio, profundidade e uma experiência marcante, Hollow Knight é
+                                    mais do que recomendado, é indispensável.
+                                </p>
+                                <p><span class="desconto">-55%</span> <span class="game-preço">R$ 104,42</span> R$ 46,99
+                                </p>
+
+                            </div>
+                            <div class="d-grid gap-2 px-3">
+                                <button class="buy-button" data-added="false">Comprar Agora </button>
+                                <button class="btn btn-primary d-none d-sm-block" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample1" aria-expanded="false"
+                                    aria-controls="collapseExample1">Requisitos
+                                    Minimos</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="collapse" id="collapseExample1">
+                        <section class="tabela">
+                            <div class="tabela-um">
+                                <h2>Requisitos mínimos</h2>
+                                <table>
+                                    <tr>
+                                        <th>Sistema Operacional</th>
+                                        <td>Windows 10 versão 18362.0 ou superior</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Arquitetura</th>
+                                        <td>x64</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Elementos gráficos</th>
+                                        <td>GeForce 9800GTX+ (1GB)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Processador</th>
+                                        <td>Intel Core 2 Duo E5200</td>
+                                    </tr>
+                                    <tr>
+                                        <th>DirectX</th>
+                                        <td>Versão 10</td>
+                                    </tr>
+                                    <th>Memória</th>
+                                    <td>4 GB</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <br>
+                            <div class="tabela-dois">
+                                <h2>Exigências recomendadas</h2>
+                                <table>
+                                    <tr>
+                                        <th>Sistema Operacional</th>
+                                        <td>Windows 10 versão 18362.0 ou superior</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Arquitetura</th>
+                                        <td>x64</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Elementos gráficos</th>
+                                        <td>GeForce GTX 560</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Processador</th>
+                                        <td>Intel Core i5</td>
+                                    </tr>
+                                    <tr>
+                                    <th>DirectX</th>
+                                    <td>Versão 10</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Memória</th>
+                                        <td>8 GB</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+            </div>
 
         </div>
+
+        <div class="col-6 ">
+            <div class="tabela-text">
+
+                <div class="card mb-3 w-100 ">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/assets/gifs/hotlinemiami-ezgif.com-resize.gif"
+                                class="img-fluid w-100 h-100 rounded-start rounded" alt="Hotline Miami">
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Hotline Miami</h3>
+                                <p class="d-none d-md-block">Hotline Miami é um jogo de ação frenética em visão top-down, conhecido por sua
+                                    violência estilizada, trilha sonora alucinante e atmosfera psicodélica dos anos 80.
+                                    Você assume o papel de um assassino misterioso que recebe telefonemas enigmáticos o
+                                    instruindo a cometer massacres brutais contra gangues criminosas.
+                                    Com jogabilidade rápida e letal, cada fase exige precisão, estratégia e reflexos
+                                    afiados — morrer e tentar de novo faz parte da experiência. A estética retro, com
+                                    gráficos pixelados e cores neon vibrantes, cria um clima único e perturbador.
+                                    Estiloso e memorável, uma verdadeira obra cult dos games modernos.
+                                <p><span class="desconto">-40%</span> <span class="game-preço">R$ 54,98</span> R$ 32,99
+                                </p>
+
+                                </p>
+                            </div>
+                            <div class="d-grid gap-2 px-3">
+                                <button class="buy-button" data-added="false">Comprar Agora </button>
+                                <button class="btn btn-primary d-none d-sm-block" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample2" aria-expanded="false"
+                                    aria-controls="collapseExample2">Requisitos
+                                    Minimos</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="collapse" id="collapseExample2">
+                        <section class="tabela">
+                            <div class="tabela-um">
+                                <h2>Requisitos mínimos</h2>
+                                <table>
+                                    <tr>
+                                        <th>Sistema Operacional</th>
+                                        <td>Microsoft® Windows® XP / Vista / 7</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Arquitetura</th>
+                                        <td>x32 ou x64</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Elementos gráficos</th>
+                                        <td>Placa gráfica compatível com DirectX 8</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Processador</th>
+                                        <td>Processador de 1,2 GHz</td>
+                                    </tr>
+                                    <tr>
+                                        <th>DirectX</th>
+                                        <td>Versão 9.0c</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Memória</th>
+                                        <td>512 MB de RAM</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <br>
+                            <div class="tabela-dois">
+                                <h2>Exigências recomendadas</h2>
+                                <table>
+                                    <tr>
+                                        <th>Sistema Operacional</th>
+                                        <td>Microsoft® Windows® XP / Vista / 7</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Arquitetura</th>
+                                        <td>x32</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Elementos gráficos</th>
+                                        <td>Placa gráfica compatível com DirectX 8</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Processador</th>
+                                        <td>Processador de 1,4 GHz ou mais rápido</td>
+                                    </tr>
+                                    <tr>
+                                        <th>DirectX</th>
+                                        <td>Versão 9.0c</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Memória</th>
+                                        <td>1 GB de RAM</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-6 ">
+            <div class="tabela-text">
+
+                <div class="card mb-3 w-100 ">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/assets/gifs/NightintheWoods-ezgif.com-resize (1).webp"
+                                class="img-fluid w-100 h-100 rounded-start rounded" alt="Night in the Woods">
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Night in the Woods</h3>
+                                <p class="d-none d-md-block">Night in the Woods é uma aventura narrativa centrada na história de Mae, uma jovem
+                                    gata antropomórfica que abandona a faculdade e retorna à sua cidade natal. O jogo
+                                    mistura diálogos profundos, exploração e minigames em um mundo 2D encantador e
+                                    melancólico.
+
+                                    Ao lado de antigos amigos, Mae redescobre sua cidade e enfrenta temas como
+                                    depressão, ansiedade, amadurecimento e pertencimento. Com uma trilha sonora
+                                    envolvente, visuais únicos e escrita afiada, o jogo cativa pela sua humanidade.
+                                    Ideal para quem busca uma experiência emocional, introspectiva e com uma boa dose de
+                                    humor.
+                                </p>
+                                <p><span class="desconto">-60%</span> <span class="game-preço">R$ 58,75</span> R$ 23,50
+                                </p>
+
+                            </div>
+                            <div class="d-grid gap-2 px-3">
+                                <button class="buy-button" data-added="false">Comprar Agora </button>
+                                <button class="btn btn-primary d-none d-sm-block" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample3" aria-expanded="false"
+                                    aria-controls="collapseExample3">Requisitos
+                                    Minimos</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="collapse" id="collapseExample3">
+                        <section class="tabela">
+                            <div class="tabela-um">
+                                <h2>Requisitos mínimos</h2>
+                                <table>
+                                    <tr>
+                                        <th>Sistema Operacional</th>
+                                        <td> Windows 7 ou mais recente</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Arquitetura</th>
+                                        <td>x64</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Elementos gráficos</th>
+                                        <td>Intel HD 5000, NVIDIA GT 630, AMD Radeon HD 5550</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Processador</th>
+                                        <td>Intel Core 2 Duo 2.4 GHz ou equivalente</td>
+                                    </tr>
+                                    <tr>
+                                        <th>DirectX</th>
+                                        <td>Versão 10</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Memória</th>
+                                        <td>4 GB</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <br>
+                            <div class="tabela-dois">
+                                <h2>Exigências recomendadas</h2>
+                                <table>
+                                    <tr>
+                                        <th>Sistema Operacional</th>
+                                        <td>Windows 10 x64</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Arquitetura</th>
+                                        <td>x64</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Elementos gráficos</th>
+                                        <td>NVIDIA GTX 750 Ti, AMD Radeon R7 360</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Processador</th>
+                                        <td>Intel Core i5 2.5 GHz ou equivalente</td>
+                                    </tr>
+                                    <tr>
+                                        <th>DirectX</th>
+                                        <td>Versão 11</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Memória</th>
+                                        <td>8 GB</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-6 ">
+            <div class="tabela-text">
+
+                <div class="card mb-3 w-100 ">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/assets/gifs/nine-sols-ezgif.com-crop.gif" class="img-fluid w-100 h-100 rounded-start rounded"
+                                alt="Nine Sols">
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">Nine Sols</h3>
+                                <p class="d-none d-md-block">Nine Sols é um jogo de ação e aventura em 2D com uma estética única, inspirada na
+                                    mitologia asiática e na ficção científica. Desenvolvido pela RedCandleGames, o game
+                                    mistura exploração estilo metroidvania com combates intensos, no
+                                    melhor estilo soulslike.
+                                    Você assume o papel de Yi, um herói destemido em busca de vingança em um mundo
+                                    governado por seres misteriosos conhecidos como os Nove Sóis.
+                                    Nine Sols é uma experiência cativante e desafiadora que conquista tanto fãs de jogos
+                                    independentes quanto os amantes de grandes aventuras.
+                                <p><span class="desconto">-45%</span> <span class="game-preço">R$ 161,80</span> R$ 88,99
+                                </p>
+
+                                </p>
+                            </div>
+                            <div class="d-grid gap-2 px-3">
+                                <button class="buy-button" data-added="false">Comprar Agora </button>
+                                <button class="btn btn-primary d-none d-sm-block" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample4" aria-expanded="false"
+                                    aria-controls="collapseExample4">Requisitos
+                                    Minimos</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="collapse" id="collapseExample4">
+                        <section class="tabela">
+                            <div class="tabela-um">
+                                <h2>Requisitos mínimos</h2>
+                                <table>
+                                    <tr>
+                                        <th>Sistema Operacional</th>
+                                        <td>Windows 10 64bit</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Arquitetura</th>
+                                        <td>x64</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Elementos gráficos</th>
+                                        <td>Nvidia GTX 950 | AMD R7 370</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Processador</th>
+                                        <td> AMD Athlon X4 | Intel Core i5 4460</td>
+                                    </tr>
+                                    <tr>
+                                        <th>DirectX</th>
+                                        <td>Versão 11</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Memória</th>
+                                        <td>8 GB de RAM</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <br>
+                            <div class="tabela-dois">
+                                <h2>Exigências recomendadas</h2>
+                                <table>
+                                    <tr>
+                                        <th>Sistema Operacional</th>
+                                        <td>Windows 10 64bit</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Arquitetura</th>
+                                        <td>x64</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Elementos gráficos</th>
+                                        <td>Nvidia GTX 970 | AMD RX 570</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Processador</th>
+                                        <td>AMD Ryzen 3 | Intel i5 Skylake</td>
+                                    </tr>
+                                    <tr>
+                                        <th>DirectX</th>
+                                        <td>Versão 11</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Memória</th>
+                                        <td>8 GB de RAM</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
     </div>
 
-
-    </div>
-
-    <section class="tabela">
-
-        <div class="tabela-um">
-
-            <h2>Requisitos mínimos </h2>
-            <table>
-                <tr>
-                    <th>Sistema Operacional</th>
-                    <td>Windows 10 versão 18362.0 ou superior</td>
-                </tr>
-                <tr>
-                    <th>Arquitetura </th>
-                    <td>x64</td>
-                </tr>
-                <tr>
-                    <th>Elementos gráficos</th>
-                    <td>GeForce 9800GTX+ (1GB)</td>
-                </tr>
-                <tr>
-                    <th>Processador</th>
-                    <td>Intel Core 2 Duo E5200</td>
-                </tr>
-                <tr>
-                    <th>Teclado</th>
-                    <td>Teclado Integrado</td>
-                </tr>
-                <tr>
-                    <th>DirectX </th>
-                    <td>Versão 10</td>
-                </tr>
-                <tr>
-                    <th>Mouse</th>
-                    <td>Mouse Integrado</td>
-                </tr>
-                <tr>
-                    <th>Controle</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>Memória</th>
-                    <td>4 GB</td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="tabela-dois">
-            <h2>Exigências recomendadas</h2>
-
-            <table>
-                <tr>
-                    <th>Sistema Operacional</th>
-                    <td>Windows 10 versão 18362.0 ou superior</td>
-                </tr>
-                <tr>
-                    <th>Arquitetura </th>
-                    <td>x64</td>
-                </tr>
-                <tr>
-                    <th>Elementos gráficos</th>
-                    <td>GeForce GTX 560</td>
-                </tr>
-                <tr>
-                    <th>Processador</th>
-                    <td>Intel Core i5</td>
-                </tr>
-                <tr>
-                    <th>Teclado</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>DirectX </th>
-                    <td>Versão 10</td>
-                </tr>
-                <tr>
-                    <th>Mouse</th>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>Controle</th>
-                    <td>Controle ou gamepad</td>
-                </tr>
-                <tr>
-                    <th>Memória</th>
-                    <td>8 GB</td>
-                </tr>
-
-            </table>
-        </div>
-
-    </section>
 
 
     <!-- FOOTER -->
@@ -346,6 +731,10 @@
         </div>
     </footer>
 
+    <script src="/assets/js/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
