@@ -1250,6 +1250,7 @@ td {
   width: 400px;
   padding: 10px;
   border: 2px solid #ccc;
+  color: #000;
   border-radius: 5px;
   font-size: 16px;
 }
@@ -1700,4 +1701,61 @@ td {
   text-decoration: none;
 }
 
+/* .header-com-sombra {
+  box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.3);
+} */
+
+/* Formatação da tag <main> */
+
+.boas-vindas-login {
+  margin-top: 30px;
+}
+
+.senha-input {
+  padding-right: 50px;
+}
+
+.toggle-password-icon {
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.lembrar-senha-label,
+.cadastro-link {
+  font-size: small;
+}
+
+.btn-continuar {
+  background-color: #e60067;
+  border-color: transparent;
+}
+
+
 /* Página de Login Fase 2 Fim */
+
+/* Página de Mais Vendidos Fase 2 Inicio */
+
+.custom-dropdown {
+  display: none;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dropdown-item {
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Efeito hover nos itens */
+.dropdown-item:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Página de Mais Vendidos Fase 2 Fim */
