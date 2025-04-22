@@ -1133,9 +1133,17 @@ td {
   color: #e60067;
 }
 
-
-
-
+/* Garantir formato consistente para os cards */
+.indie-card, .game-card {
+    min-width: 250px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
 
 /* responsividade */
 @media (max-width: 1024px) {
