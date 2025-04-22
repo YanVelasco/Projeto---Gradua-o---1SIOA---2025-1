@@ -317,6 +317,35 @@ textarea {
 
 /* Fim Estilos da barra de progresso de senha ainda nao funcionando*/
 
+.fields input,
+.fields select,
+.fields textarea {
+  /* color: black; */
+  color: #555;
+}
+
+.fields input::placeholder,
+.fields textarea::placeholder {
+  color: #555;
+}
+
+.select-preto {
+  /* color: black; */
+  color: #555;
+}
+
+.select-preto {
+  /* color: black; */
+  color: #555;
+}
+
+.select-preto option {
+  /* color: black; */
+  color: #555;
+}
+
+
+
 /* Fim Ajustes Cadastro Fase 2 */
 
 textarea {
