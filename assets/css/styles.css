@@ -26,6 +26,8 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
+  position: relative;
+  z-index: 1;
 }
 
 .menu-icon {
@@ -316,6 +318,35 @@ textarea {
 }
 
 /* Fim Estilos da barra de progresso de senha ainda nao funcionando*/
+
+.fields input,
+.fields select,
+.fields textarea {
+  /* color: black; */
+  color: #555;
+}
+
+.fields input::placeholder,
+.fields textarea::placeholder {
+  color: #555;
+}
+
+.select-preto {
+  /* color: black; */
+  color: #555;
+}
+
+.select-preto {
+  /* color: black; */
+  color: #555;
+}
+
+.select-preto option {
+  /* color: black; */
+  color: #555;
+}
+
+
 
 /* Fim Ajustes Cadastro Fase 2 */
 
@@ -892,7 +923,7 @@ input.invalido {
   text-align: center;
 }
 
-.game-item p, {
+.game-item p {
   font-size: 0.6em;
   padding: 5px;
 }
@@ -1250,6 +1281,7 @@ td {
   width: 400px;
   padding: 10px;
   border: 2px solid #ccc;
+  color: #000;
   border-radius: 5px;
   font-size: 16px;
 }
@@ -1457,23 +1489,22 @@ td {
 
 }
 
+/* Ajuste para centralizar e evitar sobreposição */
 .carousel-indie {
-  margin-top: 130px;
+  height: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  margin-top: 50px; /* Adicionado para afastar do menu dropdown */
+  margin-bottom: 20px;
 }
-
-
 
 /* Esconde o checkbox */
 #menu-toggle {
   display: none;
 }
-
-
 
 /* MENU MOBILE */
 @media (max-width: 768px) {
@@ -1671,6 +1702,25 @@ td {
   height: auto;
 }
 
+/* Estilo para o menu dropdown */
+.mais-vendidos-menu {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.mais-vendidos-menu:hover .dropdown-menu {
+  display: block;
+}
 
 /* Página Home Fase 2 Fim */
 
@@ -1700,4 +1750,61 @@ td {
   text-decoration: none;
 }
 
+/* .header-com-sombra {
+  box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.3);
+} */
+
+/* Formatação da tag <main> */
+
+.boas-vindas-login {
+  margin-top: 30px;
+}
+
+.senha-input {
+  padding-right: 50px;
+}
+
+.toggle-password-icon {
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.lembrar-senha-label,
+.cadastro-link {
+  font-size: small;
+}
+
+.btn-continuar {
+  background-color: #e60067;
+  border-color: transparent;
+}
+
+
 /* Página de Login Fase 2 Fim */
+
+/* Página de Mais Vendidos Fase 2 Inicio */
+
+.custom-dropdown {
+  display: none;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dropdown-item {
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Efeito hover nos itens */
+.dropdown-item:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Página de Mais Vendidos Fase 2 Fim */
