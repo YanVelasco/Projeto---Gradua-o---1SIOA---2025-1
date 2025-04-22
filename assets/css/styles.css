@@ -26,6 +26,8 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
+  position: relative;
+  z-index: 1;
 }
 
 .menu-icon {
@@ -921,7 +923,7 @@ input.invalido {
   text-align: center;
 }
 
-.game-item p, {
+.game-item p {
   font-size: 0.6em;
   padding: 5px;
 }
@@ -1487,23 +1489,22 @@ td {
 
 }
 
+/* Ajuste para centralizar e evitar sobreposição */
 .carousel-indie {
-  margin-top: 130px;
+  height: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  margin-top: 50px; /* Adicionado para afastar do menu dropdown */
+  margin-bottom: 20px;
 }
-
-
 
 /* Esconde o checkbox */
 #menu-toggle {
   display: none;
 }
-
-
 
 /* MENU MOBILE */
 @media (max-width: 768px) {
@@ -1701,6 +1702,25 @@ td {
   height: auto;
 }
 
+/* Estilo para o menu dropdown */
+.mais-vendidos-menu {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.mais-vendidos-menu:hover .dropdown-menu {
+  display: block;
+}
 
 /* Página Home Fase 2 Fim */
 
