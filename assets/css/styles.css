@@ -810,6 +810,16 @@ input.invalido {
   cursor: pointer;
   border-radius: 5px; }
   
+  .btn-carrossel {
+    background-color: #e60067;
+    border: none;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none; }
+    
+    
   
   .texto-sobreposto {
     position: absolute;
@@ -1644,11 +1654,12 @@ td {
 
 /* Corousel bootstrap */
 
-.carousel-inner img {
+#carrosselDestaque img {
   max-height: 300px;
-  object-fit: cover;
+  object-fit:cover;
   width: 100%;
-}
+  opacity: 0.5;
+} 
 
  /* Centralizando imagens da tag <figure>  */
 
