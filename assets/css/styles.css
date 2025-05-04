@@ -26,6 +26,8 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
+  /* position: relative;
+  z-index: 1; */
 }
 
 .menu-icon {
@@ -97,11 +99,11 @@ nav ul li a {
 
 .carousel-text h2 {
   font-size: 18px;
-  margin-top: 50px;
 }
 
 .carousel-text h1 {
   font-size: 36px;
+  margin-top: 50px;
 }
 
 .carousel-text button {
@@ -316,6 +318,35 @@ textarea {
 }
 
 /* Fim Estilos da barra de progresso de senha ainda nao funcionando*/
+
+.fields input,
+.fields select,
+.fields textarea {
+  /* color: black; */
+  color: #555;
+}
+
+.fields input::placeholder,
+.fields textarea::placeholder {
+  color: #555;
+}
+
+.select-preto {
+  /* color: black; */
+  color: #555;
+}
+
+.select-preto {
+  /* color: black; */
+  color: #555;
+}
+
+.select-preto option {
+  /* color: black; */
+  color: #555;
+}
+
+
 
 /* Fim Ajustes Cadastro Fase 2 */
 
@@ -810,6 +841,16 @@ input.invalido {
   cursor: pointer;
   border-radius: 5px; }
   
+  .btn-carrossel {
+    background-color: #e60067;
+    border: none;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none; }
+    
+    
   
   .texto-sobreposto {
     position: absolute;
@@ -882,7 +923,7 @@ input.invalido {
   text-align: center;
 }
 
-.game-item p, {
+.game-item p {
   font-size: 0.6em;
   padding: 5px;
 }
@@ -1092,9 +1133,17 @@ td {
   color: #e60067;
 }
 
-
-
-
+/* Garantir formato consistente para os cards */
+.indie-card, .game-card {
+    min-width: 250px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
 
 /* responsividade */
 @media (max-width: 1024px) {
@@ -1240,6 +1289,7 @@ td {
   width: 400px;
   padding: 10px;
   border: 2px solid #ccc;
+  color: #000;
   border-radius: 5px;
   font-size: 16px;
 }
@@ -1269,7 +1319,7 @@ td {
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  margin-top: 100px;
+  margin-top: 1px;
 }
 
 .indies h2 {
@@ -1451,23 +1501,22 @@ td {
 
 }
 
+/* Ajuste para centralizar e evitar sobreposição */
 .carousel-indie {
-  margin-top: 130px;
+  height: 300px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  margin-top: 50px; /* Adicionado para afastar do menu dropdown */
+  margin-bottom: 20px;
 }
-
-
 
 /* Esconde o checkbox */
 #menu-toggle {
   display: none;
 }
-
-
 
 /* MENU MOBILE */
 @media (max-width: 768px) {
@@ -1514,6 +1563,7 @@ td {
   .carousel-text {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
   }
 
   .carousel-text h1 {
@@ -1630,68 +1680,145 @@ td {
   }
 }
 
-@media (max-width: 576px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 20px;
-  }
+/* Página Home Fase 2 Inicio */
 
-  .logo {
-    font-size: 2rem;
-  }
+/* Icone de Carrinho */
 
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-  }
-
-  .carousel {
-    height: 200px;
-  }
-
-  .carousel-inner img {
-    max-height: 200px;
-  }
-
-  .game-list {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .game-card {
-    width: 100%;
-  }
-
-  .apresentacao h2 {
-    font-size: 1.5rem;
-  }
-
-  .apresentacao-text {
-    font-size: 0.9rem;
-  }
-
-  .card-container {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .card {
-    width: 100%;
-  }
-
-  footer {
-    text-align: center;
-  }
-
-  .rodape-content {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .rodape-section img {
-    width: 50%;
-    height: auto;
-  }
+#login-container {
+  position: relative;
 }
+
+#dropdown-menu li:hover {
+  background-color: #f2f2f2;
+}
+
+#botao-login {
+  cursor: pointer;
+}
+
+/* Corousel bootstrap */
+
+#carrosselDestaque img {
+  max-height: 300px;
+  object-fit:cover;
+  width: 100%;
+  opacity: 0.5;
+} 
+
+ /* Centralizando imagens da tag <figure>  */
+
+#card-home img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo para o menu dropdown */
+.mais-vendidos-menu {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.mais-vendidos-menu:hover .dropdown-menu {
+  display: block;
+}
+
+/* Página Home Fase 2 Fim */
+
+/* Página de Login Fase 2 Inicio */
+
+/* Icone de Carrinho */
+
+.cart i {
+  margin-right: 5px;
+}
+
+#dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#dropdown-menu li a {
+  display: block;
+  padding: 10px;
+  color: #e60067;
+  text-decoration: none;
+}
+
+/* .header-com-sombra {
+  box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.3);
+} */
+
+/* Formatação da tag <main> */
+
+.boas-vindas-login {
+  margin-top: 30px;
+}
+
+.senha-input {
+  padding-right: 50px;
+}
+
+.toggle-password-icon {
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.lembrar-senha-label,
+.cadastro-link {
+  font-size: small;
+}
+
+.btn-continuar {
+  background-color: #e60067;
+  border-color: transparent;
+}
+
+
+/* Página de Login Fase 2 Fim */
+
+/* Página de Mais Vendidos Fase 2 Inicio */
+
+.custom-dropdown {
+  display: none;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dropdown-item {
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Efeito hover nos itens */
+.dropdown-item:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+
+/* Página de Mais Vendidos Fase 2 Fim */

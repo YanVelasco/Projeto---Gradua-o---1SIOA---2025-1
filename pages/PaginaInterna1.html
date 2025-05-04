@@ -25,23 +25,25 @@
 
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li class="mais-vendidos-menu">
-                    <a href="#">Mais Vendidos</a>
-                    <ul class="dropdown-menu" style="display: none; background-color: #333; padding: 10px; border-radius: 5px;">
-                        <li id="filter-indies" style="color: white; cursor: pointer; padding: 5px;">Jogos Indies</li>
-                        <li id="filter-games" style="color: white; cursor: pointer; padding: 5px;">Jogos Triplo A</li>
-                    </ul>
-                </li>
-                <li><a href="./PaginaInterna2.html">Ofertas do dia</a></li>
-                <li><a href="./PaginaInterna3.html">Cadastro</a></li>
-                <li class="cart">
-                    <a href="#">🛒 Carrinho <span id="cart-counter">0</span></a>
-                </li>
-                <li><a href="./PaginaLogin.html" id="botao-login" class="login-btn">Login</a></li>
-
+              <li><a href="../index.html">Home</a></li>
+              <li class="mais-vendidos-menu">
+                <a href="./PaginaInterna1.html">Mais Vendidos ▼</a>
+                <ul class="dropdown-menu custom-dropdown">
+                  <li id="filter-indies" class="dropdown-item">Jogos Indies</li>
+                  <li id="filter-games" class="dropdown-item">Jogos Triplo A</li>
+                </ul>
+              </li>
+              <li><a href="./PaginaInterna2.html">Ofertas do dia</a></li>
+              <li><a href="./PaginaInterna3.html">Cadastro</a></li>
+              <li class="cart">
+                <a href="#">🛒 Carrinho <span id="cart-counter">0</span></a>
+              </li>
+              <li>
+                <a href="./PaginaInterna5.html" id="botao-login" class="login-btn">Login</a>
+              </li>
             </ul>
-        </nav>
+          </nav>
+          
     </header>
 
     <!-- Carousel -->
@@ -65,48 +67,64 @@
             <div class="indie-card">
                 <img src="../assets/images/Nine Sols.jpeg" alt="Nine Sols">
                 <h3>Nine Sols</h3>
+                <p>Plataforma/Ação 2D</p>
+                <p>12 anos</p>
                 <p>Um jogo de plataforma/ação 2D com mecânicas inspiradas em Sekiro: Shadows Die Twice.</p>
                 <button class="buy-button" data-added="false">Comprar</button>
             </div>
             <div class="indie-card">
                 <img src="../assets/images/Hades 2.jpg" alt="Hades 2">
                 <h3>Hades 2</h3>
+                <p>Roguelike/Ação</p>
+                <p>12 anos</p>
                 <p>Sequência do aclamado Hades, trazendo novas histórias e mecânicas aprimoradas.</p>
                 <button class="buy-button" data-added="false">Comprar</button>
             </div>
             <div class="indie-card">
                 <img src="../assets/images/The Plucky Squire.jpg" alt="The Plucky Squire">
                 <h3>The Plucky Squire</h3>
+                <p>Ação e Aventura</p>
+                <p>Livre</p>
                 <p>Um jogo que mistura estilos artísticos, transitando entre 2D e 3D.</p>
                 <button class="buy-button" data-added="false">Comprar</button>
             </div>
             <div class="indie-card">
                 <img src="../assets/images/Holstin.jpg" alt="Holstin">
                 <h3>Holstin</h3>
+                <p>Survival Horror</p>
+                <p>18 anos</p>
                 <p>Um jogo de terror e suspense com perspectivas de câmera inovadoras.</p>
                 <button class="buy-button" data-added="false">Comprar</button>
             </div>
             <div class="indie-card">
                 <img src="../assets/images/Voidwrought.jpg" alt="Voidwrought">
                 <h3>Voidwrought</h3>
+                <p>Metroidvania</p>
+                <p>16 anos</p>
                 <p>Inspirado em Hollow Knight, com animações fluidas e jogabilidade desafiadora.</p>
                 <button class="buy-button" data-added="false">Comprar</button>
             </div>
             <div class="indie-card">
                 <img src="../assets/images/Anomaly Agent.jpg" alt="Anomaly Agent">
                 <h3>Anomaly Agent</h3>
+                <p>Plataforma/Ação 2D</p>
+                <p>12 anos</p>
                 <p>Um jogo de ação psicodélico, ideal para fãs de Katana Zero.</p>
                 <button class="buy-button" data-added="false">Comprar</button>
             </div>
             <div class="indie-card">
                 <img src="../assets/images/Bo Path of the Teal Lotus.jpg" alt="Bō: Path of the Teal Lotus">
                 <h3>Bō: Path of the Teal Lotus</h3>
+                <p>Ação e Aventura</p>
+                <p>10 anos</p>
                 <p>Um jogo de ação com estética vibrante e inspirada no folclore oriental.</p>
                 <button class="buy-button" data-added="false">Comprar</button>
             </div>
             <div class="indie-card">
                 <img src="../assets/images/Gestalt Steam & Cinder.jpg" alt="Gestalt: Steam & Cinder">
                 <h3>Gestalt: Steam & Cinder</h3>
+                <p>Metroidvania</p>
+                <p>12 anos</p>
                 <p>Um RPG com visual steampunk e narrativa envolvente.</p>
                 <button class="buy-button" data-added="false">Comprar</button>
             </div>
@@ -119,247 +137,329 @@
             <div class="game-card">
                 <img src="../assets/images/Witcher1.jpg" alt="The Witcher 3">
                 <h3>The Witcher 3</h3>
-                <p>RPG épico com mundo aberto</p>
+                <p>RPG de Ação</p>
+                <p>18 anos</p>
+                <p>Um épico de mundo aberto</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Call of Duty3.jpg" alt="Call of Duty">
                 <h3>Call of Duty: MW3</h3>
+                <p>FPS</p>
+                <p>17 anos</p>
                 <p>Ação intensa e multiplayer dinâmico</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/FIFA 24.jpg" alt="FIFA 24">
                 <h3>FIFA 24</h3>
+                <p>Simulador de Esporte</p>
+                <p>Livre</p>
                 <p>O maior jogo de futebol do mundo</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Resident Evil 4.jpg" alt="Resident Evil">
                 <h3>Resident Evil 4</h3>
+                <p>Survival Horror</p>
+                <p>17 anos</p>
                 <p>Sobreviva ao terror neste thriller incrível!</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Black Myth Wukong.jpg" alt="Black Myth: Wukong">
-                <h3> Black Myth: Wukong </h3>
-                <p> Uma aventura épica inspirada na mitologia chinesa. </p>
+                <h3>Black Myth: Wukong</h3>
+                <p>RPG de Ação</p>
+                <p>18 anos</p>
+                <p>Uma aventura épica inspirada na mitologia chinesa. </p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Elden Ring.jpg" alt="Elden Ring">
-                <h3> Elden Ring</h3>
-                <p> Um RPG de mundo aberto com narrativa profunda e combates desafiadores.</p>
+                <h3>Elden Ring</h3>
+                <p>RPG de Ação</p>
+                <p>16 anos</p>
+                <p>Um RPG de mundo aberto com narrativa profunda e combates desafiadores.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Diablo IV.jpg" alt="Diablo IV">
-                <h3> Diablo IV </h3>
-                <p> Um RPG sombrio com exploração de masmorras e batalhas épicas.</p>
+                <h3>Diablo IV</h3>
+                <p>RPG de Ação</p>
+                <p>18 anos</p>
+                <p>Um RPG sombrio com exploração de masmorras e batalhas épicas.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/HogwartsLegacy.jpg" alt="Hogwarts Legacy">
-                <h3> Hogwarts Legacy</h3>
-                <p> Explore o mundo mágico de Harry Potter em um RPG de ação ambientado no século XIX.</p>
+                <h3>Hogwarts Legacy</h3>
+                <p>RPG de Ação</p>
+                <p>12 anos</p>
+                <p>Explore o mundo mágico de Harry Potter em um RPG de ação ambientado no século XIX.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Cyberpunk 2077.jpg" alt="Cyberpunk 2077">
-                <h3> Cyberpunk 2077</h3>
-                <p> Um futuro distópico cheio de ação, tecnologias avançadas e histórias intrigantes.</p>
+                <h3>Cyberpunk 2077</h3>
+                <p>RPG de Ação</p>
+                <p>18 anos</p>
+                <p>Um futuro distópico cheio de ação, tecnologias avançadas e histórias intrigantes.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Starfield.jpg" alt="Starfield">
-                <h3> Starfield</h3>
-                <p> Uma aventura espacial épica da Bethesda, explorando o vasto universo.</p>
+                <h3>Starfield</h3>
+                <p>RPG de Ação</p>
+                <p>18 anos</p>
+                <p>Uma aventura espacial épica da Bethesda, explorando o vasto universo.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Street Fighter 6.jpg" alt="Street Fighter 6 ">
-                <h3> Street Fighter 6 </h3>
-                <p> A evolução da clássica série de luta com novos personagens e modos.</p>
+                <h3>Street Fighter 6</h3>
+                <p>Luta</p>
+                <p>12 anos</p>
+                <p>A evolução da clássica série de luta com novos personagens e modos.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Helldivers II.jpg" alt="Helldivers II">
-                <h3> Helldivers II</h3>
-                <p> Um shooter cooperativo tático para salvar a galáxia contra hordas alienígenas.</p>
+                <h3>Helldivers II</h3>
+                <p>TPS</p>
+                <p>17 anos</p>
+                <p>Um shooter cooperativo tático para salvar a galáxia contra hordas alienígenas.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Space Marine II.jpg" alt="Space Marine II">
-                <h3> Space Marine II</h3>
-                <p> Batalhas brutais no universo de Warhammer 40K como um Space Marine.</p>
+                <h3>Space Marine II</h3>
+                <p>TPS</p>
+                <p>12 anos</p>
+                <p>Batalhas brutais no universo de Warhammer 40K como um Space Marine.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Dragons Dogma II.jpg" alt=" Dragon’s Dogma II ">
-                <h3> Dragon’s Dogma II </h3>
-                <p> Um RPG com um mundo expansivo e combate estratégico contra criaturas colossais.</p>
+                <h3>Dragon’s Dogma II</h3>
+                <p>RPG de Ação</p>
+                <p>18 anos</p>
+                <p>Um RPG com um mundo expansivo e combate estratégico contra criaturas colossais.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Diablo IV.jpg" alt=" Diablo IV ">
-                <h3> Diablo IV </h3>
-                <p> Um RPG sombrio com exploração de masmorras e batalhas épicas contra o mal.</p>
+                <h3>Diablo IV</h3>
+                <p>RPG de Ação</p>
+                <p>18 anos</p>
+                <p>Um RPG sombrio com exploração de masmorras e batalhas épicas contra o mal.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Stalker 2.jpg" alt=" Stalker 2 ">
-                <h3> Stalker 2 </h3>
-                <p> Um survival horror em um mundo radioativo cheio de segredos e desafios.</p>
+                <h3>Stalker 2</h3>
+                <p>FPS</p>
+                <p>18 anos</p>
+                <p>Um survival horror em um mundo radioativo cheio de segredos e desafios.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Forza Horizon 5.jpg" alt=" Forza Horizon 5 ">
-                <h3> Forza Horizon 5 </h3>
-                <p> Um festival de corrida no México com paisagens deslumbrantes e carros incríveis.</p>
+                <h3>Forza Horizon 5</h3>
+                <p>Simulador de Corrida</p>
+                <p>Livre</p>
+                <p>Um festival de corrida no México com paisagens deslumbrantes e carros incríveis.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Dragon Age The Veilguard.jpg" alt=" Dragon Age: The Veilguard ">
-                <h3> Dragon Age: The Veilguard </h3>
-                <p> Explore uma nova história de fantasia cheia de intrigas e combates.</p>
+                <h3>Dragon Age: The Veilguard</h3>
+                <p>RPG de Ação</p>
+                <p>16 anos</p>
+                <p>Explore uma nova história de fantasia cheia de intrigas e combates.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Monster Hunter Wilds.jpg" alt=" Monster Hunter Wilds">
-                <h3> Monster Hunter Wilds </h3>
-                <p> Cace monstros em biomas vastos e emocionantes, com ferramentas inovadoras.</p>
+                <h3>Monster Hunter Wilds</h3>
+                <p>RPG de Ação</p>
+                <p>12 anos</p>
+                <p>Cace monstros em biomas vastos e emocionantes, com ferramentas inovadoras.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Silent Hill 2.jpg" alt=" Silent Hill 2 ">
                 <h3> Silent Hill 2 </h3>
-                <p> Um remake do clássico survival horror com atmosfera e narrativa intensas.</p>
+                <p>Survival Horror</p>
+                <p>18 anos</p>
+                <p>Um remake do clássico survival horror com atmosfera e narrativa intensas.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Horizon Forbidden West.jpg" alt=" Horizon Forbidden West ">
-                <h3> Horizon Forbidden West </h3>
-                <p> Uma aventura de mundo aberto em um futuro pós-apocalíptico.</p>
+                <h3>Horizon Forbidden West</h3>
+                <p>RPG de Ação</p>
+                <p>16 anos</p>
+                <p>Uma aventura de mundo aberto em um futuro pós-apocalíptico.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Baldur's Gate 3.jpg" alt=" Baldur's Gate 3">
-                <h3> Baldur's Gate 3 </h3>
-                <p> Um RPG épico baseado no universo de Dungeons & Dragons, com escolhas impactantes.</p>
+                <h3>Baldur's Gate 3</h3>
+                <p>RPG</p>
+                <p>18 anos</p>
+                <p>Um RPG épico baseado no universo de Dungeons & Dragons, com escolhas impactantes.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Jedi Survivor.jpg" alt=" Jedi Survivor ">
-                <h3> Jedi Survivor </h3>
-                <p> Continue a saga de Cal Kestis em uma aventura épica no universo Star Wars.</p>
+                <h3>Jedi Survivor</h3>
+                <p>Ação e Aventura</p>
+                <p>14 anos</p>
+                <p>Continue a saga de Cal Kestis em uma aventura épica no universo Star Wars.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Persona 5 Royal.jpg" alt=" Persona 5 Royal ">
-                <h3> Persona 5 Royal </h3>
-                <p> Uma versão expandida do aclamado JRPG sobre amizade e rebeldia.</p>
+                <h3>Persona 5 Royal</h3>
+                <p>JRPG</p>
+                <p>16 anos</p>
+                <p>Uma versão expandida do aclamado JRPG sobre amizade e rebeldia.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Atomic Heart.jpg" alt=" Atomic Heart ">
-                <h3> Atomic Heart </h3>
-                <p> Um shooter surreal ambientado em uma utopia soviética alternativa.</p>
+                <h3>Atomic Heart</h3>
+                <p>FPS</p>
+                <p>18 anos</p>
+                <p>Um shooter surreal ambientado em uma utopia soviética alternativa.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Spider Man Miles Morales.jpg" alt=" Spider-Man: Miles Morales ">
-                <h3> Spider-Man: Miles Morales </h3>
-                <p> Controle Miles em uma emocionante jornada como o novo Homem-Aranha.</p>
+                <h3>Spider-Man: Miles Morales</h3>
+                <p>Ação e Aventura</p>
+                <p>16 anos</p>
+                <p>Controle Miles em uma emocionante jornada como o novo Homem-Aranha.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/The Last of Us Part I.jpg" alt=" The Last of Us Part I ">
-                <h3> The Last of Us Part I </h3>
-                <p> Aclamada história de sobrevivência em um mundo pós-apocalíptico.</p>
+                <h3>The Last of Us Part I</h3>
+                <p>Ação e Aventura</p>
+                <p>18 anos</p>
+                <p>Aclamada história de sobrevivência em um mundo pós-apocalíptico.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Lies of P.jpg" alt=" Lies of P ">
-                <h3> Lies of P </h3>
-                <p> Uma reimaginação sombria de Pinóquio com combates inspirados em soulslike.</p>
+                <h3>Lies of P</h3>
+                <p>RPG de Ação</p>
+                <p>16 anos</p>
+                <p>Uma reimaginação sombria de Pinóquio com combates inspirados em soulslike.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Wo Long Fallen Dynasty.jpg" alt=" Wo Long: Fallen Dynasty ">
-                <h3> Wo Long: Fallen Dynasty </h3>
-                <p> Um RPG de ação na China antiga, cheio de mitologia e lutas intensas.</p>
+                <h3>Wo Long: Fallen Dynasty</h3>
+                <p>RPG de Ação</p>
+                <p>18 anos</p>
+                <p>Um RPG de ação na China antiga, cheio de mitologia e lutas intensas.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Spider Man Remastered.jpg" alt=" Spider-Man Remastered ">
-                <h3> Spider-Man Remastered </h3>
-                <p> Reviva a jornada de Peter Parker em Nova York com visuais melhorados.</p>
+                <h3>Spider-Man Remastered</h3>
+                <p>Ação e Aventura</p>
+                <p>16 anos</p>
+                <p>Reviva a jornada de Peter Parker em Nova York com visuais melhorados.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Microsoft Flight Simulator 2024.jpg" alt=" Microsoft Flight Simulator 2024 ">
                 <h3> Microsoft Flight Simulator 2024 </h3>
-                <p> A experiência definitiva de simulação de voo com gráficos realistas.</p>
+                <p>Simulador de Voo</p>
+                <p>Livre</p>
+                <p>A experiência definitiva de simulação de voo com gráficos realistas.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Armored Core VI Fires of Rubicon.jpg"
                     alt=" Armored Core VI: Fires of Rubicon ">
-                <h3> Armored Core VI Fires of Rubicon </h3>
-                <p> Pilote mechas em batalhas de tirar o fôlego.</p>
+                <h3>Armored Core VI Fires of Rubicon</h3>
+                <p>TPS</p>
+                <p>16 anos</p>
+                <p>Pilote mechas em batalhas de tirar o fôlego.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Resident Evil 4.jpg" alt=" Resident Evil 4 ">
                 <h3> Resident Evil 4 </h3>
+                <p>Survival Horror</p>
+                <p>18 anos</p>
                 <p> Um remake espetacular do survival horror que definiu o gênero.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Dead Space.jpg" alt=" Dead Space ">
-                <h3> Dead Space </h3>
+                <h3>Dead Space</h3>
+                <p>Survival Horror</p>
+                <p>18 anos</p>
                 <p> Um remake aterrorizante do clássico de ficção científica e sobrevivência.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Lords of the Fallen.jpg" alt=" Lords of the Fallen ">
-                <h3> Lords of the Fallen </h3>
+                <h3>Lords of the Fallen</h3>
+                <p>RPG de Ação</p>
+                <p>18 anos</p>
                 <p> Um RPG sombrio em um mundo dividido entre luz e trevas.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Wi-Fi Hush.jpg" alt=" Wi-Fi Hush ">
-                <h3> Wi-Fi Hush </h3>
+                <h3>Wi-Fi Hush</h3>
+                <p>Ação/Estratégia</p>
+                <p>16 anos</p>
                 <p> Um título inovador que mistura tecnologia e furtividade em um enredo intrigante.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Farcry 6.jpg" alt=" Farcry 6 ">
-                <h3> Farcry 6 </h3>
-                <p> Lidere uma revolução contra um regime autoritário em um paraíso tropical.</p>
+                <h3>Farcry 6</h3>
+                <p>FPS</p>
+                <p>18 anos</p>
+                <p>Lidere uma revolução contra um regime autoritário em um paraíso tropical.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Modern Warfare III.jpg" alt=" Modern Warfare III ">
-                <h3> Modern Warfare III </h3>
-                <p> A continuação explosiva da saga de Call of Duty.</p>
+                <h3>Call of Duty: Modern Warfare III </h3>
+                <p>FPS</p>
+                <p>18 anos</p>
+                <p>A continuação explosiva da saga de Call of Duty.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Forza Motorsport.jpg" alt=" Forza Motorsport ">
-                <h3> Forza Motorsport </h3>
-                <p> Um simulador de corrida com foco em realismo e performance.</p>
+                <h3>Forza Motorsport</h3>
+                <p>Simulador de Corrida</p>
+                <p>Livre</p>
+                <p>Um simulador de corrida com foco em realismo e performance.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/Indiana Jones.jpg" alt=" Indiana Jones ">
                 <h3> Indiana Jones </h3>
-                <p> Embarque em uma aventura cinematográfica com o icônico arqueólogo.</p>
+                <p>Ação e Aventura</p>
+                <p>16 anos</p>
+                <p>Embarque em uma aventura cinematográfica com o icônico arqueólogo.</p>
                 <button data-added="false">Comprar</button>
             </div>
             <div class="game-card">
                 <img src="../assets/images/God of War Ragnarok.jpg" alt=" God of War Ragnarok ">
                 <h3> God of War Ragnarok </h3>
+                <p>Ação e Aventura</p>
+                <p>16 anos</p>
                 <p> Kratos e Atreus enfrentam os desafios do fim dos tempos nórdicos.</p>
                 <button data-added="false">Comprar</button>
             </div>
