@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function toggleCart(button) {
+        // Suporte para game-card e indie-card
+        const gameCard = button.closest(".game-card, .indie-card");
         const isAdded = button.getAttribute("data-added") === "true";
-        const gameCard = button.closest(".game-card");
-        // Corrige o seletor para garantir que pega o elemento certo
         const title = gameCard.querySelector("h3") ? gameCard.querySelector("h3").textContent : "";
         const priceElem = gameCard.querySelector(".game-price");
         const price = priceElem ? parseFloat(priceElem.getAttribute("data-price")) : 0;
@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
             cartCount++;
             button.textContent = "Remover do Carrinho";
             button.setAttribute("data-added", "true");
-            // Salva sempre as três propriedades
             cart.push({ title: title, price: price, image: image });
             localStorage.setItem("indora-cart", JSON.stringify(cart));
         }
@@ -39,9 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
         updateCartCounter();
     }
 
-    const buyButtons = document.querySelectorAll(".buy-button, .games .game-card button");
+    // Suporte para botões em game-card e indie-card
+    const buyButtons = document.querySelectorAll(".buy-button, .games .game-card button, .indies .indie-card .buy-button");
     buyButtons.forEach(button => {
-        const gameCard = button.closest(".game-card");
+        const gameCard = button.closest(".game-card, .indie-card");
         if (gameCard) {
             const title = gameCard.querySelector("h3") ? gameCard.querySelector("h3").textContent : "";
             if (cart.some(item => item.title === title)) {
