@@ -2,253 +2,209 @@
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indora - Seu E-commerce de Games</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-    <link rel="icon" type="image/png" href="./assets/images/SolRetrowaveLogo.png">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indora - Seu E-commerce de Games</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="./assets/images/SolRetrowaveLogo.png">
 </head>
 
 <body class="text-white">
 
-    <header>
-        <div class="logo">
-            <img class="logoimg" src="./assets/images/SolRetrowaveLogo.png" alt="logo INDORA"> INDORA
-        </div>
-
-        <!-- Hamburger menu toggle -->
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
-
-        <nav>
-            <ul>
-                <!--Página Principal: Home do website. -->
-                <li><a href="./index.html">Home</a></li>
-                <!--Página Interna 1: Conteúdo da pesquisa de aplicação e outros dados relevantes.  -->
-                <li><a href="./pages/PaginaInterna1.html">Mais vendidos</a></li>
-                <!--Página Interna 2: Conteúdo adicional da pesquisa e informações do projeto.  -->
-                <li><a href="./pages/PaginaInterna2.html">Ofertas do dia</a></li>
-                <!--Página Interna 3: Formulário de contato ou cadastro.  -->
-                <li><a href="./pages/PaginaInterna3.html">Cadastro</a></li>
-                <!--<li><a href="./pages/PaginaInterna4.html">Página Interna 4: Página de feedback com mensagem de envio do formulário com sucesso. </a></li>-->
-                <li class="cart">
-                    <a href="#">🛒 Carrinho <span id="cart-counter">0</span></a>
-                </li>
-                <!-- <li class="cart">
-                    <a href="#">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                      Carrinho <span id="cart-counter">0</span> 
-                    </a>
-                  </li> -->
-                  <li id="login-container">
-                    <a href="./pages/PaginaInterna5.html" id="botao-login" class="login-btn">Login</a>
-                    <ul id="dropdown-menu">
-                      <li><a href="#" id="logout-btn">Sair</a></li>
-                    </ul>
-                  </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Bootstrap Carousel -->
-    <div id="carrosselDestaque" class="carousel slide" data-bs-ride="carousel">
-
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carrosselDestaque" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carrosselDestaque" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carrosselDestaque" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          
-        <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-                        <img src="./assets/images/games1.jpg" class="d-block w-100" alt="Games em Destaque">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Novidades Chegaram!</h5>
-                             <p>Conheça nossos lançamentos exclusivos antes de todo mundo</p>
-                             <a href="./pages/PaginaInterna1.html" class="btn-carrossel">Descubra Agora</a></p>
-                        </div>
-                    </div>
-                
-            
-            <!-- Slide 2 -->
-                   <div class="carousel-item">
-                        <img src="./assets/images/games2.jpg" class="d-block w-100" alt="Desconto">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Mega Descontos Imperdíveis!</h5>
-                            <p>Games com preços especiais por tempo limitado</p>
-                            <a href="./pages/PaginaInterna2.html" class="btn-carrossel">Saiba mais</a></p> 
-                        </div>
-                    </div>
-
-
-            <!-- Slide 3 -->
-                    <div class="carousel-item">
-                        <img src="./assets/images/games3.jpg" class="d-block w-100" alt="Cadastro">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Vem Ser Dev com a Gente!</h5>
-                            <p>Cadastre-se e tenha benefícios exclusivos</p>
-                            <a href="./pages/PaginaInterna3.html" class="btn-carrossel">Quero me Cadastrar</a></p>
-                        </div>
-                    </div>
-
-
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carrosselDestaque" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carrosselDestaque" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
+  <!-- Integração VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
     </div>
-</div>
-</div>
+  </div>
 
-    <section class="games">
-        <h2>Jogos em Destaque</h2>
-        <div class="game-list">
-            <div class="game-card">
-                <img src="./assets/images/Witcher3.jpg" alt="The Witcher 3">
-                <h3>The Witcher 3</h3>
-                <p>RPG épico com mundo aberto</p>
-                <button class="buy-button" data-added="false">Comprar</button>
-            </div>
-            <div class="game-card">
-                <img src="./assets/images/Call of Duty3.jpg" alt="Call of Duty">
-                <h3>Call of Duty: MW3</h3>
-                <p>Ação intensa e multiplayer dinâmico</p>
-                <button class="buy-button" data-added="false">Comprar</button>
-            </div>
-            <div class="game-card">
-                <img src="./assets/images/FIFA 24.jpg" alt="FIFA 24">
-                <h3>FIFA 24</h3>
-                <p>O maior jogo de futebol do mundo</p>
-                <button class="buy-button" data-added="false">Comprar</button>
-            </div>
-            <div class="game-card">
-                <img src="./assets/images/Resident Evil 4.jpg" alt="Resident Evil">
-                <h3>Resident Evil 4</h3>
-                <p>Sobreviva ao terror!</p>
-                <button class="buy-button" data-added="false">Comprar</button>
-            </div>
+  <header>
+    <div class="logo">
+      <img class="logoimg" src="./assets/images/SolRetrowaveLogo.png" alt="logo INDORA"> INDORA
+    </div>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pages/PaginaInterna1.html">Mais vendidos</a></li>
+        <li><a href="./pages/PaginaInterna2.html">Ofertas do dia</a></li>
+        <li><a href="./pages/PaginaInterna3.html">Cadastro</a></li>
+        <li class="cart">
+          <a href="#">🛒 Carrinho <span id="cart-counter">0</span></a>
+        </li>
+        <li id="login-container">
+          <a href="./pages/PaginaInterna5.html" id="botao-login" class="login-btn">Login</a>
+          <ul id="dropdown-menu">
+            <li><a href="#" id="logout-btn">Sair</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Carousel -->
+  <div id="carrosselDestaque" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carrosselDestaque" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carrosselDestaque" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carrosselDestaque" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/images/games1.jpg" class="d-block w-100" alt="Games em Destaque">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Novidades Chegaram!</h5>
+          <p>Conheça nossos lançamentos exclusivos antes de todo mundo</p>
+          <a href="./pages/PaginaInterna1.html" class="btn-carrossel">Descubra Agora</a>
         </div>
-    </section>
-
-
-    <section class="apresentacao">
-
-        <h2>Bem-vindo a <span class="indora">INDORA</span> Game Shop, o seu destino definitivo para o mundo dos jogos
-            eletronicos!</h2>
-
-        <div class="apresentacao-text">
-            <p>Somos apaixonados por gamese acreditamos que cada título carrega uma história única, seja ele um grande
-                lançamento de sucesso ou uma pérola independente.</p>
-            <br>
-            <p> Na INDORA, reunimos o melhor dos dois mundos: os jogos mainstream mais esperados do momento e as
-                criações
-                indie mais inovadoras e surpreendentes. Nossa missão é oferecer aos gamers um catálogo diversificado,
-                cheio
-                de experiências imersivas, narrativas envolventes e jogabilidades inesquecíveis.</p>
-            <br>
-            <p> Seja você um fã de blockbusters cheios de ação ou de títulos independentes com mecânicas criativas, a
-                INDORA
-                tem o jogo perfeito para você. Além disso, valorizamos a comunidade gamer e buscamos sempre trazer
-                conteúdos
-                exclusivos, ofertas especiais e um atendimento dedicado para que sua experiência seja tão épica quanto
-                os
-                games que você ama.</p>
-            <h3>Explore, jogue e viva o universo dos videogames com a INDORA!</h3>
-
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/images/games2.jpg" class="d-block w-100" alt="Desconto">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Mega Descontos Imperdíveis!</h5>
+          <p>Games com preços especiais por tempo limitado</p>
+          <a href="./pages/PaginaInterna2.html" class="btn-carrossel">Saiba mais</a>
         </div>
-    </section>
-
-
-    <figure class="cards-figure">
-        <figcaption class="figcaption"><strong>Membros da Equipe INDORA</strong></figcaption>
-        <div class="card-container">
-            <div id="card-home" class="card">
-                <img src="./assets/images/Andre.jpg" alt="Foto do André Medeiros Grigoli" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
-                <h3>André Medeiros Grigoli</h3>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Saiba mais</a>
-            </div>
-            <div id="card-home" class="card">
-                <img src="./assets/images/carolinapereira.jfif" alt="Foto da Carolina Aparecida Pereira" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
-                <h3>Carolina Aparecida Pereira</h3>
-                <a href="https://example.com/card2" target="_blank">Saiba mais</a>
-            </div>
-            <div id="card-home" class="card">
-                <img src="./assets/images/Luiza Vicente1.JPG" alt="Foto da Luiza Mozzaquatro Palma Vicente" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
-                <h3>Luiza Mozzaquatro Palma Vicente</h3>
-                <a href="https://example.com/card3" target="_blank">Saiba mais</a>
-            </div>
-            <div id="card-home" class="card">
-                <img src="./assets/images/Rômulo Amaro.png" alt="Foto do Rômulo de Sousa Amaro" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
-                <h3>Rômulo de Sousa Amaro</h3>
-                <a href="https://example.com/card4" target="_blank">Saiba mais</a>
-            </div>
-            <div id="card-home" class="card">
-                <img src="./assets/images/yan.enc" alt="Foto do Yan Carlos Duarte Velasco" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
-                <h3>Yan Carlos Duarte Velasco</h3>
-                <a href="https://example.com/card5" target="_blank">Saiba mais</a>
-            </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/images/games3.jpg" class="d-block w-100" alt="Cadastro">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Vem Ser Dev com a Gente!</h5>
+          <p>Cadastre-se e tenha benefícios exclusivos</p>
+          <a href="./pages/PaginaInterna3.html" class="btn-carrossel">Quero me Cadastrar</a>
         </div>
-    </figure>
+      </div>
+    </div>
 
-    <!-- FOOTER -->
-    <footer class="rodape">
-        <div class="rodape-content">
-            <div class="rodape-section">
-                <h4>Sobre Nós</h4>
-                <p>Somos uma loja especializada em jogos eletrônicos, oferecendo as melhores ofertas e promoções.</p>
-                <img src="./assets/images/INDORARODAPE.jpeg" alt="logo Indora">
-            </div>
-            <div class="rodape-section">
-                <h4>Ajuda</h4>
-                <ul>
-                    <li><a href="./suporte.html">Suporte</a></li>
-                    <li><a href="./politica-de-privacidade.html">Política de Privacidade</a></li>
-                    <li><a href="./termos-de-uso.html">Termos de Uso</a></li>
-                    <li><a href="./contato.html">Contato</a></li>
-                </ul>
-            </div>
-            <div class="rodape-section">
-                <h4 class="rodape-text">Redes Sociais</h4>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carrosselDestaque" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carrosselDestaque" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
 
-                <div class="redesocial-icon">
-                    <a href="https://facebook.com/">
-                        <i class="fab fa-facebook"> </i>
-                    </a>
-                    <a href="https://twitter.com/">
-                        <i class="fab fa-twitter"> </i>
-                    </a>
-                    <a href="https://instagram.com/">
-                        <i class="fab fa-instagram"> </i>
-                    </a>
-                    <a href="https://linkedin.com/in/">
-                        <i class="fab fa-linkedin"> </i>
-                    </a>
-                </div>
+  <section class="games">
+    <h2>Jogos em Destaque</h2>
+    <div class="game-list">
+      <div class="game-card">
+        <img src="./assets/images/Witcher3.jpg" alt="The Witcher 3">
+        <h3>The Witcher 3</h3>
+        <p>RPG épico com mundo aberto</p>
+        <button class="buy-button" data-added="false">Comprar</button>
+      </div>
+      <div class="game-card">
+        <img src="./assets/images/Call of Duty3.jpg" alt="Call of Duty">
+        <h3>Call of Duty: MW3</h3>
+        <p>Ação intensa e multiplayer dinâmico</p>
+        <button class="buy-button" data-added="false">Comprar</button>
+      </div>
+      <div class="game-card">
+        <img src="./assets/images/FIFA 24.jpg" alt="FIFA 24">
+        <h3>FIFA 24</h3>
+        <p>O maior jogo de futebol do mundo</p>
+        <button class="buy-button" data-added="false">Comprar</button>
+      </div>
+      <div class="game-card">
+        <img src="./assets/images/Resident Evil 4.jpg" alt="Resident Evil">
+        <h3>Resident Evil 4</h3>
+        <p>Sobreviva ao terror!</p>
+        <button class="buy-button" data-added="false">Comprar</button>
+      </div>
+    </div>
+  </section>
 
-            </div>
+  <section class="apresentacao">
+    <h2>Bem-vindo a <span class="indora">INDORA</span> Game Shop, o seu destino definitivo para o mundo dos jogos
+      eletrônicos!</h2>
+    <div class="apresentacao-text">
+      <p>Somos apaixonados por games e acreditamos que cada título carrega uma história única.</p>
+      <p>Na INDORA, reunimos o melhor dos dois mundos: os jogos mainstream e as criações indie mais inovadoras.</p>
+      <p>Seja você um fã de blockbusters ou de títulos independentes, temos o jogo perfeito para você.</p>
+      <h3>Explore, jogue e viva o universo dos videogames com a INDORA!</h3>
+    </div>
+  </section>
+
+  <figure class="cards-figure">
+    <figcaption class="figcaption"><strong>Membros da Equipe INDORA</strong></figcaption>
+    <div class="card-container">
+      <div class="card">
+        <img src="./assets/images/Andre.jpg" alt="Foto do André Medeiros Grigoli">
+        <h3>André Medeiros Grigoli</h3>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Saiba mais</a>
+      </div>
+      <div class="card">
+        <img src="./assets/images/carolinapereira.jfif" alt="Foto da Carolina Aparecida Pereira">
+        <h3>Carolina Aparecida Pereira</h3>
+        <a href="https://example.com/card2" target="_blank">Saiba mais</a>
+      </div>
+      <div class="card">
+        <img src="./assets/images/Luiza Vicente1.JPG" alt="Foto da Luiza Mozzaquatro Palma Vicente">
+        <h3>Luiza Mozzaquatro Palma Vicente</h3>
+        <a href="https://example.com/card3" target="_blank">Saiba mais</a>
+      </div>
+      <div class="card">
+        <img src="./assets/images/Rômulo Amaro.png" alt="Foto do Rômulo de Sousa Amaro">
+        <h3>Rômulo de Sousa Amaro</h3>
+        <a href="https://example.com/card4" target="_blank">Saiba mais</a>
+      </div>
+      <div class="card">
+        <img src="./assets/images/yan.enc" alt="Foto do Yan Carlos Duarte Velasco">
+        <h3>Yan Carlos Duarte Velasco</h3>
+        <a href="https://example.com/card5" target="_blank">Saiba mais</a>
+      </div>
+    </div>
+  </figure>
+
+  <footer class="rodape">
+    <div class="rodape-content">
+      <div class="rodape-section">
+        <h4>Sobre Nós</h4>
+        <p>Somos uma loja especializada em jogos eletrônicos, oferecendo as melhores ofertas e promoções.</p>
+        <img src="./assets/images/INDORARODAPE.jpeg" alt="logo Indora">
+      </div>
+      <div class="rodape-section">
+        <h4>Ajuda</h4>
+        <ul>
+          <li><a href="./suporte.html">Suporte</a></li>
+          <li><a href="./politica-de-privacidade.html">Política de Privacidade</a></li>
+          <li><a href="./termos-de-uso.html">Termos de Uso</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="rodape-section">
+        <h4 class="rodape-text">Redes Sociais</h4>
+        <div class="redesocial-icon">
+          <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/in/"><i class="fab fa-linkedin"></i></a>
         </div>
-        <div class="creditos">
-            <p>&copy; 2025 Todos os direitos reservados.
-                Andre Grigoli - Carolina Pereira - Luiza Vicente - Romulo Amaro - Yan Velasco
-            </p>
+      </div>
+    </div>
+    <div class="creditos">
+      <p>&copy; 2025 Todos os direitos reservados. Andre, Carolina, Luiza, Romulo, Yan</p>
+    </div>
+  </footer>
 
-        </div>
-    </footer>
-    <script src="./assets/js/cart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
-    <script src="./assets/js/carousel.js"></script>
-    <script src="./assets/js/menulogin.js"></script>
+  <!-- Scripts -->
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script src="./assets/js/vlibras.js"></script>
+  <script src="./assets/js/cart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/carousel.js"></script>
+  <script src="./assets/js/menulogin.js"></script>
 </body>
-
 
 </html>
