@@ -1819,3 +1819,179 @@ td {
   background-color: #555;
   border-radius: 4px;
 }
+
+/* ===== Carrinho Moderno ===== */
+.cart-container {
+  max-width: 700px;
+  margin: 60px auto 0 auto;
+  background: #23272f;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(44, 62, 80, 0.25);
+  padding: 40px 32px 32px 32px;
+  position: relative;
+  min-height: 400px;
+}
+
+.cart-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #e60067;
+  text-align: center;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+}
+
+.cart-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-bottom: 28px;
+}
+
+.cart-card {
+  display: flex;
+  align-items: center;
+  background: #292d36;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(230, 0, 103, 0.08);
+  padding: 18px 20px;
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+
+.cart-card:hover {
+  box-shadow: 0 4px 24px rgba(230, 0, 103, 0.18);
+}
+
+.cart-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 22px;
+  border: 2px solid #e60067;
+  background: #fff;
+}
+
+.cart-card-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cart-card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.cart-card-price {
+  font-size: 1.05rem;
+  color: #e60067;
+  font-weight: bold;
+}
+
+.cart-card-remove {
+  background: none;
+  border: none;
+  color: #e60067;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: 18px;
+  transition: color 0.2s;
+}
+.cart-card-remove:hover {
+  color: #ff3366;
+}
+
+.cart-empty {
+  text-align: center;
+  color: #bbb;
+  font-size: 1.1rem;
+  margin: 40px 0;
+}
+
+.cart-total-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+.cart-total-label {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.cart-total-value {
+  font-size: 1.5rem;
+  color: #e60067;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.cart-checkout-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #e60067 60%, #800080 100%);
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 38px;
+  margin-top: 18px;
+  box-shadow: 0 2px 12px rgba(230, 0, 103, 0.12);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.cart-checkout-btn:hover {
+  background: linear-gradient(90deg, #ff3380 60%, #a020f0 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Responsividade Carrinho */
+@media (max-width: 900px) {
+  .cart-container {
+    max-width: 98vw;
+    padding: 18px 6vw 24px 6vw;
+  }
+  .cart-card img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cart-container {
+    padding: 10px 2vw 18px 2vw;
+    min-height: 300px;
+  }
+  .cart-title {
+    font-size: 1.3rem;
+  }
+  .cart-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 10px;
+  }
+  .cart-card img {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  .cart-total-row {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+  }
+  .cart-checkout-btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+}
