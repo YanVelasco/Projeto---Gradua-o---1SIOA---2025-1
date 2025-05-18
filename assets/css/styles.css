@@ -1390,20 +1390,177 @@ td {
   height: 20rem;
 }
 
+/* Container da página de login */
 .container-pag4 {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  margin: 10rem;
-  height: 20rem;
+  justify-content: flex-start;
+  margin: 5rem auto; 
+  padding: 2rem; 
+  height: auto; 
+  min-height: 40rem; 
   background: #1f1f1f;
   border-radius: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 40rem;
-  margin-left: auto;
-  margin-right: auto;
+  width: 30rem;
   text-align: center;
 }
+
+/* Título */
+.TextoBoasVindasLogin {
+  font-size: 1.8rem;
+  color: #fff; /* Cor clara para contraste com fundo escuro */
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+/* Campos do formulário */
+.form-control {
+  padding: 12px;
+  margin-bottom: 1.5rem;
+  background: #2d2d2d;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.form-control:focus {
+  background: #3a3a3a;
+  color: #fff;
+  border-color: #555;
+}
+
+/* Labels */
+.col-form-label {
+  color: #ccc;
+  text-align: left;
+}
+
+/* Botão Continuar */
+.btn-continuar {
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  background-color: #0d6efd;
+  border: none;
+}
+
+/* Checkbox Lembrar Senha */
+.form-check-input {
+  background-color: #2d2d2d;
+  border: 1px solid #444;
+}
+
+.form-check-label {
+  color: #ccc;
+}
+
+/* Link de cadastro */
+.cadastro-link {
+  color: #ccc;
+}
+
+.cadastro-link a {
+  color: #4e9af1;
+  text-decoration: none;
+}
+
+.cadastro-link a:hover {
+  text-decoration: underline;
+}
+
+/* Divisor "ou" */
+.ou-divider {
+  position: relative;
+  margin: 1.5rem 0;
+  color: #6c757d;
+}
+
+.ou-divider::before,
+.ou-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background: #444;
+}
+
+.ou-divider::before {
+  left: 0;
+}
+
+.ou-divider::after {
+  right: 0;
+}
+
+/* Estilos para os botões de login social */
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+  margin: 1.5rem 0;
+}
+
+.btn-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px; 
+  border-radius: 6px; /* Bordas um pouco mais arredondadas pq sim :) */
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn-social i {
+  font-size: 18px;
+}
+
+.btn-facebook {
+  background-color: #1877F2;
+  color: white;
+}
+
+.btn-facebook:hover {
+  background-color: #166FE5;
+}
+
+.btn-google {
+  background-color: #DB4437;
+  color: white;
+}
+
+.btn-google:hover {
+  background-color: #D33426;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container-pag4 {
+    width: 90%;
+    margin: 3rem auto;
+    padding: 1.5rem;
+  }
+  
+  .TextoBoasVindasLogin {
+    font-size: 1.5rem;
+  }
+  
+  .form-group.row {
+    flex-direction: column;
+  }
+  
+  .col-form-label {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+}
+
 
 /* Estilo para telas grandes (PCs) */
 

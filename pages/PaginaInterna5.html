@@ -38,56 +38,71 @@
     <!-- FORMULÁRIO -->
 
 
-    <main >
-        <div >
-          <div class="container-pag4 col-12 col-md-8 col-lg-6">
-            <h1 style="margin-top: 30px;"
-                class="TextoBoasVindasLogin">BOAS VINDAS DE VOLTA !</h1>
-            <form >
-              <div class="form-group row">
-                <label for="inputUsuario" class="col-sm-2 col-form-label">Usuário</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputUsuario" required>
-                
-              </div>
-            </div>
-    
-            <div class="form-group row position-relative">
-              <label for="inputPassword3" class="col-sm-2 col-form-label">Senha</label>
-              <div class="col-sm-10 position-relative">
-                <input type="password" class="form-control senha-input" id="inputPassword3" required>
-                <i class="fa-solid fa-eye position-absolute toggle-password-icon" id="togglePassword"></i>
-              </div>
-            </div>
-    
-            <div class="form-group row mb-3">
-              <div class="d-flex justify-content-between align-items-center w-100 px-5">
-                <!-- Lembrar Senha -->
-                <div class="form-check d-flex align-items-center">
-                  <input class="form-check-input me-2 ms-5" type="checkbox" id="gridCheck1">
-                  <label class="form-check-label lembrar-senha-label" for="gridCheck1">
-                    Lembrar Senha
-                  </label>
-                </div>
-    
-                <!-- Link de Cadastro -->
-                <div>
-                  <p class="mb-0 cadastro-link">
-                    Primeiro acesso? Cadastre-se <a href="/pages/PaginaInterna3.html">aqui</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-    
-            <div class="form-group row">
-              <div class="col-sm-15">
-                <button type="submit" class="btn btn-primary btn-continuar">Continuar</button>
-              </div>
-            </div>
-          </form>
+<main>
+  <div class="d-flex justify-content-center">
+    <div class="container-pag4 col-12 col-md-8 col-lg-6">
+      <h1 class="TextoBoasVindasLogin mb-4">BOAS VINDAS DE VOLTA !</h1>
+      <form>
+        <div class="form-group row">
+          <label for="inputUsuario" class="col-sm-2 col-form-label">Usuário</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputUsuario" required>
+          </div>
         </div>
-      </div>
-    </main>
+        
+        <div class="form-group row position-relative">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Senha</label>
+          <div class="col-sm-10 position-relative">
+            <input type="password" class="form-control senha-input" id="inputPassword3" required>
+            <i class="fa-solid fa-eye position-absolute toggle-password-icon" id="togglePassword"></i>
+          </div>
+        </div>
+        
+        <!--Checkbox e Link de Cadastro -->
+        <div class="form-options-container mb-4">
+          <div class="row align-items-center">
+            <!-- Lembrar Senha -->
+            <div class="col-6">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label lembrar-senha-label ms-2" for="gridCheck1">
+                  Lembrar Senha
+                </label>
+              </div>
+            </div>
+            
+            <!-- Link de Cadastro -->
+            <div class="col-6 text-end">
+              <p class="mb-0 cadastro-link">
+                Primeiro acesso? <a href="/pages/PaginaInterna3.html">Cadastre-se aqui</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Restante do formulário -->
+        <div class="form-group row mb-4">
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary btn-continuar w-100">Continuar</button>
+          </div>
+        </div>
+        
+        <div class="mb-3 text-center ou-divider">
+          <span>ou</span>
+        </div>
+        
+        <div class="social-login mb-4">
+          <button type="button" class="btn btn-social btn-facebook mb-2">
+            <i class="fab fa-facebook-f"></i> Continuar com Facebook
+          </button>
+          <button type="button" class="btn btn-social btn-google">
+            <i class="fab fa-google"></i> Continuar com Google
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main> 
 
     <!-- FOOTER -->
     <footer class="rodape">
@@ -122,7 +137,7 @@
             </p>
         </div>
     </footer>
-
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" 
     crossorigin="anonymous">
