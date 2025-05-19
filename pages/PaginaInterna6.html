@@ -4,12 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrinho de Compras - Indora</title>
+  <title>Indora - Carrinho de Compras</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/acessib.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
 </head>
 
-<body class="text-white bg-dark">
+<body class="text-white bg-dark text-white">
+  <!-- Integração VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  
+
+  <div class="acessibilidade my-2 d-flex flex-wrap gap-2" role="region" aria-label="Ferramentas de acessibilidade">
+    <h2 class="visually-hidden">Ferramentas de Acessibilidade</h2>
+    <button class="btn btn-outline-secondary btn-sm btn-custom" onclick="toggleContraste()">Contraste</button>
+    <button class="btn btn-outline-primary btn-sm btn-custom" onclick="alterarFonte('aumentar')">A+</button>
+    <button class="btn btn-outline-danger btn-sm btn-custom" onclick="alterarFonte('diminuir')">A-</button>
+    <button id="btnLeitura" class="btn btn-outline-success btn-sm btn-custom" onclick="lerPagina()"><i class="bi bi-volume-up"></i> Ler</button>
+    <!-- <button onclick="lerJogos()">Ler Jogos Favoritos</button> -->
+  </div>
+
   <div class="cart-container">
     <h1 class="cart-title">Carrinho de Compras</h1>
     <div id="cart-items" class="cart-items-list"></div>
@@ -20,7 +41,15 @@
     <div class="text-end">
       <button class="cart-checkout-btn" id="checkout-btn">Finalizar Compra</button>
     </div>
+    <div class="text-end centralizar-botao">
+      <a href="./PaginaInterna1.html" class="cart-checkout-btn" id="checkout-btn">Continuar Comprando</a>
+    </div>
+    
   </div>
   <script src="../assets/js/cart-page.js"></script>
+  <script src="../assets/js/contAcesG.js"></script>
+  <script src="../assets/js/contAcesFC.js"></script>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script src="../assets/js/vlibras.js"></script>
 </body>
 </html>
