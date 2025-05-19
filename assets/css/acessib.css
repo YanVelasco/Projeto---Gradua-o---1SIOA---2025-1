@@ -6,6 +6,18 @@
   padding: 0.1rem 0.3rem; /* Ajusta o padding para um botão mais compacto */
 }
 
+.btn-acessibilidade {
+  padding: 3px 8px !important;
+  font-size: 0.5rem !important;
+  line-height: 1.1 !important;
+  border-radius: 4px !important;
+}
+
+.btn-acessibilidade i {
+  font-size: 0.75rem;
+}
+
+
 .alto-contraste {
     background-color: #000 !important;
     color: #fff !important;
@@ -554,8 +566,8 @@ html, body {
 
   /* Botão Continuar Comprando */
 
-  .centralizar-botao {
+  a.cart-checkout-btn {
+    text-decoration: none;
     text-align: center;
-    margin-top: 20px; /* opcional, para espaçamento */
   }
   
