@@ -206,6 +206,7 @@ nav ul li a {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.3);
   text-align: center;
+  transition: box-shadow 0.3s, transform 0.3s;
 }
 
 .game-card img {
@@ -228,6 +229,12 @@ nav ul li a {
   border-radius: 5px;
 }
 
+.game-list .game-card:hover {
+  box-shadow: 0 0 24px 6px rgba(0,153,255,0.15), 0 2px 12px 0 rgba(0,0,0,0.10);
+  transform: scale(1.025);
+  z-index: 2;
+}
+
 /* Estilo específico para preços dos jogos indies */
 .indie-list .game-price {
     color: #000;
@@ -238,6 +245,16 @@ nav ul li a {
     font-size: 1.05em;
     display: inline-block;
     margin: 6px 0;
+}
+
+/* Hover para cards de indies */
+.indie-list .indie-card {
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.indie-list .indie-card:hover {
+    box-shadow: 0 0 24px 6px rgba(255,0,204,0.18), 0 2px 12px 0 rgba(0,0,0,0.10);
+    transform: scale(1.025);
+    z-index: 2;
 }
 
 /* Inicio Cadastro e Contato */
