@@ -812,7 +812,7 @@ input.invalido {
 /* PAG OFERTAS - CAROUSEL */
 
 #carrosselPromo {
-  margin-top: 13%;
+  margin-top: 10%;
   background: none;
   width: 100%;
   display: flex;
@@ -881,13 +881,18 @@ input.invalido {
 
 .promo-section {
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 5%;
   width: 100%;
-  background: linear-gradient(0deg, rgba(230, 0, 103, 0.6), rgba(51, 1, 51, 0.6));
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+   background-image: url('/assets/images/Mullet-Mad-Jack_WW.jpg');
+   background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 50px 20px;
+  color: white;
 }
 
 .promo-content {
@@ -895,6 +900,17 @@ input.invalido {
   align-items: center;
   justify-content: space-between;
   width: 90%;
+  padding: 20px;
+  
+}
+
+.promo-section h1, .promo-section h3,
+.promo-section p, .game-preço {
+  text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,  
+    -1px  1px 0 #000,  
+     1px  1px 0 #000;  
 }
 
 .video-container {
@@ -952,7 +968,7 @@ input.invalido {
 
 .game-preço {
   text-decoration: line-through;
-  color: rgb(134, 134, 134);
+  color: #ffffff;
   font-size: 0.875em;
 }
 
@@ -2529,4 +2545,29 @@ font-size: 1.2rem;
   border-radius: 5px;
   padding: 5px 15px;
   color: inherit;
+}
+
+/* AJUSTE PAG2 PARA INTEGRACAO COM CARRINHO */
+#carrosselPromo .game-card{
+  all: unset;
+  display: contents;
+}
+
+
+
+@media (min-width: 768px) {
+    .ajuste-gifs {
+        flex: 0 0 auto;
+        width: 30%;
+    }
+}
+
+.promo-text .game-card, .promo-text .game-card img {
+    all: unset;
+  display: contents;
+}
+
+.card-body .game-card{
+  all: unset;
+  display: contents;
 }
