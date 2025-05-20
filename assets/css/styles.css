@@ -2401,6 +2401,9 @@ font-size: 1.2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .categoria-card {
