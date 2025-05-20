@@ -323,6 +323,20 @@
     padding-bottom: 6px;
 }
 
+.carousel-card-placeholder,
+.carousel-card-placeholder-dados-técnicos,
+.carousel-card-placeholder-ranking {
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.carousel-card-placeholder:hover,
+.carousel-card-placeholder-dados-técnicos:hover,
+.carousel-card-placeholder-ranking:hover {
+    box-shadow: 0 0 32px 8px rgba(255,0,204,0.18), 0 2px 16px 0 rgba(0,0,0,0.12);
+    transform: scale(1.025);
+    z-index: 2;
+}
+
 .ranking-score {
     color: #ff00cc;
     font-size: 2.2rem;
