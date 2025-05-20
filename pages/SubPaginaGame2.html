@@ -4,17 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indora - Seu E-commerce de Games</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css"/>
+    <link rel="stylesheet" href="../assets/css/acessib.css"/>
     <link rel="stylesheet" href="../assets/css/carselsbpggm.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
     <link rel="icon" type="image/png" href="../assets/images/SolRetrowaveLogo.png">
 </head>
 <body class="text-white">
+
+    <!-- Integração VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+
     <header>
         <div class="logo">
             <img class="logoimg" src="../assets/images/SolRetrowaveLogo.png" alt="logo INDORA"> INDORA
+        </div>
+        <div class="acessibilidade my-2 d-flex flex-wrap gap-2" role="region" aria-label="Ferramentas de acessibilidade">
+            <h2 class="visually-hidden">Ferramentas de Acessibilidade</h2>
+            <button class="btn btn-outline-secondary btn-sm btn-custom" onclick="toggleContraste()">Contraste</button>
+            <button class="btn btn-outline-primary btn-sm btn-custom" onclick="alterarFonte('aumentar')">A+</button>
+            <button class="btn btn-outline-danger btn-sm btn-custom" onclick="alterarFonte('diminuir')">A-</button>
+            <button id="btnLeitura" class="btn btn-outline-success btn-sm btn-custom" onclick="lerPagina()"><i class="bi bi-volume-up"></i> Ler</button>
+            <!-- <button onclick="lerJogos()">Ler Jogos Favoritos</button> -->
         </div>
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
@@ -25,14 +43,9 @@
                 <li><a href="PaginaInterna2.html">Ofertas do dia</a></li>
                 <li><a href="PaginaInterna3.html">Cadastro</a></li>
                 <li class="cart">
-                    <a href="#">🛒 Carrinho <span id="cart-counter">0</span></a>
+                    <a href="./PaginaInterna6.html"><i class="bi bi-cart-fill"></i> Carrinho <span id="cart-counter">0</span></a>
                 </li>
-                <li id="login-container">
-                    <a href="PaginaInterna5.html" id="botao-login" class="login-btn">Login</a>
-                    <ul id="dropdown-menu">
-                        <li><a href="#" id="logout-btn">Sair</a></li>
-                    </ul>
-                </li>
+                <li><a href="./PaginaInterna5.html" class="login-btn">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -195,7 +208,8 @@ A jogabilidade mantém o estilo **roguelike de ação**, mas adiciona novos elem
             <div class="rodape-section">
                 <h4>Ajuda</h4>
                 <ul>
-                    <li><a href="suporte.html">Suporte</a></li>
+                    <li><a href="./PaginaInterna7.html">Quem Somos</a></li>
+                    <li><a href="">Suporte</a></li>
                     <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
                     <li><a href="termos-de-uso.html">Termos de Uso</a></li>
                     <li><a href="contato.html">Contato</a></li>
@@ -218,11 +232,12 @@ A jogabilidade mantém o estilo **roguelike de ação**, mas adiciona novos elem
         </div>
     </footer>
     <script src="../assets/js/cart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <script src="../assets/js/carselsbpggm.js"></script>
-    <script src="../assets/js/menulogin.js"></script>
     <script src="../assets/js/starbin.js"></script>
+    <script src="../assets/js/contAcesG.js"></script>
+    <script src="../assets/js/contAcesFC.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="../assets/js/vlibras.js"></script>
 </body>
 </html>
