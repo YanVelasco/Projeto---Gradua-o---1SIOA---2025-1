@@ -104,7 +104,7 @@ nav ul li a {
 
 .carousel-text h1 {
   font-size: 36px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .carousel-text button {
@@ -206,6 +206,7 @@ nav ul li a {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.3);
   text-align: center;
+  transition: box-shadow 0.3s, transform 0.3s;
 }
 
 .game-card img {
@@ -226,6 +227,34 @@ nav ul li a {
   color: white;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.game-list .game-card:hover {
+  box-shadow: 0 0 24px 6px rgba(0,153,255,0.15), 0 2px 12px 0 rgba(0,0,0,0.10);
+  transform: scale(1.025);
+  z-index: 2;
+}
+
+/* Estilo específico para preços dos jogos indies */
+.indie-list .game-price {
+    color: #000;
+    font-weight: bold;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    font-size: 1.05em;
+    display: inline-block;
+    margin: 6px 0;
+}
+
+/* Hover para cards de indies */
+.indie-list .indie-card {
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.indie-list .indie-card:hover {
+    box-shadow: 0 0 24px 6px rgba(255,0,204,0.18), 0 2px 12px 0 rgba(0,0,0,0.10);
+    transform: scale(1.025);
+    z-index: 2;
 }
 
 /* Inicio Cadastro e Contato */
@@ -2415,6 +2444,9 @@ font-size: 1.2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .categoria-card {

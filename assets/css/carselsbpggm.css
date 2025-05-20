@@ -5,7 +5,7 @@
     padding: 60px 0 60px 0;
     display: block;
     position: relative;
-    min-height: 820px;
+    min-height: 720px;
 }
 
 /* Estilos originais da carousel-text, agora detalhe_text */
@@ -16,7 +16,7 @@
     max-width: 100%;
     width: 100%;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .detalhe_text h1 {
@@ -67,17 +67,17 @@
 .carousel-section {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
-    margin-left: 60px;
-    margin-bottom: 35px;
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-bottom: 10px;
     width: 100%;
     min-height: 180px;
     max-height: 460px;
     
-    position: absolute;
+    position: relative;
+    z-index: 2;
     left: 0;
     bottom: 0;
-    z-index: 1;
 }
 
 .carousel-gallery {
@@ -86,6 +86,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 10px;
 }
 
 .carousel-main {
@@ -97,7 +98,26 @@
     justify-content: center;
     border-radius: 12px;
     overflow: hidden;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 0 16px 0 rgba(255,0,204,0.15);
+}
+
+.carousel-main:hover {
+    animation: carousel-main-pulse 0.7s;
+    box-shadow: 0 0 32px 8px rgba(255,0,204,0.25);
+    transform: scale(1.025);
+}
+
+@keyframes carousel-main-pulse {
+    0% {
+        box-shadow: 0 0 16px 0 rgba(255,0,204,0.15);
+        transform: scale(1);
+    }
+    100% {
+        box-shadow: 0 0 32px 8px rgba(255,0,204,0.25);
+        transform: scale(1.025);
+    }
 }
 
 .carousel-main img {
@@ -132,13 +152,19 @@
 }
 
 .carousel-card-placeholder {
-    width: 25%;
-    min-width: 180px;
-    min-height: 220px;
-    margin-left: 32px;
-    background: rgba(255,255,255,0.03);
-    border-radius: 12px;
-    /* Espaço reservado para o card futuro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    max-width: 320px;
+    width: 100%;
+    min-width: 220px;
+    padding: 16px 12px;
+    background: rgba(20,20,20,0.95);
+    border-radius: 16px;
+    overflow: hidden;
+    /* Garante que nada ultrapasse a div */
     background: #232323;
     display: flex;
     flex-direction: column;
@@ -146,20 +172,117 @@
     padding: 18px;
     box-sizing: border-box;
     aspect-ratio: 3/4;
+    position: relative;
+    z-index: 2;
+    margin-left: 100px;
+    margin-right: auto;
+    /* Garante alinhamento e largura igual */
 }
 
-/* Animação de leve elevação e brilho ao passar o mouse nos cards principais */
-.carousel-card-placeholder,
-.carousel-card-placeholder-dados-técnicos,
-.carousel-card-placeholder-ranking {
-    transition: box-shadow 0.22s cubic-bezier(.4,2,.6,1), transform 0.22s cubic-bezier(.4,2,.6,1);
+.carousel-card-placeholder .carousel-card-buy-btn,
+.carousel-card-placeholder .carousel-card-wishlist-btn,
+.carousel-card-placeholder .carousel-card-discount-btn {
+    /* Reduz a altura em 10% */
+    padding-top: 7.2px;
+    padding-bottom: 7.2px;
+    /* Se antes era 8px, agora é 7.2px (8 * 0.9) */
 }
 
-.carousel-card-placeholder:hover,
-.carousel-card-placeholder-dados-técnicos:hover,
-.carousel-card-placeholder-ranking:hover {
-    box-shadow: 0 8px 32px 0 #ff00cc33, 0 2px 8px #0006;
-    transform: translateY(-4px) scale(1.025);
+.carousel-card-title {
+    font-size: 0.78rem; /* 40% menor que 1.3rem */
+    margin: 6px 0 2px 0;
+    word-break: break-word;
+}
+
+.carousel-card-platform-label,
+.carousel-card-platform {
+    font-size: 0.6rem; /* 40% menor que 1rem */
+    margin: 2px 0 4px 0;
+}
+
+.carousel-card-price-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    font-size: 0.6rem; /* 40% menor que 1rem */
+}
+
+.carousel-card-discount-btn {
+    font-size: 0.95rem;
+    padding: 1.6px 8px;
+    border-radius: 6px;
+    /* Se antes era 2px, agora é 1.6px (2 * 0.8) */
+}
+
+.carousel-card-price-old {
+    text-decoration: line-through;
+    color: #aaa;
+    font-size: 1rem;
+}
+
+.carousel-card-price-new {
+    color: #ff00cc;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.carousel-card-buy-btn,
+.carousel-card-wishlist-btn {
+    margin: 6px 0;
+    padding: 8px 0;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: normal;
+    overflow-wrap: break-word;
+    margin-bottom: 10px;
+}
+
+.carousel-card-buy-btn {
+    background: #ff00cc;
+    color: #fff;
+    font-weight: bold;
+}
+
+.carousel-card-buy-btn:hover {
+    background: #d900b8;
+}
+
+.carousel-card-wishlist-btn {
+    background: #222;
+    color: #ff00cc;
+    border: 1px solid #ff00cc;
+    margin-bottom: 10px;
+}
+
+.carousel-card-wishlist-btn:hover {
+    background: #333;
+}
+
+@media (max-width: 600px) {
+    .carousel-card-placeholder {
+        max-width: 98vw;
+        padding: 10px 2vw;
+    }
+    .carousel-card-img {
+        max-width: 120px;
+    }
+    .carousel-card-title {
+        font-size: 1.1rem;
+    }
+    .carousel-card-buy-btn,
+    .carousel-card-wishlist-btn {
+        font-size: 0.95rem;
+        max-width: 98vw;
+    }
 }
 
 /* Cards da lateral direita */
@@ -175,6 +298,9 @@
     padding: 0;
     box-sizing: border-box;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Garante alinhamento e largura igual */
 }
 
 .carousel-card-placeholder-dados-técnicos {
@@ -195,6 +321,20 @@
     text-align: center;
     padding-top: 8px;
     padding-bottom: 6px;
+}
+
+.carousel-card-placeholder,
+.carousel-card-placeholder-dados-técnicos,
+.carousel-card-placeholder-ranking {
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.carousel-card-placeholder:hover,
+.carousel-card-placeholder-dados-técnicos:hover,
+.carousel-card-placeholder-ranking:hover {
+    box-shadow: 0 0 32px 8px rgba(255,0,204,0.18), 0 2px 16px 0 rgba(0,0,0,0.12);
+    transform: scale(1.025);
+    z-index: 2;
 }
 
 .ranking-score {
@@ -301,6 +441,7 @@
     justify-content: center;
     gap: 8px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .carousel-card-img {
@@ -327,9 +468,10 @@
     border-radius: 6px;
     font-weight: bold;
     font-size: 1rem;
-    padding: 4px 12px;
+    padding: 1.6px 12px;
     cursor: default;
     pointer-events: none;
+    /* Se antes era 2px, agora é 1.6px (2 * 0.8) */
 }
 
 .carousel-card-price-old {
@@ -347,22 +489,29 @@
 }
 
 .carousel-bg {
-    position: absolute;
-    inset: 0;
+    position: relative;
+    width: 100%;
+    height: 250px; /* ajuste conforme necessário */
     z-index: 0;
-    background:
-        linear-gradient(
-            180deg,
+    overflow: visible;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* Gradiente: embaixo opaco, em cima transparente */
+    background: linear-gradient(
+            to top,
             rgba(34,34,34,0.0) 0%,
             rgba(38,38,38,0.15) 20%,
             rgba(42,42,42,0.30) 40%,
             rgba(46,46,46,0.45) 60%,
             rgba(50,50,50,0.65) 80%,
             rgba(54,54,54,1.0) 100%
-        ),
-        url('../images/subpggamesimg/Nine-Sols Capa4.jpg') center center / cover no-repeat;
-    opacity: 0.8;
-    pointer-events: none;
+        );
+    opacity: 0.9;
 }
 
 .detalhe-games {
