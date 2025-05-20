@@ -1129,6 +1129,20 @@ td {
   
 }
 
+.apresentacao-dora {
+  align-items: center; 
+  align-content: center;
+  padding: 50px 50px;
+  margin-top: 5%;
+  width: 100%;
+}
+
+.apresentacao-dora h3 { color: #e60067;
+  padding: 20px;
+  font-size: 2rem;
+  width: 100%; }
+
+
 .apresentacao h2 {
   color: #e60067;
   padding: 20px;
@@ -2570,4 +2584,48 @@ font-size: 1.2rem;
 .card-body .game-card{
   all: unset;
   display: contents;
+}
+
+/* PAG DORA*/
+
+
+.dora-avatar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.avatar-img {
+  width: 100px;
+  height: auto;
+  border-radius: 30%;
+  background: #fff;
+  padding: 5px;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+}
+
+.fala-dora {
+  background-color: #222;
+  color: #e60067;
+  border-radius: 15px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  max-width: 300px;
+  position: relative;
+  animation: fadein 0.5s ease;
+  font-weight: 500;
+}
+
+.fala-dora::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #222;
 }

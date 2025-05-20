@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indora - Seu E-commerce de Games</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/acessib.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="/assets/images/SolRetrowaveLogo.png">
+</head>
+<body class="text-white">
+
+  <!-- Integração VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+
+  <header>
+    <div class="logo">
+      <img class="logoimg" src="/assets/images/SolRetrowaveLogo.png" alt="logo INDORA"> INDORA
+    </div>
+    <div class="acessibilidade my-2 d-flex flex-wrap gap-2" role="region" aria-label="Ferramentas de acessibilidade">
+      <h2 class="visually-hidden">Ferramentas de Acessibilidade</h2>
+      <button class="btn btn-outline-secondary btn-sm btn-custom" onclick="toggleContraste()">Contraste</button>
+      <button class="btn btn-outline-primary btn-sm btn-custom" onclick="alterarFonte('aumentar')">A+</button>
+      <button class="btn btn-outline-danger btn-sm btn-custom" onclick="alterarFonte('diminuir')">A-</button>
+      <button id="btnLeitura" class="btn btn-outline-success btn-sm btn-custom" onclick="lerPagina()"><i class="bi bi-volume-up"></i> Ler</button>
+      <!-- <button onclick="lerJogos()">Ler Jogos Favoritos</button> -->
+    </div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/PaginaInterna1.html">Mais vendidos</a></li>
+        <li><a href="/pages/PaginaInterna2.html">Ofertas do dia</a></li>
+        <li><a href="/pages/PaginaInterna3.html">Cadastro</a></li>
+        <!-- <li><a href="./pages/PaginaInterna7.html">Sobre Nós</a></li>         -->
+        <!-- <li class="cart">
+          <a href="./pages/PaginaInterna6.html">🛒 Carrinho <span id="cart-counter">0</span></a>
+        </li> -->
+        <li class="cart">
+          <a href="./pages/PaginaInterna6.html"><i class="bi bi-cart-fill"></i> Carrinho <span id="cart-counter">0</span></a>
+        </li>
+        <li id="login-container">
+          <a href="/pages/PaginaInterna5.html" id="botao-login" class="login-btn">Login</a>
+          <ul id="dropdown-menu">
+            <li><a href="#" id="logout-btn">Sair</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="apresentacao-dora">
+
+
+    <h3>Conheça a DORA – Sua Companheira de Jogo, Consciência e Comunidade!</h3> <div class="dora-avatar">
+  <img src="/assets/images/DORAPNG2.png" alt="Assistente DORA" class="avatar-img">
+  <div class="fala-dora" id="fala-dora"><span class="emoji me-3 fs-3"><i class="fa fa-comment" aria-hidden="true"></i></span>
+ O planeta também faz parte do seu time!</div>
+</div>
+
+ 
+
+    <div class="apresentacao">
+        <p>Apresentamos DORA, a assistente virtual oficial da INDORA!
+Mais que uma inteligência digital, a DORA foi criada para estar ao seu lado em cada jornada gamer, oferecendo suporte inteligente, dicas personalizadas, descobertas incríveis de jogos indie, e até conselhos de sustentabilidade no mundo digital.</p>
+        </p>
+        <p>A DORA é a ponte entre tecnologia e humanidade: acessível, ética e sempre ao seu lado.
+Com ela, a experiência na INDORA se torna mais fluida, divertida e consciente — como deve ser.</p>
+    </div>
+</section>
+
+
+
+<div class="apresentacao-geral">
+
+<div class="apresentacao-missao">
+<p>Mais que uma inteligência digital, a DORA foi criada para estar ao seu lado em cada jornada gamer, oferecendo suporte inteligente, dicas personalizadas, descobertas incríveis de jogos indie, e até conselhos de sustentabilidade no mundo digital.</p>
+</div>
+
+<img src="/assets/images/DORA3.jpeg" alt="Games Indie">
+
+<div class="apresentacao-visao">
+    <h2> Por que a DORA é Importante
+</h2>
+    <p>
+A DORA representa a união entre propósito e inovação. Ela é a face visível de uma plataforma que se importa com o impacto que causa no mundo e nos indivíduos. Por isso, a assistente está sempre pronta para transformar simples interações em experiências com significado — aliando tecnologia, cultura indie e responsabilidade social. </p>
+</div>
+
+</div>
+
+
+<section class="apresentacao-valores">
+
+    <div class="promo-content">
+        
+        <div class="row text-start gy-4">
+
+        <div class="col-md-6 d-flex ">
+          <span class="emoji me-3 fs-3"><i class="fa fa-gamepad" aria-hidden="true"></i></span>
+          <div>
+            <p>Recomendações personalizadas com base nos seus gostos e estilo de jogo.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 d-flex ">
+          <span class="emoji me-3 fs-3"> <i class="fa fa-search" aria-hidden="true"></i></span>
+          <div>
+            <p> Ajuda rápida com dúvidas, navegação, ofertas e novidades da plataforma.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 d-flex">
+            <span class="emoji me-3 fs-3"><i class="fa fa-recycle" aria-hidden="true"></i></span>
+          <div> 
+            <p>Dicas de consumo consciente para jogar com responsabilidade e impacto positivo.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 d-flex align-items-start">
+          <span class="emoji me-3 fs-3"> <i class="fa fa-comment" aria-hidden="true"></i></span>
+          <div>
+            <p>Interação com a comunidade gamer, promovendo inclusão, diversidade e diálogo.</p>
+          </div>
+        </div>
+
+
+                <div class="col-md-6 d-flex align-items-start">
+          <span class="emoji me-3 fs-3"> <i class="fa fa-comment" aria-hidden="true"></i></span>
+          <div>
+            <p>Interação com a comunidade gamer, promovendo inclusão, diversidade e diálogo.</p>
+          </div>
+        </div>
+  
+        <div class="col-md-6 d-flex align-items-start">
+          <span class="emoji me-3 fs-3"><i class="fa fa-lock" aria-hidden="true"></i></span>
+          <div>
+            <p>Alerta de promoções e lançamentos, para você nunca perder uma oportunidade épica. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    </div>
+<div class="indie-banner">
+    <img src="/assets/images/DORA3.jpeg" alt="Games Indie">
+
+<section id="esg-dora" class="esg-dora-section">
+  <h2>Compromissos ESG com a DORA</h2>
+  <div class="esg-columns">
+    <div class="esg-card">
+      <h3>          <span class="emoji me-3 fs-3"><i class="fa fa-recycle" aria-hidden="true"></i></span>
+ Ambiental</h3>
+      <p>DORA opera com responsabilidade ecológica, reduzindo o consumo de recursos e promovendo sustentabilidade digital.</p>
+    </div>
+    <div class="esg-card">
+      <h3><span class="emoji me-3 fs-3"><i class="fa fa-handshake" aria-hidden="true"></i></span> Social</h3>
+      <p>Acessível, inclusiva e feita para todos os gamers. A DORA respeita a diversidade de vozes da comunidade Indora.</p>
+    </div>
+    <div class="esg-card">
+      <h3>          <span class="emoji me-3 fs-3"><i class="fa fa-lock" aria-hidden="true"></i></span>
+ Governança</h3>
+      <p>Segura e ética: DORA protege seus dados e atua com transparência, conforme a LGPD.</p>
+    </div>
+  </div>
+    </div>
+
+</section>
+
+
+
+  
+  <footer class="rodape">
+    <div class="rodape-content">
+      <div class="rodape-section">
+        <h4>Sobre Nós</h4>
+        <p>Somos uma loja especializada em jogos eletrônicos, oferecendo as melhores ofertas e promoções.</p>
+        <img src="/assets/images/INDORARODAPE.jpeg" alt="logo Indora">
+      </div>
+      <div class="rodape-section">
+        <h4>Ajuda</h4>
+        <ul>
+          <li><a href="/pages/PaginaInterna7.html">Sobre Nós</a></li> <!--Página Interna 7: Sobre Nos.  -->
+          <li><a href="/suporte.html">Suporte</a></li>
+          <li><a href="/pages/Politica de Privacidade.html">Política de Privacidade</a></li>
+          <li><a href="/pages/Termos de Uso.html">Termos de Uso</a></li>
+          <li><a href="/pages/PaginaInterna3.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="rodape-section">
+        <h4 class="rodape-text">Redes Sociais</h4>
+        <div class="redesocial-icon">
+          <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/in/"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="creditos">
+      <p>&copy; 2025 Todos os direitos reservados. Andre, Carolina, Luiza, Romulo, Yan</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script src="/assets/js/vlibras.js"></script>
+  <script src="/assets/js/cart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <script src="/assets/js/carousel.js"></script>
+  <script src="/assets/js/menulogin.js"></script>
+  <script src="/assets/js/contAcesG.js"></script>
+  <script src="/assets/js/contAcesFC.js"></script>
+  <script src="/assets/js/dora.js"></script>
+</body>
+
+</html>
