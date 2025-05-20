@@ -1,0 +1,550 @@
+/* Estilos originais da carousel-indie, agora detalhe-game */
+.detalhe-game {
+    width: 100%;
+    background: linear-gradient(90deg, #1a1a2e 60%, #16213e 100%);
+    padding: 60px 0 60px 0;
+    display: block;
+    position: relative;
+    min-height: 820px;
+}
+
+/* Estilos originais da carousel-text, agora detalhe_text */
+.detalhe_text {
+    color: #fff;
+    text-align: left;
+    padding: 20px 0 20px 40px;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.detalhe_text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    margin-left: 80px;
+}
+
+.detalhe_text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.detalhe_text h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.detalhe_text p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+/* Estilos básicos para o esquema de estrelas */
+.star-rating {
+    display: inline-block;
+    font-size: 1rem; /* Reduzido de 2rem para 1rem (50%) */
+    color: #ffd700;
+    cursor: pointer;
+}
+
+.star-rating .fa-star {
+    transition: color 0.2s;
+}
+
+.star-rating .fa-solid {
+    color: #ffd700;
+}
+
+.star-rating .fa-regular {
+    color: #ccc;
+}
+
+.carousel-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 35px;
+    width: 100%;
+    min-height: 180px;
+    max-height: 460px;
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.carousel-gallery {
+    width: 75%;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.carousel-main {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.carousel-main img {
+    width: 100%;
+    height: auto;
+    max-height: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.carousel-thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 0;
+}
+
+.carousel-thumb {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border 0.2s;
+}
+
+/* Apenas thumbs ativas ou hover com contorno rosa neon */
+.carousel-thumb.active,
+.carousel-thumb:hover {
+    border: 2px solid #ff00cc;
+    box-shadow: 0 0 8px #ff00cc, 0 0 2px #fff;
+}
+
+.carousel-card-placeholder {
+    width: 25%;
+    min-width: 180px;
+    min-height: 220px;
+    margin-left: 32px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 12px;
+    /* Espaço reservado para o card futuro */
+    background: #232323;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+    box-sizing: border-box;
+    aspect-ratio: 3/4;
+}
+
+/* Animação de leve elevação e brilho ao passar o mouse nos cards principais */
+.carousel-card-placeholder,
+.carousel-card-placeholder-dados-técnicos,
+.carousel-card-placeholder-ranking {
+    transition: box-shadow 0.22s cubic-bezier(.4,2,.6,1), transform 0.22s cubic-bezier(.4,2,.6,1);
+}
+
+.carousel-card-placeholder:hover,
+.carousel-card-placeholder-dados-técnicos:hover,
+.carousel-card-placeholder-ranking:hover {
+    box-shadow: 0 8px 32px 0 #ff00cc33, 0 2px 8px #0006;
+    transform: translateY(-4px) scale(1.025);
+}
+
+/* Cards da lateral direita */
+.carousel-card-placeholder-dados-técnicos,
+.carousel-card-placeholder-ranking {
+    width: 100%;
+    max-width: 320px;
+    background: #232323;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px 0 rgba(255,0,204,0.08);
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+.carousel-card-placeholder-dados-técnicos {
+    /* Altura dobrada */
+    height: calc((min(220px, 100vw * 0.33)) * 4 / 3 + 96px);
+    min-height: 0;
+    margin-bottom: 18px;
+}
+
+.carousel-card-placeholder-ranking {
+    /* Altura dobrada */
+    height: calc((min(220px, 100vw * 0.33)) * 2 / 3 + 48px);
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+.ranking-score {
+    color: #ff00cc;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 10px 0 4px 0;
+    letter-spacing: 1px;
+}
+
+.ranking-stars {
+    margin: 0 0 4px 0;
+    font-size: 1.05rem;
+}
+.ranking-stars .fa-star {
+    color: #ffd700;
+    margin: 0 1px;
+}
+
+.ranking-excelente {
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin: 0 0 4px 0;
+}
+
+.ranking-info {
+    color: #ccc;
+    font-size: 0.75rem;
+    font-weight: normal;
+    margin: 0 0 2px 0;
+}
+
+/* Responsivo para garantir proporção em telas menores */
+@media (max-width: 900px) {
+    .carousel-card-placeholder,
+    .carousel-card-placeholder-dados-técnicos,
+    .carousel-card-placeholder-ranking {
+        max-width: 100%;
+    }
+}
+
+.carousel-card-title {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.carousel-card-platform-label {
+    color: #ff00cc;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.carousel-card-platform {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 4px; /* Reduzido para diminuir o espaço */
+    text-align: center;
+}
+
+.carousel-card-buy-btn {
+    width: 100%;
+    background: #ff00cc;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.carousel-card-buy-btn,
+.carousel-card-wishlist-btn {
+    transition: background 0.18s, color 0.18s;
+}
+
+.carousel-card-buy-btn:hover,
+.carousel-card-buy-btn:focus {
+    background: #c200a3;
+    color: #e0e0e0;
+}
+
+.carousel-card-wishlist-btn:hover,
+.carousel-card-wishlist-btn:focus {
+    background: #d1c6ce;
+    color: #888;
+}
+
+.carousel-card-wishlist-btn {
+    width: 100%;
+    background: #eee;
+    color: #232323;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.carousel-card-img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    display: block;
+    object-fit: cover;
+}
+
+.carousel-card-price-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.carousel-card-discount-btn {
+    background: #ff00cc;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 4px 12px;
+    cursor: default;
+    pointer-events: none;
+}
+
+.carousel-card-price-old {
+    color: #ccc;
+    font-size: 1.1rem;
+    text-decoration: line-through;
+    margin-left: 4px;
+}
+
+.carousel-card-price-new {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.carousel-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(34,34,34,0.0) 0%,
+            rgba(38,38,38,0.15) 20%,
+            rgba(42,42,42,0.30) 40%,
+            rgba(46,46,46,0.45) 60%,
+            rgba(50,50,50,0.65) 80%,
+            rgba(54,54,54,1.0) 100%
+        ),
+        url('../images/subpggamesimg/Nine-Sols Capa4.png') center center / cover no-repeat;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.detalhe-games {
+    padding: 40px 0;
+    background: #000;
+    border-top: none;
+    position: relative;
+}
+
+.detalhe-games::before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #ccc;
+    border-radius: 2px;
+    margin: 0 auto 32px auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.detalhe-games h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 2rem;
+    color: #ff00cc;
+    font-weight: bold;
+}
+
+.detalhe-games .game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.detalhe-game-card {
+    background: #232323; /* fundo cinza */
+    border-radius: 16px;
+    box-shadow: 0 4px 24px 0 rgba(255,0,204,0.08);
+    padding: 24px 18px 18px 18px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid #ff00cc; /* contorno rosa neon */
+}
+
+.detalhe-game-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px 0 #ff00cc88;
+}
+
+.detalhe-game-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 8px #0006;
+}
+
+.detalhe-game-card h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.detalhe-game-card p {
+    font-size: 1rem;
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Estilos copiados da section .apresentacao, agora .game_apresentação */
+.game_apresentação {
+    width: 100%;
+    min-height: 600px;
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    padding: 60px 0;
+    position: relative;
+}
+
+.game_apresentacao-texto {
+    width: 60%;
+    max-width: 60%;
+    padding: 40px 40px 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.game_apresentacao-direita {
+    width: 40%;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: 100%;
+    gap: 24px;
+    padding: 24px 16px 24px 0;
+}
+
+.vazio-card {
+    background: #232323;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px 0 rgba(255,0,204,0.08);
+    border: 2px solid #ff00cc;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+.ranking-static-btn {
+    display: inline-block;
+    background: #ff00cc;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 0.92rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 6px auto 0 auto;
+    text-align: center;
+    box-shadow: 0 2px 10px #ff00cc33;
+    border: none;
+    cursor: default;
+    width: auto;
+}
+
+.dados-tecnicos-table {
+    width: 92%;
+    margin: 18px auto 0 auto;
+    border-collapse: collapse;
+    background: transparent;
+    color: #fff;
+    font-size: 0.98rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dados-tecnicos-table th,
+.dados-tecnicos-table td {
+    padding: 7px 10px;
+    text-align: left;
+}
+
+.dados-tecnicos-table th {
+    background: #2e2e38;
+    color: #ff00cc;
+    font-weight: bold;
+    font-size: 1.02rem;
+    border-bottom: 2px solid #ff00cc;
+}
+
+.dados-tecnicos-table tr:nth-child(even) td {
+    background: #23232b;
+}
+
+.dados-tecnicos-table tr:nth-child(odd) td {
+    background: #282832;
+}
+
+.dados-tecnicos-table td {
+    border-bottom: 1px solid #333;
+    font-size: 0.97rem;
+}
+
+.dados-tecnicos-table tr:last-child td {
+    border-bottom: none;
+}
+
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indora - Seu E-commerce de Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/carselsbpggm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="icon" type="image/png" href="../assets/images/SolRetrowaveLogo.png">
+</head>
+<body class="text-white">
+    <header>
+        <div class="logo">
+            <img class="logoimg" src="../assets/images/SolRetrowaveLogo.png" alt="logo INDORA"> INDORA
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="PaginaInterna1.html">Mais vendidos</a></li>
+                <li><a href="PaginaInterna2.html">Ofertas do dia</a></li>
+                <li><a href="PaginaInterna3.html">Cadastro</a></li>
+                <li class="cart">
+                    <a href="#">🛒 Carrinho <span id="cart-counter">0</span></a>
+                </li>
+                <li id="login-container">
+                    <a href="PaginaInterna5.html" id="botao-login" class="login-btn">Login</a>
+                    <ul id="dropdown-menu">
+                        <li><a href="#" id="logout-btn">Sair</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carousel -->
+    <section>
+        <div class="detalhe-game">
+            <div class="carousel-bg"></div>
+            <div class="detalhe_text">
+                <h1>NINE SOLS</h1>
+                <h2>
+                    Avaliação:
+                    <span class="star-rating">
+                        <i class="fa-regular fa-star" data-value="1"></i>
+                        <i class="fa-regular fa-star" data-value="2"></i>
+                        <i class="fa-regular fa-star" data-value="3"></i>
+                        <i class="fa-regular fa-star" data-value="4"></i>
+                        <i class="fa-regular fa-star" data-value="5"></i>
+                    </span>
+                </h2>
+            </div>
+            <div class="carousel-section">
+                <div class="carousel-gallery">
+                    <div class="carousel-main">
+                        <img id="main-carousel-img" src="../assets/gifs/subpggamesgif/Nine Sols Gif2.gif" alt="Nine Sols Gif2">
+                    </div>
+                    <div class="carousel-thumbnails">
+                        <img class="carousel-thumb active" src="../assets/gifs/subpggamesgif/Nine Sols Gif2.gif" alt="Nine Sols Gif2" data-index="0">
+                        <img class="carousel-thumb" src="../assets/images/subpggamesimg/Nine Sols ingame2.jpg" alt="Nine Sols ingame 2" data-index="1">
+                        <img class="carousel-thumb" src="../assets/images/subpggamesimg/Nine Sols ingame3.jpg" alt="Nine Sols ingame 3" data-index="2">
+                        <img class="carousel-thumb" src="../assets/images/subpggamesimg/Nine Sols ingame4.jpg" alt="Nine Sols ingame 4" data-index="3">
+                        <img class="carousel-thumb" src="../assets/images/subpggamesimg/Nine Sols ingame5.jpg" alt="Nine Sols ingame 5" data-index="4">
+                        <img class="carousel-thumb" src="../assets/images/subpggamesimg/Nine Sols ingame6.jpg" alt="Nine Sols ingame 6" data-index="5">
+                        <img class="carousel-thumb" src="../assets/images/subpggamesimg/Nine Sols ingame7.jpg" alt="Nine Sols ingame 7" data-index="6">
+                        <img class="carousel-thumb" src="../assets/images/subpggamesimg/Nine Sols ingame0.jpg" alt="Nine Sols ingame 8" data-index="7">
+                        <!-- Adicione mais imagens conforme necessário -->
+                    </div>
+                </div>
+                <div class="carousel-card-placeholder">
+                    <img class="carousel-card-img" src="../assets/images/subpggamesimg/Nine-Sols Capa4.png" alt="Nine Sols Capa">
+                    <h1 class="carousel-card-title">NINE SOLS</h1>
+                    <h2 class="carousel-card-platform-label">DRM</h2>
+                    <h3 class="carousel-card-platform">STEAM</h3>
+                    <div class="carousel-card-price-row">
+                        <button class="carousel-card-discount-btn">-60%</button>
+                        <span class="carousel-card-price-old">R$199,00</span>
+                        <span class="carousel-card-price-new">R$79,96</span>
+                    </div>
+                    <button class="carousel-card-buy-btn">
+                        COMPRAR
+                    </button>
+                    <button class="carousel-card-wishlist-btn">
+                        <i class="fa fa-heart" style="color:#ff00cc;"></i>
+                        Adicionar a Lista de Desejos
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="game_apresentação">
+        <div class="game_apresentacao-texto">
+            <h2>Aqui na Indora você encontra os melhores games INDI. <span class="indora">NINE SOLS</span> é mais um grande jogo que disponibilizamos para você.</h2>
+            <div class="apresentacao-text">
+                <p>Nine Sols é um jogo de ação e plataforma desenvolvido pela Red Candle Games, conhecida por títulos de terror como Detention e Devotion. Lançado em 2024, o jogo se destaca como um metroidvania com mecânicas inspiradas em soulslikes, oferecendo um equilíbrio entre desafio extremo e acessibilidade.
+
+A história segue Yi, um mestre cientista e artista marcial, que busca vingança contra o Conselho dos Sols. O jogo se passa em Penglai, um planeta habitado pelos solarianos, uma espécie felina altamente inteligente e avançada tecnologicamente. A civilização solariana gira em torno das Raízes Fusang, uma planta mística que sintetiza a luz solar para gerar energia. No entanto, conflitos internos e guerras entre os nove reinos de Penglai levaram à criação de armas devastadoras, como a Esfera Haotiana, usada para destruição em massa.
+
+A narrativa de Nine Sols é profundamente influenciada pelo taoísmo, explorando temas como vida e morte, ciência versus religião e imortalidade. O jogo combina combate intenso com uma mitologia rica, tornando-se um dos melhores títulos de ação 2D de seu gênero.</p>
+                <br>
+                <h3>Explore, jogue e viva o universo dos videogames com a INDORA!</h3>
+            </div>
+        </div>
+        <div class="game_apresentacao-direita">
+            <div class="carousel-card-placeholder-dados-técnicos">
+                <table class="dados-tecnicos-table">
+                    <thead>
+                        <tr>
+                            <th>Informação</th>
+                            <th>Detalhes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Public</td>
+                            <td>Red Candle Games</td>
+                        </tr>
+                        <tr>
+                            <td>Desenv</td>
+                            <td>Red Candle Games</td>
+                        </tr>
+                        <tr>
+                            <td>Classif</td>
+                            <td>16 anos</td>
+                        </tr>
+                        <tr>
+                            <td>Gênero</td>
+                            <td>Ação, Plataforma, Metroidvania</td>
+                        </tr>
+                        <tr>
+                            <td>Plataforma</td>
+                            <td>PC</td>
+                        </tr>
+                        <tr>
+                            <td>Lançamento</td>
+                            <td>28 de maio de 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Idioma</td>
+                            <td>Inglês</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="carousel-card-placeholder-ranking">
+                <h1 class="ranking-static-btn">Nota dos Jogadores</h1>
+                <h2 class="ranking-score">9.0</h2>
+                <h3 class="ranking-stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </h3>
+                <h3 class="ranking-excelente">Excelente</h3>
+                <h4 class="ranking-info">Pontuação baseada em avaliações.</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="detalhe-games">
+        <h2>Destaques do Game</h2>
+        <div class="game-list">
+            <div class="detalhe-game-card">
+                <img src="../assets/images/subpggamesimg/Nine Sols1.jpg" alt="Nine Sols">
+                <h3>Combate baseado em deflexão</h3>
+                <p>Exige que os jogadores apararem ataques inimigos no momento certo.</p>
+            </div>
+            <div class="detalhe-game-card">
+                <img src="../assets/images/subpggamesimg/Nine Sols2.png" alt="Nine Sols">
+                <h3>Ambientação "Taopunk"</h3>
+                <p>Mundo único repleto de templos tecnológicos e artes marciais.</p>
+            </div>
+            <div class="detalhe-game-card">
+                <img src="../assets/images/subpggamesimg/Nine Sols3.jpg" alt="Nine Sols">
+                <h3>Narrativa profunda e misteriosa</h3>
+                <p>A história segue Yi, um guerreiro traído que busca vingança contra os Nove Sols.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="rodape">
+        <div class="rodape-content">
+            <div class="rodape-section">
+                <h4>Sobre Nós</h4>
+                <p>Somos uma loja especializada em jogos eletrônicos, oferecendo as melhores ofertas e promoções.</p>
+                <img src="../assets/images/INDORARODAPE.jpeg" alt="logo Indora">
+            </div>
+            <div class="rodape-section">
+                <h4>Ajuda</h4>
+                <ul>
+                    <li><a href="suporte.html">Suporte</a></li>
+                    <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+                    <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="rodape-section">
+                <h4 class="rodape-text">Redes Sociais</h4>
+                <div class="redesocial-icon">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"> </i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"> </i></a>
+                    <a href="https://instagram.com/"><i class="fab fa-instagram"> </i></a>
+                    <a href="https://linkedin.com/in/"><i class="fab fa-linkedin"> </i></a>
+                </div>
+            </div>
+        </div>
+        <div class="creditos">
+            <p>&copy; 2025 Todos os direitos reservados.
+                Andre Grigoli - Carolina Pereira - Luiza Vicente - Romulo Amaro - Yan Velasco
+            </p>
+        </div>
+    </footer>
+    <script src="../assets/js/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="../assets/js/carselsbpggm.js"></script>
+    <script src="../assets/js/menulogin.js"></script>
+    <script src="../assets/js/starbin.js"></script>
+</body>
+</html>
