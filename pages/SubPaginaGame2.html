@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indora - Seu E-commerce de Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/carselsbpggm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="icon" type="image/png" href="../assets/images/SolRetrowaveLogo.png">
+</head>
+<body class="text-white">
+    <header>
+        <div class="logo">
+            <img class="logoimg" src="../assets/images/SolRetrowaveLogo.png" alt="logo INDORA"> INDORA
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="PaginaInterna1.html">Mais vendidos</a></li>
+                <li><a href="PaginaInterna2.html">Ofertas do dia</a></li>
+                <li><a href="PaginaInterna3.html">Cadastro</a></li>
+                <li class="cart">
+                    <a href="#">🛒 Carrinho <span id="cart-counter">0</span></a>
+                </li>
+                <li id="login-container">
+                    <a href="PaginaInterna5.html" id="botao-login" class="login-btn">Login</a>
+                    <ul id="dropdown-menu">
+                        <li><a href="#" id="logout-btn">Sair</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carousel -->
+    <section>
+        <div class="detalhe-game">
+            <div class="carousel-bg" style="background-image: url('../assets/images/subpggamesimg/Hades 2 Capa2.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+            <div class="detalhe_text">
+                <h1>HADES II</h1>
+                <h2>
+                    Avaliação:
+                    <span class="star-rating">
+                        <i class="fa-regular fa-star" data-value="1"></i>
+                        <i class="fa-regular fa-star" data-value="2"></i>
+                        <i class="fa-regular fa-star" data-value="3"></i>
+                        <i class="fa-regular fa-star" data-value="4"></i>
+                        <i class="fa-regular fa-star" data-value="5"></i>
+                    </span>
+                </h2>
+            </div>
+            <div class="carousel-section">
+                <div class="carousel-gallery">
+                    <div class="carousel-main">
+                        <img id="main-carousel-img" src="../assets/gifs/subpggamesgif/Hades 2 Gif1.gif" alt="Nine Sols Gif2">
+                    </div>
+                    <div class="carousel-thumbnails">
+                        <img class="carousel-thumb active" src="../assets/gifs/subpggamesgif/Hades 2 Gif1.gif" alt="Nine Sols Gif2" data-index="0">
+                        <img class="carousel-thumb" src="../assets/images/subpggamesimg/Hades 2 ingame1.jpg" alt="Nine Sols ingame 2" data-index="1">
+                        <img class="carousel-thumb" src="../assets/images/subpggamesimg/Hades 2 ingame2.jpg" alt="Nine Sols ingame 3" data-index="2">
+                        <img class="carousel-thumb" src="../assets/images/subpggamesimg/Hades 2 ingame3.jpg" alt="Nine Sols ingame 4" data-index="3">
+                        <img class="carousel-thumb" src="../assets/images/subpggamesimg/Hades 2 ingame4.jpg" alt="Nine Sols ingame 5" data-index="4">
+                        <img class="carousel-thumb" src="../assets/images/subpggamesimg/Hades 2 ingame5.jpg" alt="Nine Sols ingame 6" data-index="5">
+                        <img class="carousel-thumb" src="../assets/images/subpggamesimg/Hades 2 ingame6.jpg" alt="Nine Sols ingame 7" data-index="6">
+                        <img class="carousel-thumb" src="../assets/images/subpggamesimg/Hades 2 ingame7.jpg" alt="Nine Sols ingame 8" data-index="7">
+                        <!-- Adicione mais imagens conforme necessário -->
+                    </div>
+                </div>
+                <div class="carousel-card-placeholder">
+                    <img class="carousel-card-img" src="../assets/images/subpggamesimg/Hades 2 Capa2.jpg" alt="Nine Sols Capa">
+                    <h1 class="carousel-card-title">HADES II</h1>
+                    <h2 class="carousel-card-platform-label">DRM</h2>
+                    <h3 class="carousel-card-platform">STEAM</h3>
+                    <div class="carousel-card-price-row">
+                        <button class="carousel-card-discount-btn">-60%</button>
+                        <span class="carousel-card-price-old">R$224,75</span>
+                        <span class="carousel-card-price-new">R$89,90</span>
+                    </div>
+                    <button class="carousel-card-buy-btn">
+                        COMPRAR
+                    </button>
+                    <button class="carousel-card-wishlist-btn">
+                        <i class="fa fa-heart" style="color:#ff00cc;"></i>
+                        Adicionar a Lista de Desejos
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="game_apresentação">
+        <div class="game_apresentacao-texto">
+            <h2>Aqui na Indora você encontra os melhores games INDI. <span class="indora">HADES II</span> é mais um grande jogo que disponibilizamos para você.</h2>
+            <div class="apresentacao-text">
+                <p>**Hades II** é a sequência do premiado *Hades*, desenvolvida pela **Supergiant Games**. A história se passa após os eventos do primeiro jogo e introduz uma nova protagonista, **Melinoe**, irmã de Zagreus. Diferente de seu irmão, que buscava escapar do Submundo, Melinoe tem um objetivo mais grandioso: **derrotar Cronos, o Titã do Tempo**, que escapou de sua prisão e declarou guerra contra os deuses do Olimpo.
+
+Melinoe é uma feiticeira treinada por **Hécate**, deusa da magia e da noite, e conta com a ajuda de diversos personagens mitológicos, incluindo **Nêmesis, Odisseu e Apolo**. O jogo expande o universo mitológico do primeiro título, trazendo novos cenários, desafios e sistemas de melhoria, como o **Altar das Cinzas**, onde os jogadores podem depositar recursos para aprimoramentos permanentes.
+
+A jogabilidade mantém o estilo **roguelike de ação**, mas adiciona novos elementos mágicos, como o sistema **Magick**, que permite lançar ataques poderosos. Além disso, personagens icônicos do primeiro jogo, como **Hades, Zeus, Poseidon e Afrodite**, retornam com visuais renovados.</p>
+                <br>
+                <h3>Explore, jogue e viva o universo dos videogames com a INDORA!</h3>
+            </div>
+        </div>
+        <div class="game_apresentacao-direita">
+            <div class="carousel-card-placeholder-dados-técnicos">
+                <table class="dados-tecnicos-table">
+                    <thead>
+                        <tr>
+                            <th>Informação</th>
+                            <th>Detalhes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Public</td>
+                            <td>Supergiant Games</td>
+                        </tr>
+                        <tr>
+                            <td>Desenv</td>
+                            <td>Supergiant Games</td>
+                        </tr>
+                        <tr>
+                            <td>Classif</td>
+                            <td>13 anos</td>
+                        </tr>
+                        <tr>
+                            <td>Gênero</td>
+                            <td>Ação, RPG, Roguelike</td>
+                        </tr>
+                        <tr>
+                            <td>Plataforma</td>
+                            <td>PC</td>
+                        </tr>
+                        <tr>
+                            <td>Lançamento</td>
+                            <td>06 de maio de 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Idioma</td>
+                            <td>Inglês</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="carousel-card-placeholder-ranking">
+                <h1 class="ranking-static-btn">Nota dos Jogadores</h1>
+                <h2 class="ranking-score">9.5</h2>
+                <h3 class="ranking-stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </h3>
+                <h3 class="ranking-excelente">Excelente</h3>
+                <h4 class="ranking-info">Pontuação baseada em avaliações.</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="detalhe-games">
+        <h2>Destaques do Game</h2>
+        <div class="game-list">
+            <div class="detalhe-game-card">
+                <img src="../assets/images/subpggamesimg/Hades 2 Capa2.jpg" alt="Nine Sols">
+                <h3>Nova protagonista, Melinoe</h3>
+                <p>Melinoe, irmã de Zagreus, busca derrotar Cronos, o Titã do Tempo.</p>
+            </div>
+            <div class="detalhe-game-card">
+                <img src="../assets/images/subpggamesimg/Hades 2 Capa5.jpg" alt="Nine Sols">
+                <h3>Expansão do universo mitológico</h3>
+                <p>O jogo introduz novos deuses e personagens, como Hécate, Nêmesis, Odisseu e Apolo.</p>
+            </div>
+            <div class="detalhe-game-card">
+                <img src="../assets/images/subpggamesimg/Hades 2 Capa3.jpg" alt="Nine Sols">
+                <h3>Jogabilidade aprimorada</h3>
+                <p>Novos sistemas, como Magick, para ataques poderosos, e o Altar das Cinzas, para depositar melhorias de forma permanente.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="rodape">
+        <div class="rodape-content">
+            <div class="rodape-section">
+                <h4>Sobre Nós</h4>
+                <p>Somos uma loja especializada em jogos eletrônicos, oferecendo as melhores ofertas e promoções.</p>
+                <img src="../assets/images/INDORARODAPE.jpeg" alt="logo Indora">
+            </div>
+            <div class="rodape-section">
+                <h4>Ajuda</h4>
+                <ul>
+                    <li><a href="suporte.html">Suporte</a></li>
+                    <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+                    <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="rodape-section">
+                <h4 class="rodape-text">Redes Sociais</h4>
+                <div class="redesocial-icon">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"> </i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"> </i></a>
+                    <a href="https://instagram.com/"><i class="fab fa-instagram"> </i></a>
+                    <a href="https://linkedin.com/in/"><i class="fab fa-linkedin"> </i></a>
+                </div>
+            </div>
+        </div>
+        <div class="creditos">
+            <p>&copy; 2025 Todos os direitos reservados.
+                Andre Grigoli - Carolina Pereira - Luiza Vicente - Romulo Amaro - Yan Velasco
+            </p>
+        </div>
+    </footer>
+    <script src="../assets/js/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="../assets/js/carselsbpggm.js"></script>
+    <script src="../assets/js/menulogin.js"></script>
+    <script src="../assets/js/starbin.js"></script>
+</body>
+</html>

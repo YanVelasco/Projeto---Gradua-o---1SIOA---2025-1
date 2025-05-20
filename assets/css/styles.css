@@ -104,7 +104,7 @@ nav ul li a {
 
 .carousel-text h1 {
   font-size: 36px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .carousel-text button {
@@ -226,6 +226,18 @@ nav ul li a {
   color: white;
   cursor: pointer;
   border-radius: 5px;
+}
+
+/* Estilo específico para preços dos jogos indies */
+.indie-list .game-price {
+    color: #000;
+    font-weight: bold;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    font-size: 1.05em;
+    display: inline-block;
+    margin: 6px 0;
 }
 
 /* Inicio Cadastro e Contato */
