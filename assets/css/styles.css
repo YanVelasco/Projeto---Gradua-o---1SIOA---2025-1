@@ -2661,3 +2661,49 @@ font-size: 1.2rem;
   border-bottom: 10px solid transparent;
   border-right: 10px solid #222;
 }
+
+/* Estilo para o objeto flutuante da DORA */
+#dora-float {
+    position: fixed;
+    bottom: 32px;
+    left: 32px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+#dora-float #dora-img {
+    width: 70px;
+    height: auto;
+    transition: transform 0.2s;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.18));
+}
+
+#dora-float #dora-msg {
+    display: none;
+    margin-left: 14px;
+    background: #fff;
+    color: #d900b8;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+    font-size: 1.05em;
+    white-space: nowrap;
+    animation: dora-msg-fadein 0.3s;
+}
+
+#dora-float:hover #dora-img {
+    transform: scale(1.08) rotate(-6deg);
+}
+
+#dora-float:hover #dora-msg {
+    display: block;
+}
+
+@keyframes dora-msg-fadein {
+    from { opacity: 0; transform: translateY(10px);}
+    to { opacity: 1; transform: translateY(0);}
+}
